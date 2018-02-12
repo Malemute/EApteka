@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ee42fdc-c6c9-413b-9c76-7f6faa84fd81">
+  <producedTypes>
+    <selectionType typeId="0031b4a3-d55a-4571-851f-15c0eb872028" valueTypeId="0e3e7453-d930-4c5f-a785-3f7a7d21c4f2"/>
+    <listType typeId="0de15aa8-ade0-4465-b2f1-1e7a2c75f4d6" valueTypeId="429845c1-e57f-4dfd-916c-c38f68f4402f"/>
+    <managerType typeId="e65eb61c-5df4-4da9-ad7c-3d03c2b039e1" valueTypeId="919487bc-7799-461d-9624-c3996c1439db"/>
+    <recordSetType typeId="929955d1-d566-47de-98c0-ef175387cb5a" valueTypeId="dbbcbe52-1e0a-4958-9d5a-dccad85e37ce"/>
+    <recordKeyType typeId="574c56e8-9fef-4365-8755-43fd1e8c445e" valueTypeId="08f0e905-7577-4295-9bf8-26a5334df9e2"/>
+    <recordType typeId="0ed0b6d4-ef4b-4ca6-bd22-144111c3719a" valueTypeId="901c51e1-fdc7-48e4-a5fa-ff6190e2b804"/>
+    <recordManagerType typeId="fb617249-6d10-4f5d-a86c-0d24148ef77b" valueTypeId="d8c501c8-d777-44fc-b81e-c08b85309a5a"/>
+  </producedTypes>
+  <name>СинхронизируемыеСправочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизируемые справочники</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СинхронизируемыеСправочники.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="473e135c-69d0-45e9-97dd-d2c25953dfc0">
+    <name>Включить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включить</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bbefc6e7-e966-46d8-ad44-da8216af9b29">
+    <name>ВключитьЧасто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включить часто</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c942a350-92c6-4172-95c7-b485db813c4e">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Обмен_ОписаниеОбъектов77</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8f33cbf1-fcb1-4d51-b619-dbcc3f526a32">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

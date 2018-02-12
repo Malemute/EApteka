@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6342195-91b5-48e9-b234-25263f066e49">
+  <name>Приемка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приемка</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.ОрдернаяПриемка</content>
+  <content>DataProcessor.ЗагрузкаПриходов</content>
+  <content>Document.Приходная</content>
+  <content>Document.ПриемныйОрдер</content>
+  <content>99e12914-845a-4b97-9e6b-11b049d4830e</content>
+  <content>Report.ОстаткиПоСкладу</content>
+  <content>Document.ОбменТовара</content>
+  <content>DataProcessor.ДелениеПрепаратов</content>
+  <parentSubsystem>Subsystem.РаботаСТоваром</parentSubsystem>
+</mdclass:Subsystem>

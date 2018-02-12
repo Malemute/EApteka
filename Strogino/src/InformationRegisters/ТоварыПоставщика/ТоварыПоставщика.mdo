@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44f21538-7c8b-407f-bd68-84669d9264a6">
+  <producedTypes>
+    <selectionType typeId="dabcde33-0e83-48a6-9053-635159fed6d5" valueTypeId="34793609-fdc6-424b-bc70-adb59244d601"/>
+    <listType typeId="9b1b9267-cd72-4549-948d-c4dfbf19c26c" valueTypeId="b07df856-9cef-4a20-9cad-ed09f559a816"/>
+    <managerType typeId="a2ccca5c-a131-4269-9fff-b61aac4dc959" valueTypeId="79beda65-81e4-4d00-b9c1-f4f71f5f7fdc"/>
+    <recordSetType typeId="09581c97-25a5-494f-9d0e-c74d449f3858" valueTypeId="93f5fdfd-3ab3-4327-8091-1990ce5a233a"/>
+    <recordKeyType typeId="c5aad3d9-6f17-43e9-9497-b5e73393fc09" valueTypeId="36e1b037-036b-4e21-91df-8ddc7574115a"/>
+    <recordType typeId="05c6b5b0-f6c5-456a-a3a9-17ee5a6c92e7" valueTypeId="d4c4da94-a53b-4e0f-a158-dc834314ddb0"/>
+    <recordManagerType typeId="37791907-239f-4c5d-94a8-7948d03c1043" valueTypeId="7f6fd75a-77a5-4405-8881-f9dd676c37a5"/>
+  </producedTypes>
+  <name>ТоварыПоставщика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Товары поставщика</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="b24e5c4f-e3aa-4cbc-8642-6bb5b3cf5c9a">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b49577bf-7fdd-4122-983a-96b2be317f33">
+    <name>КодТовараПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код товара поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4ce2f3c3-54b5-47ab-acec-e9ce2715f0e0">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f2cc398b-ee8f-4eb4-acd3-1af2de2ad723">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

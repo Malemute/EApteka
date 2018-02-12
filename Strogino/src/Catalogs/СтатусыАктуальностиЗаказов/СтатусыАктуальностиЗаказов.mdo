@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7caea0b-6b76-4739-a16e-f00b2b83cfcb">
+  <producedTypes>
+    <objectType typeId="c9e9ea0d-d00e-46e9-b1c0-0bec4e9f5c0f" valueTypeId="b46b5ed9-8d4c-4dd4-aaef-bad80882da00"/>
+    <refType typeId="abea57f7-303c-42bb-a3fc-710ac054e3f6" valueTypeId="2aede8ae-c323-4817-9fcf-2a11c23da000"/>
+    <selectionType typeId="bd79b55d-d4d5-4db4-b862-7b01da1a348f" valueTypeId="ecc7a8d7-ba3e-45ec-9aa8-7e5d623aa7d4"/>
+    <listType typeId="36223e69-3c60-4d94-a220-f8a26e52dbed" valueTypeId="61163ee9-266c-4da3-b249-6c0b96c74ffc"/>
+    <managerType typeId="a2f49043-d36b-4500-89cd-4a4a8b72a872" valueTypeId="29a248d2-2ca7-47e7-bdbf-8e1192cdeb71"/>
+  </producedTypes>
+  <name>СтатусыАктуальностиЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы актуальности заказов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтатусыАктуальностиЗаказов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтатусыАктуальностиЗаказов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="9f18de68-5821-4931-9670-490569371a9a">
+      <name>Актуален</name>
+      <description>Актуален</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="8084477a-b1f3-41f5-a5ac-a95847e0bc3d">
+      <name>ОжидаетОбработкиМРК</name>
+      <description>Ожидает обработки МРК</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="ea81e4d1-6dc7-411a-8faf-f67b35ddbda8">
+      <name>Отменен</name>
+      <description>Отменен</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <predefinedDataUpdate>DontAutoUpdate</predefinedDataUpdate>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="869c7ede-f0f9-4b09-b5dd-73c1731008f7">
+    <name>Порядок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

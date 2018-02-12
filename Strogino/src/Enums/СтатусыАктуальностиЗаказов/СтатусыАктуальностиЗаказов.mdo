@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d31cfc60-332a-4e5d-b439-01f43546a6a5">
+  <producedTypes>
+    <refType typeId="149ef394-55d5-40e2-8162-181064855503" valueTypeId="201ac5dc-ac57-436f-bd0f-cbd70809694a"/>
+    <listType typeId="0331ebee-e589-4d8a-bb55-64a733c613b3" valueTypeId="90b53b4b-8bd6-4d09-9782-e1920fe18c4f"/>
+    <managerType typeId="0c44a8fc-8823-4b29-ab27-0dcd29558d32" valueTypeId="a1794205-7a33-4441-afb5-a720a38f6c37"/>
+  </producedTypes>
+  <name>СтатусыАктуальностиЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы актуальности заказов</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b539bd99-c379-4834-b124-9cd8a3bc3d45">
+    <name>Актуален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуален</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9124dce8-7f87-489a-97fd-4895cac17896">
+    <name>ОжидаетОбработкиМРК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидает обработки МРК</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="551b4499-8b4c-4b9c-8202-002edf9c93a6">
+    <name>Отменен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменен</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

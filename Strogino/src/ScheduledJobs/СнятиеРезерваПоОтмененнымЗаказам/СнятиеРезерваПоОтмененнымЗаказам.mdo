@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b3957a7-cb15-4a67-bc26-c61e2a19f2f0">
+  <name>СнятиеРезерваПоОтмененнымЗаказам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Снятие резерва по отмененным заказам</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.СнятиеРезерваПоОтмененнымЗаданиямРегламентное</methodName>
+  <description>Снятие резерва по отмененным заказам</description>
+  <key></key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07daa62f-ee5f-4ade-8882-e22d77bbde00">
+  <producedTypes>
+    <objectType typeId="c678b26a-1d42-412d-9309-941680c3308b" valueTypeId="d8611893-c47a-4d95-a3c8-3cda4c1aa34b"/>
+    <refType typeId="baebe178-1e22-4e3c-8222-e6be9ce2abad" valueTypeId="66dcc352-3dfe-4b5c-bdc6-9dcece9d79b1"/>
+    <selectionType typeId="f05acc16-a339-42d9-bdce-e503d02f77f2" valueTypeId="f3e5b4bd-2bd4-451c-9eff-17c4cb0bd73b"/>
+    <listType typeId="3426a930-d7ed-464e-b5ce-755c5757c9ef" valueTypeId="e9d87387-7236-4fec-b0ff-a5c765b3f058"/>
+    <managerType typeId="9b1e0292-9c67-42d6-9111-beca09c3dbd7" valueTypeId="761223f4-0d90-4567-98cc-a807e2093ee5"/>
+  </producedTypes>
+  <name>Деление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Деление</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Деление.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Деление.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Номенклатура</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="05775ef5-877f-43c2-8756-f272de4a5296">
+    <name>ТоварПолучаемый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар получаемый</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5e28e4f9-69b5-4972-b2fe-a3d68445dd90">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1a82f683-b944-4d60-9b81-e94b884de8c0">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

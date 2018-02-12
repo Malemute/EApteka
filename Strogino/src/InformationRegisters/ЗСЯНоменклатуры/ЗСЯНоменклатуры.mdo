@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="98d6f000-e077-4e1a-b376-5a690dcd1978">
+  <producedTypes>
+    <selectionType typeId="ecc865b1-44cb-490f-946e-c02003aba081" valueTypeId="73edd42d-1880-4e58-9790-7e8afdc5f2f5"/>
+    <listType typeId="7e31dc74-933a-46c7-8bad-1e2c6ecb6522" valueTypeId="bb7f6f2f-d3fa-4d52-ad8e-4fb4ec2330b6"/>
+    <managerType typeId="5406329f-1fa2-4885-8181-76f3ca103f84" valueTypeId="2b18b996-7dac-468a-928a-15f459fb49ea"/>
+    <recordSetType typeId="17cd7f3c-be72-48e1-bfeb-4a179539ed71" valueTypeId="e34eb79e-b0b7-4f05-b55d-65e27663a378"/>
+    <recordKeyType typeId="f934bde1-1d30-4477-bbad-5713635e80b5" valueTypeId="c4311638-4b5c-47f6-b1f3-f6ca8396cbbd"/>
+    <recordType typeId="5b4baa29-ea74-4c76-993c-6ddc99e8d64d" valueTypeId="c918446a-1f88-4b59-9f8b-9068d03d25e3"/>
+    <recordManagerType typeId="91fd0783-46cc-4735-b265-ac8dfa4f9b24" valueTypeId="694167d3-d56a-4925-959d-86e0cbf96929"/>
+  </producedTypes>
+  <name>ЗСЯНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЗСЯНоменклатуры</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="eb0c61ea-8200-4f2f-9071-7c8a7f656344">
+    <name>ЗонаСсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зона ссылка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЗонаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="e2329bc1-92ec-4d8d-8c28-f7e77e647519">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ecbd5114-b1a3-4c79-bd70-35173ac173fb">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5527ae7f-594a-4b79-a00e-06debadffa91">
+    <name>Зона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зона</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6086e858-5b5b-41e2-b4af-8114b1a2ac9d">
+    <name>Стеллаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стеллаж</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="30e585bb-1ae8-4b77-b467-96f52df50390">
+    <name>Ячейка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ячейка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="02afa542-c8da-4597-9f4a-4279dba40bc4">
+    <name>МестоЗСЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место ЗСЯ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестоЗСЯ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

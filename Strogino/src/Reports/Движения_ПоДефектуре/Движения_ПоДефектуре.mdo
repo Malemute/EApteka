@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aae0bf7d-e428-4313-9197-99f4c56a9208">
+  <producedTypes>
+    <objectType typeId="83b871c2-f3f5-4cff-bfa0-84fb32312ef4" valueTypeId="0331702f-140e-4769-b4e9-eb48686b63ad"/>
+    <managerType typeId="83c99f62-44bc-4217-9530-b5a0f282740e" valueTypeId="c14535a5-6bbc-4a9d-9bfb-8a68a49064cd"/>
+  </producedTypes>
+  <name>Движения_ПоДефектуре</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения по дефектуре</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.Движения_ПоДефектуре.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="3b2508ae-cdc7-4888-b9e0-2a6cd0a5935c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

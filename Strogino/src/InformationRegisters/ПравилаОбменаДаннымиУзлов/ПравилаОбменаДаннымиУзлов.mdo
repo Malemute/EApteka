@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d09922a-0adf-4022-91d6-f8475afbf220">
+  <producedTypes>
+    <selectionType typeId="903951e3-d315-4341-b651-e7667fe230e6" valueTypeId="d36230e5-239a-4d3d-acfe-ff3cd3d09cab"/>
+    <listType typeId="6ae04808-df90-4693-a4a1-18b293084470" valueTypeId="1c5eebda-d3e3-4aa0-979e-4b367517de63"/>
+    <managerType typeId="45bf60a2-2518-4d37-afd6-bbf155cd4c54" valueTypeId="3e293553-6822-461f-871a-a3cd8a99aa25"/>
+    <recordSetType typeId="ed32a648-33d6-4fe0-9125-235238c97e0c" valueTypeId="b3c78824-682d-41f8-9afd-11ff66339ceb"/>
+    <recordKeyType typeId="02741b71-9360-41c3-aeff-1a623288e13a" valueTypeId="bc84e604-8b90-46e2-a212-54bf545d1112"/>
+    <recordType typeId="a2358fe1-43ae-4bf2-a4c4-a39a0bfc950e" valueTypeId="5a627912-26e9-493c-a2f1-3f2b5b5233b4"/>
+    <recordManagerType typeId="cc8054a1-ac3a-43f8-9453-9fef9a41e334" valueTypeId="a86d15a4-a8f9-47c2-b3df-cf5fbd2912db"/>
+  </producedTypes>
+  <name>ПравилаОбменаДаннымиУзлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Правила обмена данными узлов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="07c1979b-ca5d-4a39-afad-6efded1bc1ce">
+    <name>ПравилаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила обмена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПравилаОбменаДанными</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8782f2fe-fd5d-4108-8500-fbbb468bf132">
+    <name>УзелИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел информационной базы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

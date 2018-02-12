@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b047e15-9e6a-4393-9e50-4278e86ec23c">
+  <producedTypes>
+    <managerType typeId="ec0a5aca-9ec1-40fc-8826-f51a6640223b" valueTypeId="402ea614-d049-4073-adc9-a186b2e5c9e8"/>
+    <valueManagerType typeId="dc0d8ba5-c662-4eed-ab4a-e547f0ccdbf2" valueTypeId="9aabafa1-0c18-4378-987b-b585e860d9a5"/>
+  </producedTypes>
+  <name>ВестиРасчетыСПоставщиками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вести расчеты с поставщиками</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

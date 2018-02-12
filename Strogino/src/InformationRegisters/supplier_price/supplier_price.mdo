@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7efd1a08-f03b-4a91-b6ca-6a9f2f76314a">
+  <producedTypes>
+    <selectionType typeId="be346f8c-79e9-444e-af67-289d5577d46a" valueTypeId="7a0f3954-7ce7-4a1f-a719-771fde2359f8"/>
+    <listType typeId="e5d40173-0d31-46e9-a563-e0e4116387c9" valueTypeId="a4b4b95e-a0ba-486b-8331-170dfa4711af"/>
+    <managerType typeId="082aad18-3890-4a92-9fa6-82c640d74e8a" valueTypeId="9c149a58-fc1d-47be-a9d9-1aa085dc5fdd"/>
+    <recordSetType typeId="3b78ccce-eb86-462b-a9ce-ac0a63f81c0d" valueTypeId="13673123-ba4d-4904-bb0e-f405d742f47d"/>
+    <recordKeyType typeId="adf34976-ddee-4c01-9a67-bb875bf47f35" valueTypeId="a85a5d3c-c594-41ba-b301-0603d18c576e"/>
+    <recordType typeId="5ef4f180-30cb-42c9-9883-9af41c9d579f" valueTypeId="b7496a9f-1642-4f77-a1ca-b48d2b5796c1"/>
+    <recordManagerType typeId="c3b936d3-04d5-41f2-aa60-96a7df914997" valueTypeId="aadcd21b-a053-4ffa-afdf-537fb7bb8deb"/>
+  </producedTypes>
+  <name>supplier_price</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прайс поставщиков</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="88483004-316f-4312-804e-00cd84eb3def">
+    <name>supplier_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ca3d5658-8f41-4b50-85ed-42d01dd5f696">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование товара</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="2a3fd029-823a-445c-bc01-a73c35b638da">
+    <name>Производитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производитель</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="6c6d1a0d-102a-4506-a7f3-adb82f39a258">
+    <name>id_reg</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион работы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.РегионРаботы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="6131c014-a550-4134-ad90-16538561427f">
+    <name>nac_max</name>
+    <synonym>
+      <key>ru</key>
+      <value>Nac max</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a1281c18-f0b3-46b7-857f-0790eb19836b">
+    <name>nac_min</name>
+    <synonym>
+      <key>ru</key>
+      <value>Nac min</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3971c085-31d0-44d2-8010-4e06efa7be80">
+    <name>del_price_corr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коррект. цена поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c8277008-f302-42a7-a836-2fac57110e71">
+    <name>cnt_pack</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кол. в упаковке</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fb42a544-7455-49a2-a703-e5b04d515f33">
+    <name>nac</name>
+    <synonym>
+      <key>ru</key>
+      <value>Nac</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1b1cfe49-5cff-48db-82bd-c5caec17c2ae">
+    <name>delivery_date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата доставки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ca6e0e78-3e8b-4868-bc66-809344459aa9">
+    <name>del_expiration</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок годности</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="25ab9b35-1a98-4b87-8648-86f346ea3089">
+    <name>del_price_post</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="998a0d32-8432-4b6d-b83b-986d4e2d7fc9">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1112c7cf-973e-4b09-b140-eab20cebe012">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.supplier_price.Dimension.Поставщик</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8a8a84c3-371a-43cb-8bae-77f5fe646643">
+    <name>КодПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2fa417aa-7897-407b-a4a8-0e6cb45e3994">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5147a0f9-9682-4c2d-8e42-55545035074c">
+    <name>box</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробочный</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2808f4ce-cb8f-4569-9058-1cb1e7dfa322">
+    <name>price_corr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коррект. цена поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a6543830-4d77-42af-9d80-9fddb8b604f1">
+    <name>price</name>
+    <synonym>
+      <key>ru</key>
+      <value>Price</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f13bc8c2-f926-45c2-9011-cb99af06f5b0">
+    <name>cnt</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1adabd37-8482-4c40-a1a7-cb58d5a6e66d">
+    <name>price_post</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9ed80fff-86af-4928-bf9a-d8c79c3f48c1">
+    <name>expiration</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок годности</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

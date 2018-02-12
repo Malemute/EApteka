@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2f37859-9bc8-4280-9887-bfb7445220a6">
+  <name>ЭквайринговыеТерминалы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Эквайринговые терминалы</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <content>CommonCommand.СверкаИтоговПоКартам</content>
+  <content>CommonCommand.УправлениеЭквайринговымТерминалом</content>
+  <content>CommonTemplate.ДрайверARCUS2ЭквайринговыеТерминалыIngenico</content>
+  <content>CommonTemplate.ДрайверIboxProПоддержкаMPosЭквайринга</content>
+  <content>CommonTemplate.ДрайверTRPOSЭквайринговыеТерминалы</content>
+  <content>CommonTemplate.ДрайверUCSEFTPOSЭквайринговыеТерминалы</content>
+  <content>CommonTemplate.ДрайверГАЗПРОМБАНКЭквайринговыеТерминалы</content>
+  <content>CommonTemplate.ДрайверИНПАСЭквайринговыеТерминалыUNIPOS</content>
+  <content>CommonForm.ФормаНастройкиИНПАСЭквайринговыеТерминалыSmart</content>
+  <content>CommonForm.ФормаНастройкиСБРФЭквайринговыеТерминалы</content>
+  <content>CommonTemplate.ДрайверИНПАСЭквайринговыеТерминалыSmart</content>
+  <content>CommonModule.ПодключаемоеОборудованиеИНПАСЭквайринговыеТерминалыSmartКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеСБРФЭквайринговыеТерминалыКлиент</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеЭквайринговыйТерминал16</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеЭквайринговыйТерминал32</content>
+  <content>CommonTemplate.ДрайверШтрихМПлатежныйТерминалYarus</content>
+  <content>CommonTemplate.Драйвер1СЭквайринговыеТерминалыСбербанк</content>
+  <parentSubsystem>Subsystem.ПодключаемоеОборудование</parentSubsystem>
+</mdclass:Subsystem>

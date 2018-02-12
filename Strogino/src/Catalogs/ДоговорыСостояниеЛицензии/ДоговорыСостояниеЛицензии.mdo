@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f77436b9-caa1-47dc-8aeb-61d5d4c0cb07">
+  <producedTypes>
+    <objectType typeId="9bfa56e8-e6b7-4017-a813-f686fa79f937" valueTypeId="24cfbfb1-3b45-45c4-b454-caafa781e5df"/>
+    <refType typeId="6b77dd3c-0c3d-4d59-9b5d-2387dd9fe086" valueTypeId="dd0e9289-11e7-4138-b9ad-1a8e4d62810b"/>
+    <selectionType typeId="aa517ce8-c917-4cf9-bc51-e60a436b4815" valueTypeId="a6f8c36d-80b4-4dda-a233-12fbc1c5b51f"/>
+    <listType typeId="279c12c2-bc36-4ab4-af98-12c0d3903b8f" valueTypeId="81bb9a3b-1f00-4294-8dc4-4e824fcaf16f"/>
+    <managerType typeId="8118e739-96d4-4276-941c-3c7a5d27c943" valueTypeId="b94ad322-ca61-432b-8edd-ba6b5e05d1c5"/>
+  </producedTypes>
+  <name>ДоговорыСостояниеЛицензии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договоры состояние лицензии</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДоговорыСостояниеЛицензии.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ДоговорыСостояниеЛицензии.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>5</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

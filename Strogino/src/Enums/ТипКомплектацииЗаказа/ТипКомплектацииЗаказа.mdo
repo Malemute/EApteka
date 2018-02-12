@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c6a6fe1-c9dd-4bbf-be57-4142267e2977">
+  <producedTypes>
+    <refType typeId="bbc2fb8f-b4dc-4b45-9299-b688f6ca0eb0" valueTypeId="79c57da0-c0bf-4833-b3fe-fc1bbf6896e4"/>
+    <listType typeId="06a9ffe8-6174-4aab-a3eb-02d81cca62f3" valueTypeId="240511ce-a9ca-41b8-8d3a-2533921890be"/>
+    <managerType typeId="a3e90770-2a43-4810-82c1-0a6a774b41d9" valueTypeId="8664fd10-a045-4fe1-8039-ca30fa6ef553"/>
+  </producedTypes>
+  <name>ТипКомплектацииЗаказа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип комплектации заказа</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="78f57ab9-2b22-447b-949b-6e0f0c0908f8">
+    <name>СборкаИКомплектацияВАптеке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка и комплектация в аптеке</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2bdb738d-be32-4ff0-96a7-9c53734929c8">
+    <name>СборкаНаСкладеВКоробку_КомплектацияВАптеке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка на складе в коробку - комплектация в аптеке</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="eb394fd3-bb60-4426-9221-7b2afaad75e8">
+    <name>СборкаНаСкладеВПакеты_РаскладкаПакетовВАптеке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка на складе в пакеты -  раскладка пакетов в аптеке</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <forms uuid="aa5105bb-c861-44a8-9342-9d18c421c23c">
+    <name>ЧастотаРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Частота рассылки</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Enum>

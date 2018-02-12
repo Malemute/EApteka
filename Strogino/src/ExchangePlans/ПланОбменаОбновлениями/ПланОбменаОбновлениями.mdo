@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d9a6c89-59e1-4c4e-9b62-c00a980658aa" thisNode="2018c8dd-a548-4283-8630-6bc070b71eac">
+  <producedTypes>
+    <objectType typeId="06642a56-045e-47a5-ad9a-8b48b1df8eec" valueTypeId="4d33e478-e968-41ab-ae86-b0f4127fbc0d"/>
+    <refType typeId="a704a241-4373-4ee6-9c27-f2d15a2a5809" valueTypeId="6b6cdb2d-827b-4bac-ac44-b37ec09f9093"/>
+    <selectionType typeId="25dcb589-5dc5-4433-bee7-be4e00dd1ec0" valueTypeId="0c4143c2-953d-4436-94f9-cfe4ca76fbf0"/>
+    <listType typeId="42379792-4a4e-4770-91ba-0535a2781bff" valueTypeId="af7f5696-a041-4cac-88de-e2933eb3b5d3"/>
+    <managerType typeId="f093354b-ef7b-4a06-86b4-208b2987316f" valueTypeId="15bf0434-2781-46c4-b089-7e329740ce8d"/>
+  </producedTypes>
+  <name>ПланОбменаОбновлениями</name>
+  <synonym>
+    <key>ru</key>
+    <value>План обмена обновлениями</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.ПланОбменаОбновлениями.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.ПланОбменаОбновлениями.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>План обмена для контроля над изменениями конфигурации</value>
+  </explanation>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Catalog.АдресХранения</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>ExchangePlan.ПланОбменаОбновлениями.Form.ФормаСписка</defaultListForm>
+  <distributedInfoBase>true</distributedInfoBase>
+  <attributes uuid="c418a3d4-a3b1-46b1-b1e9-29dda6d636a2">
+    <name>АдресХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.АдресХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="645eaaa4-a443-4c19-b653-e4e61a8caa7a">
+    <name>Префикс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Префикс</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="470e701d-8216-4be7-9aec-b85fcec2e51e">
+    <name>ВключитьОбмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включить обмен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="394b91e3-1e13-4fdd-8768-dac9c5ba9f7f">
+    <name>ВерсияКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия конфигурации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="23118916-12df-4fb2-89a3-f400dcafac58">
+    <name>НастройкаВебСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка веб сервиса</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НастройкиПодключенийКВебСервисам</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="98815c31-5c1e-4303-a89e-5d9723dd3414">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExchangePlan>

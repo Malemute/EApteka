@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa1f6bed-b5bb-4484-9a1b-5557424b924d">
+  <producedTypes>
+    <selectionType typeId="db2c2025-10ba-4ee9-b124-0186d9a9e58f" valueTypeId="4f55ab90-fd28-45db-82a0-bdcf2a16103c"/>
+    <listType typeId="b7ab72b9-1feb-4443-9d4b-75ccb482d038" valueTypeId="b6c1636b-047a-4e78-8ebb-ec56dc6be91d"/>
+    <managerType typeId="4a243f17-9e84-42ea-92e4-8388d29f90dd" valueTypeId="2f8cc437-3864-4d78-88b7-1e8f37999de5"/>
+    <recordSetType typeId="de81d38d-fe84-4ad3-bbd7-fb630cb29063" valueTypeId="1f8118ca-7e54-4972-938f-66850f208d1f"/>
+    <recordKeyType typeId="55dc4076-45a9-4700-bccc-aa103f664864" valueTypeId="5caf8715-2869-4d02-bf2d-24edd4b7c631"/>
+    <recordType typeId="3666d78c-7ce7-4259-b935-70c51404f067" valueTypeId="85fab4ca-450f-4bfc-abf0-c4dec55f0ab4"/>
+  </producedTypes>
+  <name>Претензии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Претензии</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="67342e03-92e5-4d98-bb25-20728db3e062">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="a38f35f3-0b04-4f1b-8674-5c73987268ab">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="a9b43d3e-7d5e-4154-97cb-e1308954937a">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="43c3114a-f3eb-4330-9a50-29e7a36b7459">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Партии</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="eff33314-318e-4959-80f2-d0d0ccb114a5">
+    <name>Претензия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Претензия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Претензии</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6c9ed2de-10de-45f0-81df-77fb460b62b8">
+    <name>ДокументПретензии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ претензии</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Претензия</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

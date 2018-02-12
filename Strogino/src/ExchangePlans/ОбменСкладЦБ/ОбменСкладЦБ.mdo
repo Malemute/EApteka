@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="665ebafe-da09-45dc-9e04-242b9972b05f" thisNode="1a6a542e-d577-465e-90fe-02bdef5b4ad9">
+  <producedTypes>
+    <objectType typeId="c6bedf1a-d7fc-4485-8120-01e07e1d304f" valueTypeId="a82c51d2-9568-4d5b-b07a-508bd2837d8f"/>
+    <refType typeId="08fde668-4b78-48ee-975d-30858a140424" valueTypeId="fd94b475-8ecf-4eec-b31d-c49f5c35761e"/>
+    <selectionType typeId="25ea5a16-4c03-4a66-aaea-685f4d195033" valueTypeId="5c13afa8-bbf0-4f8f-816c-183b46070a3d"/>
+    <listType typeId="3e43fc1a-c5b9-4b85-8241-8640fa71735d" valueTypeId="3af39220-7728-4de3-bec5-925e932f05a0"/>
+    <managerType typeId="dc918126-49a1-4be0-87fb-bf2efe317295" valueTypeId="a1fa1128-a275-451e-a0bd-0cfb3eb1241e"/>
+  </producedTypes>
+  <name>ОбменСкладЦБ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен Склад &lt;-> ЦБ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.ОбменСкладЦБ.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.ОбменСкладЦБ.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>3</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <content>
+    <mdObject>Catalog.МестаХранения</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.Партии</mdObject>
+  </content>
+  <content>
+    <mdObject>InformationRegister.СтавкиНДСПоНоменклатуре</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Номенклатура</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.АдресХранения</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.Приходная</mdObject>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ExchangePlan.ОбменСкладЦБ.Form.ФормаУзла</defaultObjectForm>
+  <defaultListForm>ExchangePlan.ОбменСкладЦБ.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a451914a-1674-4621-813a-83df8a380551">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="c7f27d8e-924d-4025-a5a6-41fd8966f333">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="9c549f52-c897-4f0d-a8a0-12a4f2324bf0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4deff150-199d-4374-b23a-b4f3e1b0a127">
+    <name>ФормаУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма узла</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExchangePlan>

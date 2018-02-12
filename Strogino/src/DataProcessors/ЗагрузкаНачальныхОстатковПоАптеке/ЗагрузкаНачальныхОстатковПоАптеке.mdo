@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f3b28dd-2713-479f-81cf-1f216bff04d0">
+  <producedTypes>
+    <objectType typeId="bb5da2b0-efe1-499c-9589-7e6cdb47c4b1" valueTypeId="03b5861b-ee19-4952-a9f4-10515ea46cfd"/>
+    <managerType typeId="b1fcf1b9-0ebb-4b6f-a6b1-a69e83efa2d1" valueTypeId="49a415e9-1067-4bd6-8462-be916fccae7c"/>
+  </producedTypes>
+  <name>ЗагрузкаНачальныхОстатковПоАптеке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка начальных остатков по аптеке</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаНачальныхОстатковПоАптеке.Form.Форма</defaultForm>
+  <attributes uuid="388968a6-d681-4085-9627-962e96c55a44">
+    <name>АдресХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.АдресХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="6f2f4cd1-33f5-4ed9-a77d-dcc510f599b9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

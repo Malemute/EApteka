@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6bd470c3-b14f-45e5-b46e-c7aa5d4e5ea9">
+  <producedTypes>
+    <refType typeId="d7eb49dd-b6f4-4cbb-b529-ce875037d4be" valueTypeId="22d3be8c-4113-4dec-8062-e5542a25d6f5"/>
+    <listType typeId="334a0dfc-c8cd-40d3-86c7-fb63775d8364" valueTypeId="202edb23-e652-475a-98c3-b4d505c89b97"/>
+    <managerType typeId="69cf4a55-d3ec-462c-869c-c1c2adb37ef6" valueTypeId="59d8c92a-f35b-4265-af1d-b4303fd64bef"/>
+  </producedTypes>
+  <name>ЧастотаРассылки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Частота рассылки</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="88a9ea06-7e6c-40ed-8cd7-0da19c60b9ff">
+    <name>Никогда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Никогда</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="951dcf6e-0c2e-411f-8f4f-06fd32111d1b">
+    <name>ОдинРаз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Один раз</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="eaad778d-493a-46d6-b116-c99b7831cf61">
+    <name>РазВЧас</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раз в час</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="bd8adfd4-a96e-4cb4-b8e3-1b14dc7ab7c5">
+    <name>РазВДень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раз в день</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

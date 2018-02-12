@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9aa2bd4b-f345-44de-bab6-d5daae6fc37b">
+  <name>ИспользоватьПодключаемоеОборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать подключаемое оборудование</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Use the hardware peripherals</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.ИспользоватьПодключаемоеОборудование</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>CommonCommand.УправлениеЭквайринговымТерминалом</content>
+  <content>CommonCommand.ВыбратьРМТекущегоСеанса</content>
+  <content>DataProcessor.ТестированиеПодключаемогоОборудования</content>
+</mdclass:FunctionalOption>

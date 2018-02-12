@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90fe2baa-b435-44f6-aaf4-312ce9ec455c">
+  <producedTypes>
+    <selectionType typeId="c874572e-a29d-4c6b-b8af-d688901e4729" valueTypeId="3f4b451f-9da9-4f4c-97c7-6fb9b4938ab7"/>
+    <listType typeId="920f391e-9f2e-472b-b26a-585ae4869dee" valueTypeId="78e3577d-88cb-4fdd-b1a6-08452c4ddc1f"/>
+    <managerType typeId="03f111fb-f9cb-48d5-a95e-6bc6c9d0158c" valueTypeId="516d73ff-09d0-4be9-9ef7-30de99286c4e"/>
+    <recordSetType typeId="85b2f4cd-5b87-42a4-9b21-99bacd55e25c" valueTypeId="6b05c292-f2de-4092-9668-61897a834069"/>
+    <recordKeyType typeId="811c224f-100a-4d3c-a379-e122198a1d89" valueTypeId="594d2400-5d23-45c4-bee3-0d2d40f997a4"/>
+    <recordType typeId="f2ecffd6-8c31-47a2-922d-d2fbdc62e8d3" valueTypeId="e34eb225-7b73-489d-bd9f-fbd23aaea343"/>
+    <recordManagerType typeId="1ecec787-0f93-4897-ac5b-9480534e4a21" valueTypeId="92da4d91-37a0-43b4-aa61-703a92b0ff2a"/>
+  </producedTypes>
+  <name>tmp_defect_e</name>
+  <synonym>
+    <key>ru</key>
+    <value>ea5 tmp_defect_e</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>letterdate</value>
+    </synonym>
+    <comment>letterdate</comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4044f498-2aef-4026-b801-b16061a4fcf2">
+    <name>letternr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Letternr</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="c8d16fdb-c630-4b46-8c46-9f5799df85dc">
+    <name>mnfnm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Mnfnm</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>128</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="365f7be8-1895-45a0-84d0-d4bad707270b">
+    <name>specnm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Specnm</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>254</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="d3afa11a-d120-4494-a5d2-9e00e1696333">
+    <name>countryr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Countryr</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="2a5b14b8-1db5-49bd-a3bd-6fe9f8c58020">
+    <name>drug_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Drug id</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="d2533fe9-0004-4bc2-a417-6d79c0fe4341">
+    <name>seriesnr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Seriesnr</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>254</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+</mdclass:InformationRegister>

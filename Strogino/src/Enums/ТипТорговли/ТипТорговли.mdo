@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d78866c5-2573-4781-87e1-67de2ffdd0a8">
+  <producedTypes>
+    <refType typeId="d3fc8f87-045a-4785-8bed-f1375087725a" valueTypeId="82dad0d2-26ca-43c9-acb6-3857742da456"/>
+    <listType typeId="904d31af-d1ae-4736-b67e-3d3a4179394a" valueTypeId="05f5bc7e-c86a-46f8-8c3b-32a1de0fb225"/>
+    <managerType typeId="d4add068-556b-4a22-b504-92429dad57e6" valueTypeId="eff0de9e-d3a5-4eb0-96d3-9cd15fbe4860"/>
+  </producedTypes>
+  <name>ТипТорговли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип торговли</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="67130f37-2d1b-4756-91e9-98529370c7e3">
+    <name>Медикаменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медикаменты</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ea72bf6e-359f-4a27-b1f1-a9bb767b118f">
+    <name>Зоотовары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зоотовары</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b5f6f6c5-daaa-4519-92ce-6bc350df375d">
+    <name>Детство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Детство</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="864408ab-d334-423d-8668-0fb3a77140d4">
+    <name>ДляДома</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для дома</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e43aa760-63ab-4c19-8dac-3704a60d0847">
+    <name>Артемида</name>
+    <synonym>
+      <key>ru</key>
+      <value>Артемида</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f4a3a02c-eaeb-4f5a-8258-ca7215899eaf">
+    <name>Сезонные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сезонные</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a69f3ecf-16f7-43b7-b461-3a608a143f50">
+    <name>Косметика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Косметика</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

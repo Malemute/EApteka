@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9552d37f-33a3-4e4a-8b0e-0b3d5586b5d6">
+  <name>Касса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Касса</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.РабочееМестоКассира</content>
+  <content>Document.Чеки</content>
+  <content>Document.Заказ</content>
+  <content>Document.ВозвратОтПокупателя</content>
+  <content>Report.ОтчетПоРеализации</content>
+  <content>Report.ОтчетПоПромоКодам</content>
+  <content>Report.ОтчетПоЦенамНоменклатуры</content>
+</mdclass:Subsystem>

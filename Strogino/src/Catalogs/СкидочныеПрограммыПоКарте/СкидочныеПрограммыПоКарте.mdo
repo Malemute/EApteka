@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90073501-f256-4580-a8a7-8d4dde82716f">
+  <producedTypes>
+    <objectType typeId="03827829-f5ec-4e71-a4c6-3d63b8bba5f7" valueTypeId="df90516b-6879-4a18-a553-800f979cc317"/>
+    <refType typeId="d9b7d4de-55c6-47a7-a88a-cce22349b28a" valueTypeId="523c9aa3-1c7e-44c1-a5c8-0eb562fe2efd"/>
+    <selectionType typeId="e17d313a-f638-45b9-8c5b-4719c4d59836" valueTypeId="8c9ec5e4-bf39-4f8d-aae4-e9ba49d8b55a"/>
+    <listType typeId="5cee62d9-15cd-47a9-be7f-86088c4a4ead" valueTypeId="7b09298d-ffc9-4589-8ccf-14afbc826655"/>
+    <managerType typeId="62ca5ad0-9f31-41c1-babe-12801d093936" valueTypeId="b6caafd6-1d2f-4437-97fa-17f9246b22c2"/>
+  </producedTypes>
+  <name>СкидочныеПрограммыПоКарте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Скидочные программы по карте</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СкидочныеПрограммыПоКарте.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СкидочныеПрограммыПоКарте.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c06c05b7-faa4-49b9-b9c0-b2afd84f454e">
+    <name>Идентификатор_char50</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор char50</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                                  </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f7e10f17-90e8-4429-8522-e7b7ed1399c2">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="401ef87a-bb83-47ea-8223-af449aa4b3f0">
+    <name>ЛимитВДнях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лимит в днях</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="affbccab-fc83-4555-9e59-a9a9826fbd6f">
+    <name>БезБуклета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без буклета</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="64c7b3f1-c3c8-486f-9458-b115d170bfb1">
+    <name>ТоварКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар карта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a1fac9e-dd3f-4a36-837b-4adcbc8e8e60">
+  <producedTypes>
+    <refType typeId="83447e1a-f533-43f5-a24c-a20d824851b7" valueTypeId="bf85abb8-d700-423a-b195-5151b53cfe38"/>
+    <listType typeId="90ae2093-559b-49b2-9e49-e0e57cae761c" valueTypeId="9c37fecd-f25f-434e-8bcf-dd432fd24f68"/>
+    <managerType typeId="06bd8021-a451-4970-ae35-460b617c9c82" valueTypeId="c0422e14-0cd5-48fa-bc17-9800ed8541f4"/>
+  </producedTypes>
+  <name>ТипыОбъектовМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы объектов метаданных</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f7d461ad-20b1-4ee2-bc91-ef3c179bd775">
+    <name>Справочник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ccae669e-3d13-4817-a9ed-ec559e65eb3e">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a0497f33-fa55-4e20-841f-ef405acc01fb">
+    <name>БизнесПроцесс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бизнес-процесс</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="962fff33-293d-4d5b-a965-b80b04c82257">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="54b57495-7915-470e-aa96-c9fcd98aed95">
+    <name>РегистрСведений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистр сведений</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

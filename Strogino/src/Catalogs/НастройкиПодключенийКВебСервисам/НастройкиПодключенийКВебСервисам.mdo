@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eaf27a2b-663a-4331-a3d2-ac4bf73791ff">
+  <producedTypes>
+    <objectType typeId="e91d7d3a-15fb-4b72-954c-011222285be1" valueTypeId="99454a5d-cc85-4348-b8d6-2328c065a415"/>
+    <refType typeId="a38835a5-a027-4730-97bb-4a1a2622ad55" valueTypeId="b1ec4080-168d-4fad-a20f-513bbd0d6252"/>
+    <selectionType typeId="2cab5714-c5f8-4f26-bd0c-a25a1f91b9e9" valueTypeId="c51cc042-69a8-473c-8634-0eb12d716238"/>
+    <listType typeId="2b30e6b8-a5c8-4f83-928d-4a72785ca0bc" valueTypeId="66c4d726-0288-4be4-be1c-41d707102e1a"/>
+    <managerType typeId="c446b25f-be0d-4a91-9e47-92018915c0b7" valueTypeId="0e5f5021-7404-4799-b62a-18370fa501c8"/>
+  </producedTypes>
+  <name>НастройкиПодключенийКВебСервисам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки подключений к веб сервисам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиПодключенийКВебСервисам.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.НастройкиПодключенийКВебСервисам.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="45081835-1abc-4031-b800-5b2d9ca1e614">
+      <name>Склад</name>
+      <description>Склад</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="5256f556-659c-430b-92a0-7b6b2f2a7b0b">
+      <name>ЦентральнаяБазаDataRequests</name>
+      <description>Центральная база</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <predefinedDataUpdate>DontAutoUpdate</predefinedDataUpdate>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НастройкиПодключенийКВебСервисам.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="2c017934-4bc6-49e0-a47b-eaf27a8d349c">
+    <name>НазваниеСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название сервиса</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="570243dd-fed8-4852-a822-d2e24b29c03f">
+    <name>АдресСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес сервиса</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e4ee6983-aff9-4c9e-8601-04fefac68b13">
+    <name>ПространствоИмен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пространство имен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f805f42b-6e10-4f3f-b8de-92815659014d">
+    <name>Порт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="49b9da3a-72b7-4010-826e-49f85103fd65">
+    <name>Логин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd1c0646-a930-450e-ad74-eddbc078610c">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bfdbf982-f28d-4f08-aa71-1bbc008b2f8b">
+    <name>ИмяСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя сервиса</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="08cab217-655f-4ffd-878e-4d407fa4f76c">
+    <name>Таймаут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут (сек)</value>
+    </synonym>
+    <comment>>>Гусаров Д. 25.05.2015 Наряд 0000443909</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d571d194-df80-48e2-805e-df771751da60">
+    <name>АдресХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.АдресХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ee7be280-deb8-4f93-a7c3-e4d600691473">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

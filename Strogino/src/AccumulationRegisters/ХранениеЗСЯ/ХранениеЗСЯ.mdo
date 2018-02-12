@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="312ab887-f833-4d14-9442-bef45a1e93fa">
+  <producedTypes>
+    <selectionType typeId="9c7a4db3-e031-4370-bbb1-34d55811678f" valueTypeId="832bfb91-43ac-4817-b616-40f5dcc60e79"/>
+    <listType typeId="ce0cc96a-6172-4df6-bbfd-addf8ec12eff" valueTypeId="b3c1b2b6-dfec-4aae-8b71-90c639966ab3"/>
+    <managerType typeId="d562b928-23b5-41ee-83e8-0a2d12535fc9" valueTypeId="e5e88e81-d5c3-4c80-a62b-bc3f943ff4e6"/>
+    <recordSetType typeId="de80c79b-4369-4387-a013-ca784528784c" valueTypeId="22de51ad-a3e0-45b4-81fb-b14d75b9a439"/>
+    <recordKeyType typeId="97fe3790-daca-4e4d-a5ea-0a6ec37a48c0" valueTypeId="ade79e9d-e66c-4456-8120-30e74b530ea1"/>
+    <recordType typeId="bcda52da-5aa1-47e4-987c-a2dbbecd9b10" valueTypeId="3957ab94-8095-474f-a170-d5a09da320ec"/>
+  </producedTypes>
+  <name>ХранениеЗСЯ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранение ЗСЯ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="b0d05796-e690-4b83-9e6d-e9ae1d59ae2e">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="57a12da8-5f76-48f5-a815-42e367dc57e2">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="039648cb-5942-41f2-98b1-4c581d10f4d3">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Заказ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c52aeb41-a457-4951-9426-d1b51715f124">
+    <name>МестоЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место заказа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НаклейкиМестЗаказа</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f2cf081c-8d6b-411d-a3ec-499163a33f65">
+    <name>ЗСЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗСЯ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестоЗСЯ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

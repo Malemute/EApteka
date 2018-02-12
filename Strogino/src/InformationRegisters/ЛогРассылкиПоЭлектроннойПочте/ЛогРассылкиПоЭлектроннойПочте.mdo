@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0079c33e-d4c0-49d5-9aac-76e4bc3a62bf">
+  <producedTypes>
+    <selectionType typeId="49f5ad8d-2a41-49b5-9cbc-dba92788040d" valueTypeId="893f26bd-d249-40c5-ae1e-fb647fdfb690"/>
+    <listType typeId="f4eec8ec-f4fd-4d50-a04e-a871470b3396" valueTypeId="6915c4aa-1a05-4a76-96d5-373e7c032d6b"/>
+    <managerType typeId="cc7b3b9b-dd02-4396-8ce3-3223ad579cec" valueTypeId="1139dc74-8b74-4c80-9977-c037683dbd69"/>
+    <recordSetType typeId="039ef979-11ea-4c30-a6ad-d55310e39ef6" valueTypeId="36572131-ee5d-413d-8f2d-e893ff8c670b"/>
+    <recordKeyType typeId="022d8256-71a1-4cf9-9d51-9c0cfad1a0b6" valueTypeId="d622aee0-66d5-443e-b524-3802649f8a51"/>
+    <recordType typeId="bf014d3e-f68f-4cb6-b75b-7e952fee62e2" valueTypeId="21577172-40fb-45f3-886c-a95667d646a1"/>
+    <recordManagerType typeId="a7f08fc7-1fc2-4849-93ca-2cf3bbddc5a4" valueTypeId="5b6e1241-8ebe-49c4-9202-c43688f1434c"/>
+  </producedTypes>
+  <name>ЛогРассылкиПоЭлектроннойПочте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лог рассылки по электронной почте</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a82d88d5-8627-45a5-8e23-221562760500">
+    <name>ПисьмоОтправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо отправлено</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="00eff603-02bc-4b9e-b3c8-f63c984ea772">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="4e9b99ca-ce09-4317-be78-cbcf5ba4bbc8">
+    <name>ШаблонРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон рассылки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ШаблоныРассылкиПоЭлектроннойПочте</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

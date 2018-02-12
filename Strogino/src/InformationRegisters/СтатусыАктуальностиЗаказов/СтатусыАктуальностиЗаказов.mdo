@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="003318b6-1dbe-4269-aea2-a63e7e3a5001">
+  <producedTypes>
+    <selectionType typeId="91115580-c2ac-4218-aa6b-fafa11bc9c28" valueTypeId="360bc10d-dcdf-491e-9deb-05261724ac87"/>
+    <listType typeId="37a9e973-23b7-4694-9060-e28130899071" valueTypeId="7a94ffd9-6797-4b54-a6ad-d21476471c16"/>
+    <managerType typeId="5ef73f3a-37a0-49c3-bf9f-064c3d5ec4d2" valueTypeId="cead58c8-7bf6-4bce-b57d-94d720159d3e"/>
+    <recordSetType typeId="0fb4a89a-eeba-4f2c-965a-4aa8ea1bcfdf" valueTypeId="c1ab4e2c-1cf7-42b0-94f9-912d633a71f2"/>
+    <recordKeyType typeId="4a6217d3-a521-4e70-b66c-08e926e56654" valueTypeId="d432fd4b-c1a6-45cd-a3db-16427b05f971"/>
+    <recordType typeId="03a441fc-5656-45f1-aae5-261163e2ad19" valueTypeId="0d77a4c3-ab17-428f-9455-12b6863191f9"/>
+    <recordManagerType typeId="4a649b5d-3631-4ef1-9bc6-5aeb5839a043" valueTypeId="7ffc8876-5bab-4317-bda8-8a1fafc3219b"/>
+  </producedTypes>
+  <name>СтатусыАктуальностиЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы актуальности заказов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="99edfd25-2dcc-420d-ba97-21491626d828">
+    <name>Отменен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="405c27e6-f7f5-4161-b7cc-4b6235c4b7fb">
+    <name>СтатусАктуальности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус актуальности</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтатусыАктуальностиЗаказов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7e8bec7b-ba6a-424e-82a4-d1d967b58172">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c19bda76-5a9e-48d0-b8a7-7d6d41513300">
+    <name>Выгружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружено</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="898aa4cc-4e4f-4cbb-b9e6-3ae0b763686d">
+    <name>ОснованиеУстановкиСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание установки статуса</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ОснованияУстановкиСтатусаДокумента</types>
+      <types>DocumentRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6bef20ce-f9ad-479c-8a65-ce55a9822cc0">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Заказ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

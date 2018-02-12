@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fd4e982-233b-43c1-ac11-4b8a48f6d1e7">
+  <producedTypes>
+    <managerType typeId="316256b1-e6db-4bbf-a6ca-3d1804948a44" valueTypeId="93d44316-38b5-4886-8b37-b15cf9e2b800"/>
+  </producedTypes>
+  <name>ExchangeFromUniversalXML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен при помощи Универсального обмена данными XML</value>
+  </synonym>
+  <comment></comment>
+  <locationURL>http://127.0.0.1:8765/Base3/ws/ExchangeFromUniversalXML?wsdl</locationURL>
+</mdclass:WSReference>

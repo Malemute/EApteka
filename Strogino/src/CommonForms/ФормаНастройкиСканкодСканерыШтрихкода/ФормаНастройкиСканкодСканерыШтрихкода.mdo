@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8f4a594-8d59-49a2-9772-1a1e19c4f871">
+  <name>ФормаНастройкиСканкодСканерыШтрихкода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма настройки &quot;SCANCODE: Сканеры штрихкода&quot;</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:CommonForm>

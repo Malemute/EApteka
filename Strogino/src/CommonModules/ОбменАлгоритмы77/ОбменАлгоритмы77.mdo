@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28dc9972-8e37-472c-b882-908c3f815d96">
+  <name>ОбменАлгоритмы77</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен алгоритмы77</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="492be065-079c-46c2-a103-34e3030f92fe">
+  <producedTypes>
+    <selectionType typeId="c3b4a873-189c-4d96-a6db-37ff679309a8" valueTypeId="227c48da-297f-4ee7-ad60-4194026adcfe"/>
+    <listType typeId="d54ad37d-a9ce-487f-9815-3ad0d96b2af6" valueTypeId="518fe643-c954-4513-8213-c8181d366410"/>
+    <managerType typeId="4cce4891-22be-4c00-a9eb-e9ec803cb82f" valueTypeId="377e493c-b4ba-4987-afdd-42f94f950855"/>
+    <recordSetType typeId="201bae0e-1339-4fd5-b4b9-cb2bca9bb9d1" valueTypeId="1ec26342-1b69-46fd-b4db-e058d141675d"/>
+    <recordKeyType typeId="6c7f2e1e-08b5-44de-a7cc-3c48dd74b3c4" valueTypeId="f3907aa3-d1a4-42de-a672-154eb44e938b"/>
+    <recordType typeId="efc0c967-6d78-4553-924a-265dcd3b2aad" valueTypeId="37c69fa8-e619-4c3a-bef4-9ab7a35fca96"/>
+    <recordManagerType typeId="b96a2956-ec0c-4f45-928f-e989163e715f" valueTypeId="d74e5409-2637-4ca0-bf04-155c4184c154"/>
+  </producedTypes>
+  <name>t_ucs</name>
+  <synonym>
+    <key>ru</key>
+    <value>courierds_t_ucs</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="4f0dfc36-fd62-49ec-9553-60798cf90e9c">
+    <name>ДатаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата загрузки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="10bdd934-938c-48a1-a3dd-854a405e8931">
+    <name>kkm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Kkm</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="f726c2fb-394d-4267-8b57-92f853c8a8ac">
+    <name>TCPIP</name>
+    <synonym>
+      <key>ru</key>
+      <value>TCPIP</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="81062d7d-54d8-40fd-9cee-3b7695b4c1b7">
+    <name>TCPPort</name>
+    <synonym>
+      <key>ru</key>
+      <value>TCPPort</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="d14f0f4c-41dc-4b37-b0ce-c405751a1648">
+    <name>TerminalID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Terminal ID</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="cf2771d0-b79f-4260-82e8-3bb74377d3ce">
+    <name>TerminalDriverID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Terminal driver ID</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+</mdclass:InformationRegister>

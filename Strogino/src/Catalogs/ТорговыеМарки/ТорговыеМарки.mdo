@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b46ddfb-ec47-4a00-8942-7f73143cf48f">
+  <producedTypes>
+    <objectType typeId="0a1773de-6014-4510-a2d3-fa18d1b01036" valueTypeId="71845def-db38-44b8-9758-b9775658f072"/>
+    <refType typeId="c21f09e6-92de-4ee7-a0bc-5472fc6d3793" valueTypeId="3020b8de-2ddd-4643-8b1b-cb2bcdb0ce35"/>
+    <selectionType typeId="78bb6f03-7604-4134-a0aa-4881c0615057" valueTypeId="4e482be6-6f2e-440d-abdd-3614fbd937a9"/>
+    <listType typeId="80cf4ce4-1ab7-4ea0-8ef7-e0ee81129729" valueTypeId="68711785-199f-4f76-b3c2-b6b09ccd8ebb"/>
+    <managerType typeId="d286f19c-e5b2-49ac-9ebb-48f79f18b641" valueTypeId="602369ce-ece7-4d0c-8772-e1f5521c3b7a"/>
+  </producedTypes>
+  <name>ТорговыеМарки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Торговые марки</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТорговыеМарки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТорговыеМарки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="226f1d8a-c7aa-4b3f-9d2a-420a9dda13d9">
+    <name>ОтображатьНаСайте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отображать на сайте</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

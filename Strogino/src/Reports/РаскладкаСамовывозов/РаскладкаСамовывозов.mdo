@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da97e2bc-4252-46c3-8fa6-5f7f2bc17906">
+  <producedTypes>
+    <objectType typeId="1642ae8c-b19e-4c61-957c-4ee8548b55d6" valueTypeId="dd63f981-8bf5-4153-827e-b895074b15d2"/>
+    <managerType typeId="4575bd12-0f1f-4c6e-b276-f0573251f440" valueTypeId="de490b61-cd4d-4048-a3e0-93cd787aff4e"/>
+  </producedTypes>
+  <name>РаскладкаСамовывозов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Раскладка самовывозов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РаскладкаСамовывозов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="cfb1751e-d4e0-48b6-997a-675c1af21bdd">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

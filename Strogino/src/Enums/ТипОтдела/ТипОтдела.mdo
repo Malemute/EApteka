@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2cc90907-7053-4144-873f-5a8fdbed2bcd">
+  <producedTypes>
+    <refType typeId="9f5c6621-98ed-488c-8404-4cc6b023a07b" valueTypeId="94325254-a6e6-45dd-8ca7-589171736002"/>
+    <listType typeId="dc912fde-e4a5-4217-84ae-013ca20764eb" valueTypeId="ca311f5a-7502-47c7-a8a5-ca30171a620c"/>
+    <managerType typeId="d8b6db94-aab3-4e74-a0e7-eb875be6544c" valueTypeId="0c072241-1081-44f3-8425-efb87e192017"/>
+  </producedTypes>
+  <name>ТипОтдела</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип отдела</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4ae269b9-1abb-4b76-9b74-6ba031eb2062">
+    <name>СкладОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад основной</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ae6c4b2e-4b60-4ea3-af0c-6177c6d954d1">
+    <name>СкладРезерва</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад резерва</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a97d7356-8d64-4a06-b051-e6e522b6e996">
+    <name>ТорговыйЗал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Торговый зал</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="97529e5b-dca8-4a03-bc7a-313ebca3bb01">
+    <name>Робот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Робот</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c2f2132e-ffdb-43ce-b580-9fa69fa8bd6d">
+    <name>Приемка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приемка</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6ab47da5-9e90-4bd2-ab66-8d346624410a">
+    <name>Сборка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fd4d905b-0818-46b0-b8a9-cf02a99a64f7">
+    <name>ККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ККМ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f5537946-46f3-4d5d-a197-e773a0e3827e">
+    <name>БезМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без места</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="81851851-e564-43a5-a353-f3d9fe172c75">
+    <name>Транзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзит</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f0a1f4cf-5e88-482b-832a-a2dcc6f0054b">
+    <name>Претензии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Претензии</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="66775430-8909-47be-a762-6176238836e4">
+    <name>СборкаЛишнее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка лишнее</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

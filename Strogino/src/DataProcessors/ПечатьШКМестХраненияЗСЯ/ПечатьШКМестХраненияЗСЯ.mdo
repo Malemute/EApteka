@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="285f2dff-553f-468d-9569-e73137915edf">
+  <producedTypes>
+    <objectType typeId="f09a71bc-efa5-4619-8dfa-26860a728713" valueTypeId="21217e15-ae94-4c01-b1cf-0ea53de18495"/>
+    <managerType typeId="884291c8-0f97-45d6-8604-9b7b42e08012" valueTypeId="0ca31c19-7684-47c2-ada6-e6b085871cf4"/>
+  </producedTypes>
+  <name>ПечатьШКМестХраненияЗСЯ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать ШК мест хранения ЗСЯ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПечатьШКМестХраненияЗСЯ.Form.Форма</defaultForm>
+  <attributes uuid="cb66b665-0ae7-4968-9cee-71bde95315b8">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="888dbd3e-81d1-4045-a323-65b45414a6c0">
+    <name>Зона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зона</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЗонаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="aaadc734-2ab5-46ff-a7b6-9a9fb151e5fe">
+    <name>СтелажС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стелаж с</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="13d65465-9cae-4d1e-920e-c9b43e9620c8">
+    <name>СтелажПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>по</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1cb87f0b-aa91-4504-9fe9-df4521003374">
+    <name>ЯчейкаС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ячейка с</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e5d612d1-82f4-483f-a5d6-426ac8c84e77">
+    <name>ЯчейкаПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>по</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="bbb1cfac-c1e6-4b99-9b45-b0e9d3c713bc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="20301ce3-6e7d-42f7-a82a-4f4d80e692b5">
+    <name>МакетШтрихКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет штрих кода</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

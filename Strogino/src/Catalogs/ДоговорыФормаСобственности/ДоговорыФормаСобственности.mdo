@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5567f475-bf12-4d72-bdaf-6f818fc3141e">
+  <producedTypes>
+    <objectType typeId="ad86f792-dd0d-4882-a2c1-bb866d55a4e8" valueTypeId="45edc2c1-2365-44b4-8157-9bdbdecae56d"/>
+    <refType typeId="28494aa6-79d7-4a34-9c45-1527efbff3fb" valueTypeId="6c671451-d529-40bd-a6ad-e0b6ada7c8c9"/>
+    <selectionType typeId="354b86cd-9309-4f59-a698-47a3dff09142" valueTypeId="0a8b0531-6631-4572-9f47-66f41ae7cf3a"/>
+    <listType typeId="648ee4e0-3b9c-440b-852d-93bd5a6c525f" valueTypeId="38228732-09bd-489a-8d73-98b526ecf831"/>
+    <managerType typeId="8bbb7e12-1961-4b46-b6eb-9ec250186b8e" valueTypeId="c2027eb1-7299-41a7-a0f3-75f69f9c9344"/>
+  </producedTypes>
+  <name>ДоговорыФормаСобственности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договоры форма собственности</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДоговорыФормаСобственности.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ДоговорыФормаСобственности.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>5</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

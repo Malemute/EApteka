@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b59b445-1160-4ef8-b7e6-73c51dcf995d">
+  <producedTypes>
+    <objectType typeId="99720d15-6333-4e18-8c42-6ac6f499f5ff" valueTypeId="29fa635c-fe99-494c-a562-20ac78d22316"/>
+    <refType typeId="28210121-8e76-41ad-8eec-551725aba509" valueTypeId="9312df33-57ec-4cfb-82f9-927a6ef4cc68"/>
+    <selectionType typeId="b59446b5-7d16-4f59-8315-c84398dc4ade" valueTypeId="46da9c99-02c6-484a-abe2-903a3014cb57"/>
+    <listType typeId="c850de41-9262-4ace-8e84-0b8c41ef4cba" valueTypeId="e62a54b5-0963-4e2b-8f7d-b33ed0e8158e"/>
+    <managerType typeId="9b849788-7267-4a11-8223-399739000d93" valueTypeId="15cecc6a-3fad-44e3-9a24-9712a33772dd"/>
+  </producedTypes>
+  <name>Претензии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Претензии</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Претензии.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Претензии.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="d7ef25dd-5bbf-4198-a383-97db1e42c3a6">
+      <name>Брак</name>
+      <description>Брак</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000003</value>
+      </code>
+    </items>
+    <items id="1cf051e7-de8c-4e01-982a-bf88b8970f90">
+      <name>ВозвратПоставщику</name>
+      <description>Возврат поставщику</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000005</value>
+      </code>
+    </items>
+    <items id="58992ac5-d263-46e5-a483-8d584739d582">
+      <name>Лишний</name>
+      <description>Лишний</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000004</value>
+      </code>
+    </items>
+    <items id="0c86e856-5de8-4554-879e-1dd26f4c6e9e">
+      <name>Недовоз</name>
+      <description>Недовоз</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000001</value>
+      </code>
+    </items>
+    <items id="3af72b66-dbc0-488c-80a1-d94353bdd8b5">
+      <name>Перевоз</name>
+      <description>Перевоз</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="cf9dd8e5-bf5f-4533-8f2e-0fe84e92e1e0">
+    <name>ФормироватьДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формировать движения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f08ead75-87b3-49e8-9105-4463dde2d998">
+    <name>ОповещатьПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещать поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

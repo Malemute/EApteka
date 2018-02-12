@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39ff7617-3f90-48bb-9af0-c07a261f4d45">
+  <producedTypes>
+    <objectType typeId="d273627e-52e8-4bb2-a42a-b48e986c907c" valueTypeId="7825cb74-f4a1-40b5-85d5-321775c745cf"/>
+    <refType typeId="e9eb01e0-e6fb-4fe2-ad1a-5cb6b306ff29" valueTypeId="11306ea6-ed02-40df-b3c4-82acb10c0cd8"/>
+    <selectionType typeId="438484c3-ec45-4420-855b-340aadc17302" valueTypeId="86926497-268e-415c-8007-1dbc939d43dc"/>
+    <listType typeId="1a154852-63fc-4074-a4c0-056eaa59b02c" valueTypeId="2eb193b4-9c67-4550-8af8-a680e64329f6"/>
+    <managerType typeId="0bc6e8a6-3ea4-4248-8d82-dde5d885fc55" valueTypeId="873aec0c-c202-4ca5-b97b-3d0302757b55"/>
+  </producedTypes>
+  <name>МестаХранения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Места хранения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МестаХранения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.МестаХранения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.АдресХранения</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a45434d0-cd3c-4897-9bda-8d55cc265c0f">
+    <name>Основной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="85da79ac-63d6-4f64-986b-6bc33bfb126c">
+    <name>ОтветственныйККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный ККМ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b454788-b739-4fe8-8c1b-6d1723a69547">
+    <name>Подотделы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подотделы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="39fcccd2-ac02-44c0-9dec-8f59a6ef6793">
+    <name>Коробки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bdbf0640-5f32-4990-9574-57547444898d">
+    <name>Подкоробки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подкоробки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1fc40c42-bb70-4146-9f4e-bea22ce4058e">
+    <name>АдресХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.АдресХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

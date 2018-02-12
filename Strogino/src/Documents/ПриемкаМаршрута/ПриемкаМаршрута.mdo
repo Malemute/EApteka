@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5370dc9-59cf-4300-8ff3-dd16cf5e16f9">
+  <producedTypes>
+    <objectType typeId="93b9fcae-bcf5-425e-9834-8c0c299cded6" valueTypeId="ead7b580-3e94-476c-adef-e0b730df3784"/>
+    <refType typeId="055e6d32-000a-49f8-ba93-12852c9d6586" valueTypeId="23f686a6-4b77-41bb-8c19-858ebb03aa2e"/>
+    <selectionType typeId="3af1b836-efca-46f8-a0e2-e4309f106b60" valueTypeId="a3c700ae-c7d5-4ec4-8abb-419f2989dcd9"/>
+    <listType typeId="d70c406a-44c9-49d1-9c14-05278ce70476" valueTypeId="d287069a-9836-4f91-9171-c18a0300dac3"/>
+    <managerType typeId="c6927189-e0f4-418e-a0f5-b2cd61fa08dd" valueTypeId="9166941b-f64a-4f65-8f5e-89aa316bb687"/>
+  </producedTypes>
+  <name>ПриемкаМаршрута</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приемка маршрута</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриемкаМаршрута.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.МаршрутНаАптеку</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ОтправкаСМС</registerRecords>
+  <registerRecords>AccumulationRegister.МестаЗаказов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="c62530bf-4b68-493d-89da-018dd8e382c0">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.МаршрутНаАптеку</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e7d2219b-9711-491d-bde5-59419aa4c172">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="0f09ca6a-a4dd-4a58-af60-c1b4e2730419">
+    <producedTypes>
+      <objectType typeId="7e0f36e6-6bc1-4483-9671-2c39b57c882d" valueTypeId="2a59b86f-e9d7-4878-ae22-77d7f6da96b2"/>
+      <rowType typeId="a7547583-d3d5-4179-a0a2-34d1818c8f3f" valueTypeId="8de6f586-1ee6-4029-8b76-6155b46d4055"/>
+    </producedTypes>
+    <name>Состав</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="1e37a2c8-3991-4d52-b4e9-afd5d02c70be">
+      <name>Заказ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>DocumentRef.Заказ</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9275ed04-3060-4e34-b1cf-1cabb7713809">
+      <name>МестоЗаказа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Место заказа</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.НаклейкиМестЗаказа</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

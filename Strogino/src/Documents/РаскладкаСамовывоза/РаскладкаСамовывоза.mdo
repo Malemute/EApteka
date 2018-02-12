@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62000190-4d13-49a8-8c24-f7f6931c5699">
+  <producedTypes>
+    <objectType typeId="65a2eaa2-5aa5-439f-89d4-5957bbd3ce9f" valueTypeId="e900760d-9efd-4bc6-80bb-571d0c0a8176"/>
+    <refType typeId="6f7bfb12-8bd0-43f2-8433-a8144108cb1b" valueTypeId="1b0a2362-aa8f-419b-b9e2-ec5fd6b74f68"/>
+    <selectionType typeId="b92e1a68-ed94-41e1-805e-f62af226f25c" valueTypeId="87f3e8fe-1229-47fc-a34f-62bf4b4124b7"/>
+    <listType typeId="09e08fef-4d00-4b22-8758-fbe667150f4a" valueTypeId="591d5e6b-4389-41a5-a9e8-434079a64a84"/>
+    <managerType typeId="9f5a3c1f-230d-4507-b6bf-ee2e93ce50aa" valueTypeId="8c20c112-eefa-4fbf-acca-caf813f272c1"/>
+  </producedTypes>
+  <name>РаскладкаСамовывоза</name>
+  <synonym>
+    <key>ru</key>
+    <value>Раскладка самовывоза</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.РаскладкаСамовывоза.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ОтправкаСМС</registerRecords>
+  <registerRecords>AccumulationRegister.ХранениеЗСЯ</registerRecords>
+  <registerRecords>AccumulationRegister.МестаЗаказов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="77e93fb7-1499-4f15-b58c-ce00131ccec1">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3e07a953-6191-4505-90a6-f982f5c06997">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e79f436b-6d1e-48fe-b69f-27e79a394b09">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.МаршрутНаАптеку</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="ba4bfff0-8230-4f69-951a-6b750466b0ef">
+    <producedTypes>
+      <objectType typeId="eb2aa763-d2fb-47d3-b9b4-6c8186b26d44" valueTypeId="92ff017e-b08b-4698-9540-dca5b5f91e3a"/>
+      <rowType typeId="000b046b-fd27-4dcc-96eb-1f37b0fc564e" valueTypeId="b501ca4b-e0bb-4ac2-9c79-b50ae5cbb4ff"/>
+    </producedTypes>
+    <name>Состав</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="c5668d52-0564-4c87-ac53-b490e6b91988">
+      <name>Заказ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>DocumentRef.Заказ</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e774fcb1-4595-47ff-b7f1-058db378d515">
+      <name>МестоЗаказа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Место заказа</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.НаклейкиМестЗаказа</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b099d938-4e01-47bb-9eb8-c54d11ba1c38">
+      <name>ЗСЯ</name>
+      <synonym>
+        <key>ru</key>
+        <value>ЗСЯ</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.МестоЗСЯ</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

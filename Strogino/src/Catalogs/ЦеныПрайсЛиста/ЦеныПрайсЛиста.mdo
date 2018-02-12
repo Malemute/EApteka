@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8922d988-d23e-4e31-ab34-ac2cfa2acef9">
+  <producedTypes>
+    <objectType typeId="d21b6e67-cb8d-48d5-b2a2-01b47c84dc71" valueTypeId="c2ee842a-9c63-4736-a795-fb7af518d664"/>
+    <refType typeId="58327760-6bd9-478d-8f00-0f4478f4334c" valueTypeId="7e246ca9-e260-495f-a8d2-e8522d6e5017"/>
+    <selectionType typeId="5e767d46-7a06-4c75-87d7-0a3f3acde10d" valueTypeId="9c1eaef5-05d9-4e6f-ba9a-90c414e99052"/>
+    <listType typeId="0061e618-b8e3-4903-b3d7-7a01b9368b47" valueTypeId="ced02446-8bf8-46df-ba62-8429d18ceaca"/>
+    <managerType typeId="db3219c8-b166-4d42-bd5f-3018f27ddfd3" valueTypeId="12961357-0bf0-4516-aa7b-061d82ae1533"/>
+  </producedTypes>
+  <name>ЦеныПрайсЛиста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены прайс листа</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЦеныПрайсЛиста.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЦеныПрайсЛиста.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Номенклатура</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ЦеныПрайсЛиста.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="fc227fef-b4c1-4099-97f8-c9224fed7710">
+    <name>ТипЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип цены</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ТипЦены</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="79e8bbe3-a7d2-46a5-a015-a617e7807176">
+    <name>РегионРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион работы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.РегионРаботы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0925f36c-f7a1-429e-9e37-f3f38836ff44">
+    <name>НеНазначатьЦенуРоботом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не назначать цену роботом</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8be4b8a2-926b-4c90-8046-05f32a8372aa">
+    <name>СбрасыватьЦенуПриСледующемПриходе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сбрасывать цену при следующем приходе</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="00445521-21f7-443a-87c0-424cebc30350">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

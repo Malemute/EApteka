@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13415ac3-3525-417e-8664-da0d19470211">
+  <name>Рукопожатие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рукопожатие</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>

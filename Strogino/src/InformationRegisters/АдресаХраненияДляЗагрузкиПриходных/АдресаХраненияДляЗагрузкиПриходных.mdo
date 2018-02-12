@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03fd4712-fbbc-4f66-b7fa-9b11eb27a5c7">
+  <producedTypes>
+    <selectionType typeId="cb0126ee-a129-4794-b099-e80a934fe25e" valueTypeId="847e6b27-f71d-4eca-aec1-c0ffef58badf"/>
+    <listType typeId="dcfc2e19-594b-4944-bb4f-21a49a682b0e" valueTypeId="13139fa6-84bf-4e86-bf21-8990a682ce36"/>
+    <managerType typeId="f34e6421-3d42-42ff-af46-f2463ac66305" valueTypeId="d11fbc38-b78a-429b-983c-73ac1116e037"/>
+    <recordSetType typeId="84c08afb-b4b9-4b0f-90ff-08b1699bf1f5" valueTypeId="4feec28c-a630-4e75-8e77-b79cddddb9ed"/>
+    <recordKeyType typeId="91e6dcfc-f31e-4e76-97ca-6e8df38ac031" valueTypeId="98dad3e3-a229-4889-baab-106c9b0f9808"/>
+    <recordType typeId="e603be64-5aa7-4343-b070-7b29e92cb77b" valueTypeId="ac3c91bc-b8f5-4eb5-b35e-0a41c104b5be"/>
+    <recordManagerType typeId="f888a538-ddbe-4025-9484-1c350f28209a" valueTypeId="819d82cf-2a16-4ff3-a208-4816019749cd"/>
+  </producedTypes>
+  <name>АдресаХраненияДляЗагрузкиПриходных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адреса хранения для загрузки приходных</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="5423c733-d84a-4b89-bdc6-3d6fb8f91df1">
+    <name>АдресХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.АдресХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

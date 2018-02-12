@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e07f1428-a985-4ca6-83cd-4d4d2ccace61">
+  <name>ДисплеиПокупателя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дисплеи покупателя</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <content>CommonTemplate.Драйвер1СДисплейПокупателя</content>
+  <content>CommonForm.ФормаНастройкиАтолДисплеиПокупателя</content>
+  <content>CommonForm.ФормаНастройкиККСДисплеиПокупателя</content>
+  <content>CommonForm.ФормаНастройкиСканкодДисплеиПокупателя</content>
+  <content>CommonForm.ФормаНастройкиШтрихМДисплеиПокупателя</content>
+  <content>CommonTemplate.ДрайверАТОЛДисплейПокупателя8X</content>
+  <content>CommonTemplate.ДрайверККСДисплеиПокупателя</content>
+  <content>CommonTemplate.ДрайверКристаллСервисДисплеиПокупателяVikiVision</content>
+  <content>CommonTemplate.ДрайверСканкодДисплеиПокупателя</content>
+  <content>CommonModule.ПодключаемоеОборудованиеАтолДисплеиПокупателяКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеККСДисплеиПокупателяКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеСканкодДисплеиПокупателяКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеШтрихМДисплеиПокупателяКлиент</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеДисплейПокупателя16</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеДисплейПокупателя32</content>
+  <content>CommonTemplate.ДрайверСканкодДисплеиПокупателяNative</content>
+  <parentSubsystem>Subsystem.ПодключаемоеОборудование</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1cdeae5e-e67b-4904-bcad-38e9595b31a4">
+  <name>Order</name>
+  <synonym>
+    <key>ru</key>
+    <value>Order</value>
+  </synonym>
+  <comment></comment>
+  <rootURL>Order</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="d4517a9a-47bf-4e4a-923f-d3f3794eaaf1">
+    <name>Reservation</name>
+    <synonym>
+      <key>ru</key>
+      <value>Reservation</value>
+    </synonym>
+    <comment></comment>
+    <template>/reserve/</template>
+    <methods uuid="0a9a14c4-87b3-426c-9f64-92e2adca29d4">
+      <name>Reserv</name>
+      <synonym>
+        <key>ru</key>
+        <value>Reserv</value>
+      </synonym>
+      <comment></comment>
+      <handler>ReservationReserv</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

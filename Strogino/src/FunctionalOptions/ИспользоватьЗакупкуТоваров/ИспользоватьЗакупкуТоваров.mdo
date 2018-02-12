@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49f81126-9729-4851-882c-be40bbe35de4">
+  <name>ИспользоватьЗакупкуТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать закупку товаров</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.ИспользоватьЗакупкуТоваров</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Subsystem.РаботаСТоваром.Subsystem.Закупка</content>
+  <content>Document.ЗаявкаНаДефектуру</content>
+  <content>Document.АннулированиеЗаказовПоставщику</content>
+  <content>Document.ЗаказПоставщику</content>
+  <content>Report.Движения_ПоДефектуре</content>
+  <content>InformationRegister.БлокированныеПоставщики</content>
+  <content>InformationRegister.НастройкиПрайсовПоставщиков</content>
+  <content>InformationRegister.ЛогЗагрузкиПрайсовПоставщиков</content>
+  <content>InformationRegister.ЗапрещенныеТовары</content>
+  <content>InformationRegister.ТоварыПоставщика</content>
+  <content>InformationRegister.ПрайсЛистПоставщика</content>
+  <content>InformationRegister.Поставщики</content>
+  <content>InformationRegister.НастройкиВыгрузкиЗаказовПоставщикам</content>
+</mdclass:FunctionalOption>

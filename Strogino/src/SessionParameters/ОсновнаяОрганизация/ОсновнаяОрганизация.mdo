@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b82b2c07-2bb8-402a-9579-29356ba3a891">
+  <name>ОсновнаяОрганизация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основная организация</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.Фирмы</types>
+  </type>
+</mdclass:SessionParameter>

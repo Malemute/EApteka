@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52342549-87ab-480b-91bd-f8c733dc7473">
+  <name>Exchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange</value>
+  </synonym>
+  <comment>Вебсервис для обмена в РИБД</comment>
+  <namespace>eapteka.ru\</namespace>
+  <descriptorFileName>Exchange.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="bbfab076-791c-49ba-a115-edc9011d9653">
+    <name>ConfigExchange</name>
+    <synonym>
+      <key>ru</key>
+      <value>Config exchange</value>
+    </synonym>
+    <comment>Обмен изменениями конфигурацией</comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ConfigExchange</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="5150f97b-c134-471e-980f-62aefd85779a">
+      <name>ConfigData</name>
+      <synonym>
+        <key>ru</key>
+        <value>Config data</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="492e3076-7349-4da1-81c1-0dae2fb5c386">
+    <name>DataExchange</name>
+    <synonym>
+      <key>ru</key>
+      <value>Data exchange</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>DataExchange</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="bae4bfa0-ceea-41a3-9d98-387b1c2ea3cd">
+      <name>Data</name>
+      <synonym>
+        <key>ru</key>
+        <value>Data</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="09bb321b-66a5-4046-9909-e4c44b04d968">
+    <name>ExecuteCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Execute code</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ExecuteCode</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="65f136a2-26bf-40ef-8c13-d5ab7ddd2536">
+      <name>TextCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Text code</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

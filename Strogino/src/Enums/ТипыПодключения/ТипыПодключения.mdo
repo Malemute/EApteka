@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3462c932-86f4-48a8-a602-5f337d585217">
+  <producedTypes>
+    <refType typeId="9f423e6e-bf4b-457d-87cc-c96973b917b9" valueTypeId="5fbc89e6-63ed-44b9-a185-eec4ea1feae5"/>
+    <listType typeId="0b77c422-8105-4a58-bb9b-954e64fc05e5" valueTypeId="4cba7d0c-0f25-4ee6-87b0-9a9b8e778587"/>
+    <managerType typeId="dda22eb6-5f4b-4f44-9553-92eaeec31225" valueTypeId="85a14a10-3d3c-4542-baaa-fa22ea881720"/>
+  </producedTypes>
+  <name>ТипыПодключения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы подключения</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="47a6a5bd-1448-41ea-9789-fa8b8d7138dc">
+    <name>SQL</name>
+    <synonym>
+      <key>ru</key>
+      <value>SQL</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c480d720-c120-4de7-a0ae-09bdd06ac6b9">
+    <name>_1C77</name>
+    <synonym>
+      <key>ru</key>
+      <value>1C 7.7</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

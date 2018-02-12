@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f64429f-96f1-4174-92e3-457768998880">
+  <producedTypes>
+    <selectionType typeId="547692d9-b4e0-4c4c-88c5-74741e71c499" valueTypeId="0dde3890-914a-497d-8557-dcb3ea180f4a"/>
+    <listType typeId="c8bdeec5-5727-45eb-871d-b3eb94b19b16" valueTypeId="06ec2bc9-5d06-45bb-a2b6-7794ad53ad19"/>
+    <managerType typeId="a338fda6-7358-4471-9444-4f80d27918d5" valueTypeId="170ed431-0253-4dea-97d0-0dfa8e232fb8"/>
+    <recordSetType typeId="c5c3219b-4734-40e3-a228-cbd447665da7" valueTypeId="8ee2b395-6f19-4e29-9ac2-1b269c6a9ba0"/>
+    <recordKeyType typeId="df478ae8-c8a2-4b87-b808-7693afc93372" valueTypeId="9ccd4c60-8e78-494e-a2af-277ec4b48862"/>
+    <recordType typeId="5c65f1a0-0fae-4a33-a1f9-bda635f735b9" valueTypeId="84b8721d-b8f4-4b3b-8549-c20f5cfb698e"/>
+    <recordManagerType typeId="37dc35b0-d3db-49a5-bf1d-5ebb253aff49" valueTypeId="fd5f9fe6-5bc5-40fe-9cf7-e8ba5088fd24"/>
+  </producedTypes>
+  <name>СтавкиНДСПоНоменклатуре</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки НДСПо номенклатуре</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="992d7d9e-2dc6-4f32-88a9-b542744f8f47">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СтавкиНДС</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="972705c7-5455-4e6c-8225-6f5f562df6c9">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

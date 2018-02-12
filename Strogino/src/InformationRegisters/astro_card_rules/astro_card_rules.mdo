@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71b337e0-e846-42e4-bb03-fb000bc2488e">
+  <producedTypes>
+    <selectionType typeId="d79f82b8-1bb5-4a41-b739-308c5970e1d4" valueTypeId="04d940ed-7a67-48db-9caa-2330f5decdfc"/>
+    <listType typeId="90cbab4e-4b24-41e1-877c-68d0fa5d1a7d" valueTypeId="c8082aef-469e-439c-9b2c-055ac3551d19"/>
+    <managerType typeId="82099515-b7be-48b4-97c5-14ee46bc0f98" valueTypeId="75e81b3a-d08c-4010-a330-3367c834a8f2"/>
+    <recordSetType typeId="52d5a23c-defe-493c-bf71-9084425e77ce" valueTypeId="6987e7b5-0c9e-4524-a520-5ca5c3138ee2"/>
+    <recordKeyType typeId="01f3fe12-0656-40a6-a9a0-d333be0eb369" valueTypeId="dfe67251-9405-4f00-93d4-f3d2a1fbef59"/>
+    <recordType typeId="07a4b1ab-9167-40e4-b69b-4bfeff855eef" valueTypeId="8c03a38b-186b-408b-8aa2-4359f8176820"/>
+    <recordManagerType typeId="0141f45d-3065-473b-9eb1-7ab092288ab4" valueTypeId="46ca2aec-bf4e-497a-8ca2-0f757d9c6f32"/>
+  </producedTypes>
+  <name>astro_card_rules</name>
+  <synonym>
+    <key>ru</key>
+    <value>ea5_astro_card_rules</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="536a28c6-8671-44e5-8352-e0c77690b019">
+    <name>discount</name>
+    <synonym>
+      <key>ru</key>
+      <value>Discount</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="025f3cc7-e002-40a2-a30f-7e4ed200fecf">
+    <name>id</name>
+    <synonym>
+      <key>ru</key>
+      <value>id</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="0f002657-f9fb-4080-b2bb-640d48eddf06">
+    <name>_from</name>
+    <synonym>
+      <key>ru</key>
+      <value>from</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="ba2c85a9-2d40-40b6-9121-67d0f0d546e9">
+    <name>to</name>
+    <synonym>
+      <key>ru</key>
+      <value>to</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="17749a86-7d8b-4c93-b1b4-4768d6bac5ce">
+    <name>rule_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>rule id</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="462df5b8-4d15-4a12-ba6c-dc8e9b737e34">
+    <name>description</name>
+    <synonym>
+      <key>ru</key>
+      <value>description</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="a3465c3a-ab73-4a07-9dac-86a8c0d77667">
+    <name>sku</name>
+    <synonym>
+      <key>ru</key>
+      <value>sku</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="22ca938f-d945-4201-bfd3-50604f1d9eb2">
+    <name>card_type</name>
+    <synonym>
+      <key>ru</key>
+      <value>card_type</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="e5fe70ef-509a-499b-a87e-f824543dc028">
+    <name>territory</name>
+    <synonym>
+      <key>ru</key>
+      <value>territory</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="a41d66dd-d040-4d6f-9d2a-8eec957f94b5">
+    <name>version</name>
+    <synonym>
+      <key>ru</key>
+      <value>version</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="a33fbcd8-6cdd-43f6-af18-771004a34e41">
+    <name>export_date</name>
+    <synonym>
+      <key>ru</key>
+      <value>export_date</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="0c617c7c-1bde-4945-8b59-416a696aa911">
+    <name>project</name>
+    <synonym>
+      <key>ru</key>
+      <value>Project</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СкидочныеПрограммыПоКарте</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

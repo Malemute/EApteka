@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6234bb2-e3f9-49c6-861f-abf24a0f770c">
+  <producedTypes>
+    <refType typeId="7160720d-7b4c-470d-b822-501e170c5d8d" valueTypeId="a85c68d5-ff9d-4ca0-b0b4-b2cf39a09b0d"/>
+    <listType typeId="8a6940ca-32b8-45cb-9ba6-3ae25cd658e8" valueTypeId="02d60001-e649-437e-a9e1-654c21ed8ad1"/>
+    <managerType typeId="5e0f719c-e37c-46ee-aabc-f19f92ff467c" valueTypeId="76b2f8b1-7e5a-478d-bdf2-2192ea536c20"/>
+  </producedTypes>
+  <name>СтатусВозврата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус возврата</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="701465b7-d1d3-403c-afc2-1485c614533d">
+    <name>Создан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создан</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ed775e45-80b9-4077-92bf-187746dee09d">
+    <name>Подтвержден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подтвержден</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

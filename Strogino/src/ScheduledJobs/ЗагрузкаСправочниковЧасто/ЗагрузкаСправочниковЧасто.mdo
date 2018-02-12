@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34fa0050-114c-43bc-84eb-1345532f8e94">
+  <name>ЗагрузкаСправочниковЧасто</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка справочников часто</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ЗагрузкаСправочниковЧасто</methodName>
+  <description>Загрузка справочников часто</description>
+  <key></key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

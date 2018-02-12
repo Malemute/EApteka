@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="556b7f1d-89a0-41b5-ad6a-9181a3cfa099">
+  <producedTypes>
+    <selectionType typeId="3a7856eb-c7b6-4d65-bc34-1d62200a2b1f" valueTypeId="ffdafee4-7581-45c3-88b8-2a2a6b75cf0a"/>
+    <listType typeId="2802d4c0-83e5-4ada-909f-8f5f1e23d1f6" valueTypeId="471ddcb0-7cf0-4b8e-9361-8b3cc3c99594"/>
+    <managerType typeId="532bb415-5502-49e8-a9ca-a6e979ed55a1" valueTypeId="ae35091d-6205-4fd6-9f7e-13fda87ce0da"/>
+    <recordSetType typeId="b8e1f729-dbd1-4cef-8a63-a374b8e0ace8" valueTypeId="56e08cc9-7454-42b5-a3e9-6ccabbcd980c"/>
+    <recordKeyType typeId="12075fea-1d01-493b-a78b-015ed0b0212f" valueTypeId="ca752fd5-d1b6-4425-b17f-e6741126fd65"/>
+    <recordType typeId="881c54d6-527d-40c3-a4ed-105204c64811" valueTypeId="9383f74a-158e-44fa-a199-9c782d8d6169"/>
+    <recordManagerType typeId="42c2d6c7-3c0a-49d6-bb78-d020d6641839" valueTypeId="6ae40847-fb40-4a3b-9160-29087d98d94d"/>
+  </producedTypes>
+  <name>КомплектацияЗаказов_ПрогрессКомплектации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комплектация заказов прогресс комплектации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a9dd1a6b-9346-4c3a-9e7b-d418155de5b2">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cecfc7e2-86d5-4d57-a0d5-18eaa515d420">
+    <name>ДокументКомплектация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ комплектация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.КомплектацияЗаказов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f902a86e-2c3e-40d5-b4d2-1629ebe9add8">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Заказ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="341664d9-a177-4a7b-b3f5-eed55d642be5">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2d2388bf-8314-47f5-b358-f73fafbbe648">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Партии</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a12e0dba-4ffb-4862-8112-6e8c079baad3">
+    <name>ЗСЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗСЯ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестоЗСЯ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

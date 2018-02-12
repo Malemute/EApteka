@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7de43701-f755-4fd5-a8b4-744c4e7ca109">
+  <producedTypes>
+    <objectType typeId="3865ade8-86e7-4b07-9f84-e064642c11e6" valueTypeId="a8f9115c-b34e-49e8-aa8b-9dbf13a0ecf5"/>
+    <refType typeId="abb1f563-b02e-40a3-9a87-bb1ae151f3ea" valueTypeId="55558a3e-0cdd-4d45-bc77-852093de0b19"/>
+    <selectionType typeId="eb0fe230-d030-4f04-9765-8814857d4063" valueTypeId="5c503033-2c05-49c5-b560-5bb0e5600f8e"/>
+    <listType typeId="b0d75fd3-9e91-4a23-8c69-f73492a27414" valueTypeId="5d4b7b41-d353-451d-931c-48bdd0be0f6c"/>
+    <managerType typeId="645f0611-4dc4-457e-a62a-c9f6726856f2" valueTypeId="7700cf01-e6f1-463c-a902-d850a3b750db"/>
+  </producedTypes>
+  <name>Фирмы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фирмы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Фирмы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Фирмы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="6e4aaf9f-6201-4743-a751-6b3e4a864a8c">
+    <name>ГлБухгалтер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главный бухгалтер</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>35</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aafc4e58-3e7c-4d56-bffe-fa411ed8aa9b">
+    <name>ГНИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование налоговой инспекции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0fd43512-4ccf-49f8-8b20-889ee4a8915a">
+    <name>ДатаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата регистрации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd59c0cf-5ac6-44ff-9257-669c56aca59c">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b58ab604-1265-4e6e-a34b-d32bb802e216">
+    <name>Кассир</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассир</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>35</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8b0a4574-f21d-49e3-a8da-6b61979dd863">
+    <name>ОКОНХ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код по ОКОНХ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4b008a36-7cc7-4d73-9d81-58262eb20fe6">
+    <name>ОКПО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код по ОКПО</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5cdb7bb4-f93e-4dea-992c-4dd0d184c4cb">
+    <name>ПолнНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="85ed759c-4f54-4936-9366-2bcad7d5f260">
+    <name>ПочтовыйАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почтовый адрес</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>85</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="63cb8650-36c1-4054-8303-744edd405f77">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фамилия и инициалы руководителя фирмы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>35</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9bc98012-95a0-48a3-b72a-28f42cf956e2">
+    <name>Телефоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефоны по юридическому адресу и действительному местонахождению фирмы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d2103d79-6a21-4758-acda-b178455668a7">
+    <name>ЮридическийАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юридический адрес</value>
+    </synonym>
+    <comment>Юридический адрес фирмы</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>85</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="097457cf-b2bb-4e2b-b158-e98469a690c7">
+    <name>СистемаНалогообложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Система налогообложения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ТипыСистемНалогообложенияККТ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

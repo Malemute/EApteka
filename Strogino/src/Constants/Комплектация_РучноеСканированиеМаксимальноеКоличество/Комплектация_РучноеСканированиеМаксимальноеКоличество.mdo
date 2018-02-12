@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f3c1680-2f44-4699-963a-13a69f1a704e">
+  <producedTypes>
+    <managerType typeId="3c90f83e-3736-4ed3-a848-ba62c88f71ee" valueTypeId="2be4328f-ec9c-4db8-aa74-d8c7874d7659"/>
+    <valueManagerType typeId="8a5ef834-9eed-4a4e-b06f-cdac37bdb671" valueTypeId="21b52965-fbb4-4662-9c60-0b5dc6b60ee8"/>
+  </producedTypes>
+  <name>Комплектация_РучноеСканированиеМаксимальноеКоличество</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комплектация ручное сканирование максимальное количество</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

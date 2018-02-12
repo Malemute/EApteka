@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25fb3ac0-6559-4b1b-ac56-8e0a5b95252b">
+  <producedTypes>
+    <selectionType typeId="caf59e6b-0793-4553-a790-b713d0bf0706" valueTypeId="f95642bf-c665-4a01-8e7c-d64aadcb5817"/>
+    <listType typeId="f7edf3eb-e9c7-4ed4-8191-68dcb0efc6c1" valueTypeId="6a9ad561-fec7-407a-a185-ae0be75cb4cf"/>
+    <managerType typeId="d7ae2676-dc66-447a-93da-f482b3be557b" valueTypeId="7050a0d5-cfb7-4c99-a4e1-d8bacca9d5ec"/>
+    <recordSetType typeId="2d01abe7-2a71-4f23-9407-7555f42013a4" valueTypeId="bcdbf93f-114f-484e-8716-39731d1e036c"/>
+    <recordKeyType typeId="695d9445-7f01-4bd3-9fdd-824141942437" valueTypeId="9382c0b2-e48e-41fd-b81f-756016aa35e3"/>
+    <recordType typeId="2bb82def-f6b0-438a-bb14-e715ae334432" valueTypeId="d9a77c4c-3b8d-44f2-9560-5dae89ab491e"/>
+    <recordManagerType typeId="3097f533-b39d-42f8-a840-676e38be0b8b" valueTypeId="eceefd39-4d9e-42c8-8e81-a3df5d46b748"/>
+  </producedTypes>
+  <name>МестаХраненияПоДоговору</name>
+  <synonym>
+    <key>ru</key>
+    <value>Места хранения по договору</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Место хранения</value>
+  </recordPresentation>
+  <dimensions uuid="b02041c0-750f-4ade-835e-20de27ce528d">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="db1ab9de-d333-47d0-9f0e-bbd303472f78">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>0:e34c7148-4fe2-4e78-b1bb-384b6b843d15</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9223303a-b983-4fb6-8f88-ac322a97590c">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>0:e34c7148-4fe2-4e78-b1bb-384b6b843d15</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44f9d0e3-d561-41f9-a4ed-ce2c76701a58">
+  <name>ФормаНастройкиСБРФЭквайринговыеТерминалы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма настройки &quot;СБ РФ: Эквайринговые терминалы&quot;</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:CommonForm>

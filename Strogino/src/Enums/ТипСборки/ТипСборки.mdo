@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80bab730-8c41-46c0-950b-20cff3963c08">
+  <producedTypes>
+    <refType typeId="622a09ea-476d-4fef-a82d-e5a71312215d" valueTypeId="59c6aa0c-fe5e-4b56-9cf3-00c785efcafa"/>
+    <listType typeId="cbfa69fc-c06e-4e51-81d3-f04bf55fbdf4" valueTypeId="782a4f2f-2687-4dea-a860-8d33bc84981b"/>
+    <managerType typeId="6d75fdbe-aa37-47aa-88e2-f4ccedb36567" valueTypeId="834f9f25-5f2b-473d-8440-aef708b247f0"/>
+  </producedTypes>
+  <name>ТипСборки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип сборки</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="95f2ce6b-8e36-437f-b960-64a84f63bbb4">
+    <name>СборкаЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка заказа</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="100dd6af-7f21-43c7-91ed-d6f4b6114c99">
+    <name>СборкаПеремещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка перемещения</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2b39a34f-6020-4f5e-b05a-1204113c15de">
+    <name>СборкаЗаказовИзКоробки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка заказов из коробки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="09c0c867-b328-4185-86e8-8f86f7f20e75">
+    <name>СнятиеРезерваПоОтмененнымЗаказам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Снятие резерва по отмененным заказам</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b9fef24f-abe2-4f84-8cec-28613a4c71ea">
+    <name>ОчисткаЯчеекОтТоваровПоОтмененнымЗаказам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очистка ячеек от товаров по отмененным заказам</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

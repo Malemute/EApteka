@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2016d64e-eec9-4c07-a404-0765899c04cd">
+  <name>Ошибка32</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ошибка</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0e7ced5-c7c6-4f32-b159-68464756f008">
+  <producedTypes>
+    <refType typeId="d367746a-6507-40a4-9193-442c83ce4aa6" valueTypeId="1c3c6be2-a3c9-48b3-87e6-a581314383d5"/>
+    <listType typeId="d912bbe0-f0f9-4e18-b0fe-bfea595ad4ba" valueTypeId="44e6dee1-0890-450d-be71-1d961b61fb27"/>
+    <managerType typeId="8cb93ba2-9003-4c24-8009-0815d0a6924d" valueTypeId="e1d6d6e0-43ee-47d2-8523-939f503c7c67"/>
+  </producedTypes>
+  <name>ТипККМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип ККМ</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="81db7d21-efec-4fee-a90e-51b080d5b12b">
+    <name>АТОЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>АТОЛ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="db79990e-bacc-46ae-af8c-15a2959d7a47">
+    <name>ШТРИХ_М</name>
+    <synonym>
+      <key>ru</key>
+      <value>ШТРИХ М</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

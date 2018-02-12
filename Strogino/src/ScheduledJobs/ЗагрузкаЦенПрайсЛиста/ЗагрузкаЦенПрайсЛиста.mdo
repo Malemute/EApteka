@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3b4b51b-2b51-462c-a77a-6c88a1522baa">
+  <name>ЗагрузкаЦенПрайсЛиста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка цен прайс листа</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ЗагрузкаЦенПрайсЛиста</methodName>
+  <description>Загрузка цен прайс листа</description>
+  <key></key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d6a8b137-b43a-4de9-9c49-0348fe1b66d5">
+  <producedTypes>
+    <selectionType typeId="b3b2be3d-360e-494e-b9e0-5b41812b717b" valueTypeId="9c37531c-2f2a-48d2-b36e-409d757a0594"/>
+    <listType typeId="bea3624e-90de-4fc3-a231-1252585e20c3" valueTypeId="79c999c0-b1ca-4a56-99c3-4f56eccaeacd"/>
+    <managerType typeId="4f44d911-d4aa-4e60-ba00-e4377e9a7235" valueTypeId="2372bbdf-352f-432e-987f-b8bee1a3e533"/>
+    <recordSetType typeId="832df092-0b1b-4a9a-9869-793e41a598e8" valueTypeId="204fbba4-36ab-44b8-97a1-be8868dff132"/>
+    <recordKeyType typeId="d54ec8d7-fa0f-4d4e-9fc7-424144fbbf5b" valueTypeId="b2aeb69c-22aa-4dc6-97a6-1e487ed4768d"/>
+    <recordType typeId="d880c783-25f9-4255-82c7-053f605c5f29" valueTypeId="fa283164-7497-4858-8ab2-18fff7a88313"/>
+    <recordManagerType typeId="fd475d55-9aae-4836-b33e-8d72e18f0247" valueTypeId="4c11f1d6-6cec-447f-bc9d-09bf5996ad8f"/>
+  </producedTypes>
+  <name>ЗаказыСИзменившемсяСатусом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказы с изменившемся сатусом</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="810e4fdd-5e51-47ae-aafe-f084bcc2e029">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Заказ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

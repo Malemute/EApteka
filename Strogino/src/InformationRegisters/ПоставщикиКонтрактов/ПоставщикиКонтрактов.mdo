@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e02e6c8-8474-4852-8b83-74c965bc20f9">
+  <producedTypes>
+    <selectionType typeId="7a709b57-e381-4b2f-aeba-c9257359f107" valueTypeId="6efdeb95-50e7-405c-811b-6c999acf0c22"/>
+    <listType typeId="b87e429f-85e8-4311-bfc3-fe56f00c41bb" valueTypeId="a0565ff6-1508-4718-90fd-1a02e7f048ab"/>
+    <managerType typeId="47e6f5f1-3491-49db-b9b7-2b2eaaaf3d86" valueTypeId="ec8e1bf7-7dda-476d-8e8a-c95e072ee084"/>
+    <recordSetType typeId="747b5b9d-71ac-4c1c-aba5-eee6b5a23865" valueTypeId="7508700c-86f5-4953-b880-2dc421bd9935"/>
+    <recordKeyType typeId="aa252e7e-a587-41c4-b3d3-4438c8e37c04" valueTypeId="c097cd36-2a95-4217-ad8e-e9e87ec859c8"/>
+    <recordType typeId="88648eab-da71-4ed4-be7a-4868327bb8b5" valueTypeId="18d83269-6cf9-42b3-beb3-88622651ddf8"/>
+    <recordManagerType typeId="1e2e263d-4a91-4d23-a804-561a9ffe9b90" valueTypeId="97c2d867-5cf5-4b75-a80d-ed848c32d29d"/>
+  </producedTypes>
+  <name>ПоставщикиКонтрактов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поставщики контрактов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="486f5c66-49a5-4868-afb7-50bea73be639">
+    <name>Контракт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контракты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9e2b7f74-6f7a-490f-89b8-be1fba37ef88">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

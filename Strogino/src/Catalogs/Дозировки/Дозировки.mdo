@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0fb1a0a8-a25a-4191-be29-3269df56b319">
+  <producedTypes>
+    <objectType typeId="c64bb2ac-820f-454f-b05a-b68703dc0ce3" valueTypeId="541622a9-022f-472e-9fd5-8cbdd6192488"/>
+    <refType typeId="8d2e70e0-0fe0-47e6-851b-52e335012f6f" valueTypeId="2691aa99-9471-4471-822e-a3b3307bab21"/>
+    <selectionType typeId="bb61c99e-8e14-4632-b00f-93e46906ebc6" valueTypeId="b9c7186e-b76a-4daf-980e-b0869cc3d580"/>
+    <listType typeId="6093cd6c-01f6-4381-8f5c-4e9e2457578e" valueTypeId="afd3936c-83e4-41ac-bf4f-4eef7c708f7c"/>
+    <managerType typeId="b01bdc49-72e1-4f3f-978c-ec60ca53bb5e" valueTypeId="91f39b6b-1214-456c-87c9-c94de6ab6bb6"/>
+  </producedTypes>
+  <name>Дозировки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дозировки</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Дозировки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Дозировки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>5</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

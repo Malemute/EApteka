@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d36b45b0-6332-45f9-9b8e-44522b7e4f29">
+  <producedTypes>
+    <objectType typeId="dc2b293d-58b1-46a0-a557-d1673e5dc097" valueTypeId="dfc58ff3-9666-46a7-8cda-2a5a376f0578"/>
+    <managerType typeId="da56024e-59e8-4a5b-b8d3-6620fae5833d" valueTypeId="7f7aa675-b135-468f-8be4-c7265077e587"/>
+  </producedTypes>
+  <name>УниверсальныйРедакторРеквизитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Универсальный редактор реквизитов v 2.1</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УниверсальныйРедакторРеквизитов.Form.УправляемаяФорма</defaultForm>
+  <auxiliaryForm>DataProcessor.УниверсальныйРедакторРеквизитов.Form.Форма</auxiliaryForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="ab2b5995-34cf-45f4-8ca6-bfe82041146f">
+    <name>УправляемаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управляемая форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2ab6bf25-8476-4b6e-a074-8737268750a9">
+    <name>УправляемаяФормаВыбораВидаОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управляемая форма выбора вида объекта</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7ecb8a79-2983-44e5-91e7-9edf529e4799">
+    <name>УправляемаяФормаВыбораОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управляемая форма выбора объекта</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="136a3358-a155-4b97-9062-b3e935dcc407">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c94f85f8-81cd-4eb1-99b7-482118a770e1">
+    <name>ФормаВыбораОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора объекта</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0b4b2cb5-53dc-4b8d-a1a3-bda98b12ae3e">
+    <name>ирПустышка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ир пустышка</value>
+    </synonym>
+    <comment></comment>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

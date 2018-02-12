@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ad31bac-357f-4309-bad5-62056f2b70a2">
+  <producedTypes>
+    <objectType typeId="0bc47055-d9cb-44a0-b59f-9c8f76ddcfca" valueTypeId="2203f37a-1699-4a0f-9447-77297ef76282"/>
+    <refType typeId="bc273ad2-d926-4b23-8523-47781180045c" valueTypeId="32af758b-4eaf-4b3c-b1c3-697be7598090"/>
+    <selectionType typeId="b9a3903d-00cb-4f01-a748-fce9359b20b4" valueTypeId="dd5abd4b-7dc0-4809-bc9b-a402bb2549dd"/>
+    <listType typeId="98436066-c0d8-4a2f-8cd8-75ba2873c5d8" valueTypeId="6e12c882-1279-43c4-b564-8cba4cc24293"/>
+    <managerType typeId="3611e88f-aab8-426a-8428-636beec8f5cb" valueTypeId="52390cf4-9c0f-4b93-a28a-066db9b50c94"/>
+  </producedTypes>
+  <name>ПрайсМестаХранения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прайс места хранения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПрайсМестаХранения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПрайсМестаХранения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.ПрайсЛист</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="6ef196bd-9272-4d6c-92dc-301c6725e1e5">
+    <name>Отдел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдел</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a872c5f6-0147-4fac-aaae-ade5ccb3885a">
+    <name>ДержимНаСкладе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Держим на складе</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b657e795-8493-45f3-a94f-38cc87e11f52">
+    <name>Рейтинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейтинг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

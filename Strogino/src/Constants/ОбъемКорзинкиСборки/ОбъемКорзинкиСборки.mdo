@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f4dc63e-9198-4629-aa49-8a3488a21f25">
+  <producedTypes>
+    <managerType typeId="55d35974-8d46-4a2f-b475-ac220f0fccce" valueTypeId="8b1fb094-1ce9-4615-b9c5-cacea7ed8aca"/>
+    <valueManagerType typeId="bae0edf7-b17b-46de-951c-29a2ddcc2055" valueTypeId="dc4e3c23-ec89-44d1-87ee-0a21cec0d85b"/>
+  </producedTypes>
+  <name>ОбъемКорзинкиСборки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объем корзинки сборки</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>3</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

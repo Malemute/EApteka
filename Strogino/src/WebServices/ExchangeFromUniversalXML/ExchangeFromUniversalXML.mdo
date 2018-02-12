@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8c1000d-5ed3-4bb0-be97-3aded70fc8a9">
+  <name>ExchangeFromUniversalXML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен при помощи Универсального обмена данными XML</value>
+  </synonym>
+  <comment></comment>
+  <namespace>http://www.1c.ru/ExchangeFromUniversalXML</namespace>
+  <descriptorFileName>Exch4uXML.1cws</descriptorFileName>
+  <sessionMaxAge>600</sessionMaxAge>
+  <operations uuid="684ec012-e4d2-4b19-98e7-0d4fec44af78">
+    <name>PutMessage</name>
+    <synonym>
+      <key>ru</key>
+      <value>Put message</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>PutMessage</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="288b47d5-9a58-48e9-860b-0550d91609d1">
+      <name>NamePlane</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя плана обмена</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="c6066684-d9b5-44d9-a1e9-5cd4333c01b5">
+      <name>CodeHub</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код узла</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="92c27885-5f6f-42e5-9b21-7a2ffb8371fb">
+      <name>StructMessage</name>
+      <synonym>
+        <key>ru</key>
+        <value>Структура сообщения обмена</value>
+      </synonym>
+      <comment>Структура, запакованная XDTO, содержащая сообщение обмена</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="5e6692da-44e3-4f8e-82dd-d374cc594bbe">
+    <name>GetNextMessage</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get next message</value>
+    </synonym>
+    <comment>Возвращает структуру следующего сообщения обмена. запакованную в XDTO</comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetNextMessage</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="3ecde019-e1ef-44a8-a372-90e78305978d">
+      <name>NamePlane</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя плана обмена</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="cf350208-ac2e-4b39-a571-ccb7607cfe93">
+      <name>CodeHub</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код узла</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

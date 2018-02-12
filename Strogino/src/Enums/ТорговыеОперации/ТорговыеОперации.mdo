@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d6503044-bc6a-4dab-93a7-6d14b9649387">
+  <producedTypes>
+    <refType typeId="8e84121d-7b40-418f-ba76-e36951c4785c" valueTypeId="f6b8e9c8-4737-42ae-8dcc-d35b0674e596"/>
+    <listType typeId="01d6a8b4-19d9-4f77-ab97-e012e1f866b4" valueTypeId="b8efb87b-ffee-4bcf-b810-360293d38ca1"/>
+    <managerType typeId="ae2adfeb-be23-46b4-946c-9cf98b1c899a" valueTypeId="b48de6de-2cce-48f2-960b-ed94f688642e"/>
+  </producedTypes>
+  <name>ТорговыеОперации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Торговые операции</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1697ce68-775c-4460-a19a-457a1ace84d6">
+    <name>Продажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="84e436a5-16f7-4c68-ad85-848b700ea327">
+    <name>Возврат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d0109b16-1d41-49cc-9a3e-23ff2df9656b">
+    <name>Списание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3b7ad764-ce66-405d-8b1b-c955db14d68b">
+    <name>Сторно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сторно</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="04018a98-de96-4aa7-91b7-9e9a796172b9">
+    <name>Предоплата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предоплата</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="25e03019-912f-4f45-9309-c16121e349c2">
+    <name>ВозвратПредоплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат предоплаты</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="cbfe9162-ba30-44c5-a572-faf71c2a79a0">
+    <name>ВозвратОтПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат от покупателя</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

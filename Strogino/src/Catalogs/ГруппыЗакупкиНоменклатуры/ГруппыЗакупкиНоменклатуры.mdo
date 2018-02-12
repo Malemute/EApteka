@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34f3b8eb-cf1f-4f49-947b-ca7113eaf81b">
+  <producedTypes>
+    <objectType typeId="144a2620-4565-4845-b976-ae99056f6a4c" valueTypeId="b66764df-b68f-4c6c-843e-bcc053105c66"/>
+    <refType typeId="30a2e592-e12b-4fc7-acf6-63158afa6c02" valueTypeId="36f667f0-e2f4-4c8f-b4c2-be6ef70842c0"/>
+    <selectionType typeId="cc69bf4e-d402-4460-bf29-a06fe6b07532" valueTypeId="8d5e95de-0e68-4920-a870-13632a38cb73"/>
+    <listType typeId="fc45c2a4-35b2-4b09-a771-dc4be2ef5720" valueTypeId="9159c268-6b33-4d5b-a2ce-ed580e772723"/>
+    <managerType typeId="134de3d4-3888-4b79-aaa5-12eb1b837500" valueTypeId="a216085c-31ab-4f0a-b221-6424cb444541"/>
+  </producedTypes>
+  <name>ГруппыЗакупкиНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы закупки номенклатуры</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГруппыЗакупкиНоменклатуры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ГруппыЗакупкиНоменклатуры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a281439a-376c-468c-9fcb-9eab599fe685">
+    <name>ГруппаЗакупки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа закупки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ГруппаЗакупки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

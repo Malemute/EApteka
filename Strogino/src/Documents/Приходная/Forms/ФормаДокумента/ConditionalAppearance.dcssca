@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<item>
+				<selection>
+					<item>
+						<field>ТоварыНакладная</field>
+					</item>
+					<item>
+						<field>ТоварыСертификаты</field>
+					</item>
+					<item>
+						<field>ТоварыРеестр</field>
+					</item>
+					<item>
+						<field>ТоварыПриемныйАкт</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>OrGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.Недовоз</left>
+							<comparisonType>NotEqual</comparisonType>
+							<right xsi:type="xs:decimal">0</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.Товары.Брак</left>
+							<comparisonType>NotEqual</comparisonType>
+							<right xsi:type="xs:decimal">0</right>
+						</item>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Salmon</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<use>false</use>
+				<selection>
+					<item>
+						<field>ТоварыТовар</field>
+					</item>
+					<item>
+						<field>ТоварыСертификатыТовар</field>
+					</item>
+					<item>
+						<field>ТоварыРеестрТовар</field>
+					</item>
+					<item>
+						<field>ТоварыПриемныйАктТовар</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.Товары.Партия</left>
+						<comparisonType>Filled</comparisonType>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<use>false</use>
+				<selection>
+					<item>
+						<field>ТипНакладной</field>
+					</item>
+					<item>
+						<field>ОрдернаяСхема</field>
+					</item>
+					<item>
+						<field>РазрешенаПриемка</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.ВычНП</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<use>false</use>
+				<selection>
+					<item>
+						<field>ОрдернаяСхема</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РазрешенаПриемка</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>СогласованиеТаблица</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Согласование.ОшибкаСогласования</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value bold="true" italic="false" kind="WindowsFont" ref="sys:DefaultGUIFont" strikeout="false" underline="true" xsi:type="v8ui:Font"/>
+					</dcscor:item>
+				</appearance>
+			</item>
+			<item>
+				<selection>
+					<item>
+						<field>Согласование</field>
+					</item>
+				</selection>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РазрешенаПриемка</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</filter>
+				<appearance>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</appearance>
+			</item>
+		</ConditionalAppearance>

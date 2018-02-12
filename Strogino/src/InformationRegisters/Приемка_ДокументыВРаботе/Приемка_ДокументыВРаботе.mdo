@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2950c274-fd67-46e1-bb1b-68c54f21a924">
+  <producedTypes>
+    <selectionType typeId="189cbec0-0290-40c2-a654-210b4e72ba63" valueTypeId="47db4455-3c76-48bb-91cb-ccab1f286fdf"/>
+    <listType typeId="5f2ea69f-e448-4228-8f59-b4dd31e7edba" valueTypeId="cb9e614a-fb24-4bef-9546-d7f8499fe53d"/>
+    <managerType typeId="57328126-37c2-4d22-a686-fe2308013f16" valueTypeId="9c6b1e1d-86dd-4350-8c34-3f5fa0de8e6d"/>
+    <recordSetType typeId="0060e11c-5c26-4b9e-a60b-d6ee52331573" valueTypeId="af0d9ba7-3101-4d1f-b604-50a21d289cb7"/>
+    <recordKeyType typeId="214b14ba-11e1-420c-a55f-057be53d4c8a" valueTypeId="c78754f2-393a-4afb-9bbb-cf8a1e2304cf"/>
+    <recordType typeId="3062ccff-13f2-46ad-8c9c-92273a01c3d6" valueTypeId="50a79437-8841-48c8-ac50-4488e4c02a62"/>
+    <recordManagerType typeId="15dc5353-922a-44a0-8b63-cde0a7dfcc48" valueTypeId="ba6bb4e8-8a07-463d-a69a-01f2fb8a4413"/>
+  </producedTypes>
+  <name>Приемка_ДокументыВРаботе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приемка документы в работе</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="869321b3-d559-4e01-befd-3aeb3b92ea4d">
+    <name>НачалоПриемки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало приемки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a53c1a8f-0150-4685-aba3-2346e08e570b">
+    <name>ЗавершениеПриемки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершение приемки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9efd1928-e6bd-4b61-8177-9f94bf3ecf4d">
+    <name>Флаг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Флаг</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ea472f8e-a4d8-44e7-bf17-79923411b642">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Приходная</types>
+      <types>DocumentRef.Перемещение</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

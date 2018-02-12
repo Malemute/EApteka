@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7825fdc9-1b9b-43ec-9d3f-72581ba998bd">
+  <producedTypes>
+    <refType typeId="14c355f0-e680-4064-b019-5532718dc7ec" valueTypeId="613c1120-e075-40af-a3fc-f2cd133187ad"/>
+    <listType typeId="55db4e42-d73c-4225-8f11-a37e044b9c93" valueTypeId="7b9be4eb-e2ea-434f-a7b0-ac48102d8f1d"/>
+    <managerType typeId="6e1fcebf-6f75-4f10-b2d8-1a56482d6282" valueTypeId="6ddb6bd3-8280-44e4-8bcc-fdae4b87a250"/>
+  </producedTypes>
+  <name>ТипДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип доставки</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="87effd58-9c79-4830-994b-f1b9832a83d4">
+    <name>Обычная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обычная</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9fb2db60-c7e8-4589-86f0-d80a790a203d">
+    <name>Срочная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срочная</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="515e47e4-d005-4cd5-87be-c5ac16d0ca0a">
+    <name>Самовывоз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Самовывоз</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="5f46946e-5b4d-46fb-9c7f-4a65913783ce">
+    <name>Бесплатно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бесплатно</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="844e7b33-4f67-4c23-9153-5637ced88e8a">
+    <name>ЕМС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЕМС</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0643ffaa-5c9a-4b63-a8b4-32e8501b2f84">
+    <name>Б2С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Б2 С</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9e297334-db37-4001-a694-6e5416f788b1">
+    <name>ДХЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ДХЛ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d3286841-9d3f-4fd9-93f5-9ea7b80045e8">
+    <name>Тетрика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тетрика</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="1e210521-a0f1-402a-ab29-18cb25ba7103">
+    <name>Довоз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Довоз</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0813224f-8eea-4911-87f9-48714bd7556d">
+    <name>Ручная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="c797a290-c5e4-4314-b821-9340a7422295">
+    <name>Партнеры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партнеры</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

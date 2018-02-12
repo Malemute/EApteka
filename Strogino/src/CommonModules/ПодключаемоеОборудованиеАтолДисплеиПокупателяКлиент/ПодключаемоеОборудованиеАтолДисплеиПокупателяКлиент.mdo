@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97a34ca4-3f83-4cd5-a5e8-46d05e5fd415">
+  <name>ПодключаемоеОборудованиеАтолДисплеиПокупателяКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработчик драйвера &quot;АТОЛ: ДисплеиПокупателя&quot;</value>
+  </synonym>
+  <comment></comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="716ced5e-7f2a-4df1-a046-f29a83737d7a">
+  <producedTypes>
+    <refType typeId="0fd470b7-b1d7-4e13-8f16-b949f47b5ff8" valueTypeId="3a5e149f-c0eb-48d5-a729-98d834acf932"/>
+    <listType typeId="7b9e2f23-6463-4345-ab0e-55f9ff1c6049" valueTypeId="3acf4914-05d5-4f95-b89d-3d56191cf0e6"/>
+    <managerType typeId="d1229ab7-e85b-4313-a0af-05c031d7a6bd" valueTypeId="bdfc3b34-0175-4c34-90e0-626e71b21b6e"/>
+  </producedTypes>
+  <name>ТипыЗаявокНаДефектуру</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы заявок на дефектуру</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ceb9d5ad-afcf-45ad-81d1-dac96b00fb17">
+    <name>ОформлениеПотребности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оформление потребности</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f7212a9e-c6e8-4e15-841b-9c82312eab37">
+    <name>АннулированиеПотребности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аннулирование потребности</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

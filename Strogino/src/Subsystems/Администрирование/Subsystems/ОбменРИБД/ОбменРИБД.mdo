@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1163e96e-d887-45b8-a809-16732c152c8a">
+  <name>ОбменРИБД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен РИБД Аптеки</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.НастройкиОбмена</content>
+  <content>Catalog.НастройкиПодключенийКВебСервисам</content>
+  <content>ExchangePlan.ПланОбменаОбновлениями</content>
+  <content>ExchangePlan.ПланОбменаДанными</content>
+  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e7d9989-0bf0-4a6e-ba53-8e36a043d1fb">
+  <producedTypes>
+    <selectionType typeId="4c7b2f45-67be-4931-92ba-59d3b82f3746" valueTypeId="165f70f5-cc8e-4fe7-92d2-b80f26eeb2c4"/>
+    <listType typeId="146bb95e-120e-44d8-b4d9-3583518de5ca" valueTypeId="f7e37fa5-0d4b-46f2-b6f0-70be6faa19da"/>
+    <managerType typeId="5b2e615d-6ed1-4629-a0da-677b52893ac2" valueTypeId="d3f8a919-b190-443b-a945-eb4882df8d17"/>
+    <recordSetType typeId="8f209f60-a0c0-467b-a6b2-3f6e31e1dbd9" valueTypeId="b37cc3f3-e2da-4770-8042-33a310768810"/>
+    <recordKeyType typeId="cc3efdd0-f76e-4978-9bb2-4e10086eb0f2" valueTypeId="17292b31-e1a7-49b7-9a35-9a732c217d29"/>
+    <recordType typeId="17094f99-51f1-43e3-9e5e-c3e98b325d35" valueTypeId="dfa95374-ed3e-47b9-9499-78c5597d8401"/>
+    <recordManagerType typeId="d44f98f3-6d46-469e-8b74-99fe672c6fde" valueTypeId="1b740d3b-8389-4cea-b42b-ac538c49fe50"/>
+  </producedTypes>
+  <name>ОтправкаСМС</name>
+  <synonym>
+    <key>ru</key>
+    <value>БуферОтправкаСМС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fe132b36-8363-4835-abbb-77ee961db4cb">
+    <name>Выгружен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6b9f9916-a3ec-4f40-924c-314c27e50a34">
+    <name>АдресХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.АдресХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="34031632-a820-4474-aa17-de5781821c70">
+    <name>created</name>
+    <synonym>
+      <key>ru</key>
+      <value>Created</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="065fe5f4-af01-40c3-ac5d-091a8785545f">
+    <name>phone</name>
+    <synonym>
+      <key>ru</key>
+      <value>Phone</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="67410703-e16c-4a71-9ca8-28c0dd312ccf">
+    <name>sms</name>
+    <synonym>
+      <key>ru</key>
+      <value>Sms</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9bf522ba-fdc9-4114-ae6c-cb83784e1aa8">
+    <name>approved</name>
+    <synonym>
+      <key>ru</key>
+      <value>Approved</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0ce58c39-1344-422e-b8e6-cab002a320d5">
+    <name>id_t_tc</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id t tc</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="409c1693-1694-4611-b236-424b0edf691b">
+    <name>iddoc</name>
+    <synonym>
+      <key>ru</key>
+      <value>Iddoc</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c7d15dbf-ed02-4428-944b-92b8f9fb369d">
+    <name>type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Type</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

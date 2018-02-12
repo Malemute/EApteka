@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1be64735-9366-4ddf-8414-1a19b51cbdec">
+  <producedTypes>
+    <selectionType typeId="cc54a0b0-40db-4c26-b4e5-a94a78600700" valueTypeId="c7215d38-4ec4-4862-9307-8991a9825bbb"/>
+    <listType typeId="f4ec1312-9376-4a2d-a180-77d7c8c6b28e" valueTypeId="b48cae3c-e979-462f-b8b0-a514224dfa96"/>
+    <managerType typeId="a47d156d-71b6-4d17-a349-76ef9e8b63d4" valueTypeId="df192bb5-0715-440f-8493-1ca32b71e5b2"/>
+    <recordSetType typeId="0e953566-39d7-40d9-8020-fe930d43811d" valueTypeId="f75f3dec-489f-4710-b0bd-4510baf3a62b"/>
+    <recordKeyType typeId="1391e77a-d479-4222-a49c-9bc66db77fcd" valueTypeId="0b9c00f4-48cf-46f3-a5a1-8e09b693f16e"/>
+    <recordType typeId="3443e1af-ddb7-416f-afb7-a7a6d29d1f03" valueTypeId="0c975506-1179-4775-bcfe-cca177e494c5"/>
+    <recordManagerType typeId="713aa41a-5b4e-49c6-b1f7-76a64f37652f" valueTypeId="405bc0b7-d1cc-45b5-b5f0-97c905a8d563"/>
+  </producedTypes>
+  <name>ЗапрещенныеТовары</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запрещенные товары</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e45d74db-917f-4256-b1ca-96011a92b95d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="caf14897-cc7c-4761-a74a-dcca52079b03">
+    <name>Активно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активно</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4141440b-90ea-41d2-aae3-2d7890e422bb">
+    <name>ДатаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="bbef3aaf-3853-4aae-86e4-97fbfbaa6ca3">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2a551b78-92ae-4c6e-ac11-f2544763cc86">
+    <name>ДопНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

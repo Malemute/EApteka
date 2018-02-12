@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e38f4a1e-a05d-4d18-9f75-42ea8060f6e3">
+  <producedTypes>
+    <selectionType typeId="7ab57bb9-922c-4902-83e6-d0999dc5a462" valueTypeId="239f7bd4-f8ff-4f43-a58a-66cde677032e"/>
+    <listType typeId="245017c7-b099-4f5c-b04d-c208d6285e0e" valueTypeId="200c8c34-7993-4b1e-997d-b39eee2886bd"/>
+    <managerType typeId="79dc9bcd-d4fe-44b6-b152-36d0341df2c6" valueTypeId="307e5485-9c9f-4fc2-9ad0-fb9842675b33"/>
+    <recordSetType typeId="8efe140a-c7f0-47c4-9c7f-fb679d503535" valueTypeId="3a09b541-6575-458d-a6c9-11501f3c37ed"/>
+    <recordKeyType typeId="0bd6bfe7-41f5-43ef-82a8-f774cbb09a85" valueTypeId="061d548e-9d74-436f-be11-058b1ce016b1"/>
+    <recordType typeId="f0138bb2-ab04-4517-8015-71099c8f13a8" valueTypeId="6636b14e-e460-473f-9046-dbbdb486208e"/>
+    <recordManagerType typeId="d2010d11-aae1-4305-8356-9b1a018a0ba0" valueTypeId="eb4fc30c-1f59-4242-9589-514393ba840c"/>
+  </producedTypes>
+  <name>КомплектацияЗаказов_РаспределениеЗаказовПоЗСЯ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комплектация заказов распределение заказов по ЗСЯ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e636ce45-04f6-42bc-9906-842dd88065db">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Заказ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="494d5b6e-7682-4416-b262-65a03ad67766">
+    <name>ЗСЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗСЯ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестоЗСЯ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

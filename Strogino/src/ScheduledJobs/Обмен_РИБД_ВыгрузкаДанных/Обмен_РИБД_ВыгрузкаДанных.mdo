@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05fb8e7e-dc0e-4030-9d45-210afad596c3">
+  <name>Обмен_РИБД_ВыгрузкаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен РИБД выгрузка данных</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.ОбменАлгоритмыРИБД.Обмен_РИБД_ВыгрузкаДанныхЗадание</methodName>
+  <description>Обмен РИБД выгрузка данных</description>
+  <key></key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

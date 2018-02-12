@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e341fd7c-e0e6-4d3e-9eca-a5bd1b30439d">
+  <name>ЗагрузкаМаршрутовИСборныхКоробок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка маршрутов и сборных коробок</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ЗагрузитьСамовывозИзКоробки</methodName>
+  <description></description>
+  <key></key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

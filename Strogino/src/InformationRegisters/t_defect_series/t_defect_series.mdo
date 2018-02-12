@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6425d4e3-24f7-477d-a82f-f435f8fb41ec">
+  <producedTypes>
+    <selectionType typeId="e6fb5fed-58b4-48e4-a060-4e4999fcff7d" valueTypeId="d5ad9d1c-4d6e-4e72-85c9-e73bd499d320"/>
+    <listType typeId="2e812662-f72d-4915-a2ea-a6d2060a84cd" valueTypeId="0271539f-b92c-402a-8f3c-0bd9c36cbbde"/>
+    <managerType typeId="f4589982-abdf-46ab-a418-fadc292e15f4" valueTypeId="ef649a7c-91d0-458c-b945-62eb1b19e2ab"/>
+    <recordSetType typeId="40aa04b1-139c-4323-a4c0-9d4504fe19d0" valueTypeId="e4db01c9-b128-4e71-b66c-9e731e1c3b9a"/>
+    <recordKeyType typeId="79d6490c-8675-4008-9667-a1010b1a5574" valueTypeId="fbcf933b-7db8-4730-9501-b580ce6b82fe"/>
+    <recordType typeId="ef02f3a0-bce4-4118-a3bf-5cbd9002674f" valueTypeId="12fe5584-b8d7-4e13-9f92-b9d2d7b9c7b4"/>
+    <recordManagerType typeId="d6aff94a-b137-43d1-b6e7-7416bf493141" valueTypeId="2970d4e2-449f-4965-a486-f57cfe312251"/>
+  </producedTypes>
+  <name>t_defect_series</name>
+  <synonym>
+    <key>ru</key>
+    <value>CourierDS_t_defect_series</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="effe555b-fd82-4f39-8770-0fca5203dedd">
+    <name>code</name>
+    <synonym>
+      <key>ru</key>
+      <value>code</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="62824226-82e7-4d7b-9b9c-2aeeb583cb85">
+    <name>name</name>
+    <synonym>
+      <key>ru</key>
+      <value>Name</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="6d1b27db-3adf-48e8-af1a-d3630462d7ce">
+    <name>series</name>
+    <synonym>
+      <key>ru</key>
+      <value>Series</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="03a20bc4-a1a6-4641-ae13-0e964bb074a4">
+    <name>code_egk</name>
+    <synonym>
+      <key>ru</key>
+      <value>Code egk</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="7405fc48-6da9-44d9-aeed-9c579f1a73ec">
+    <name>id_defect</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id defect</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+</mdclass:InformationRegister>

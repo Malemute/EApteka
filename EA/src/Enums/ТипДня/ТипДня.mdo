@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e36d081-7958-42a7-9a8d-f22018b47876">
+  <producedTypes>
+    <refType typeId="c1428d18-32b0-4df5-bc28-0a2801333dd1" valueTypeId="80e24b26-23c1-4e17-9bc3-4c04b1d16d7e"/>
+    <listType typeId="fdcb7c42-9682-4760-a1d1-5d7fa6c0407b" valueTypeId="01a8a2aa-88f2-4abb-8205-aa7bc5505570"/>
+    <managerType typeId="39f67b49-29ed-4d6a-b633-618a2e88dc5e" valueTypeId="d109f6fa-af69-4857-8b8c-3b558cae1fd0"/>
+  </producedTypes>
+  <name>ТипДня</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип дня</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e275c961-686e-4aae-8f2a-5f6faa40d2c6">
+    <name>Рабочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочий</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3bb997f2-0ee1-495b-8adc-eb934e3e2428">
+    <name>Календарный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

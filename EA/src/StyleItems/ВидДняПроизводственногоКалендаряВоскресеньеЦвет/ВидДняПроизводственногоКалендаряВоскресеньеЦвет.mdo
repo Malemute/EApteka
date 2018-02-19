@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d0dd680-9d00-4374-9065-4c935cd02d08">
+  <name>ВидДняПроизводственногоКалендаряВоскресеньеЦвет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид дня производственного календаря «Воскресенье»</value>
+  </synonym>
+  <comment></comment>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorRef">
+      <color>Web.Red</color>
+    </value>
+  </value>
+</mdclass:StyleItem>

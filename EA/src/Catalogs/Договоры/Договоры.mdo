@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e7def995-dfea-42c0-a024-b366663e6cf5">
+  <producedTypes>
+    <objectType typeId="5152210c-6ec5-442d-8fb0-296ea0df86b8" valueTypeId="233448b5-24d0-47a2-8df2-0113725c8665"/>
+    <refType typeId="9fe92c05-18be-49e9-ac23-754566faad7d" valueTypeId="ef0c6076-0df4-46ec-8cd8-a41cd88db15a"/>
+    <selectionType typeId="0bca1ea3-511b-429f-b0b3-ee9e95270bd4" valueTypeId="d5eb6a82-40bf-44f4-b67f-cd4ee99ed1f9"/>
+    <listType typeId="42044600-568a-4f02-8c24-597ac01bc862" valueTypeId="7b5b7753-aaa1-430c-b236-ffd6b5f71118"/>
+    <managerType typeId="f0d495a5-8272-49e3-933d-6e15796a65c5" valueTypeId="6df1a444-8f27-4b8f-a399-bd22f05512b8"/>
+  </producedTypes>
+  <name>Договоры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Договоры</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Договоры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Договоры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Договоры.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Договоры.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="91c8951f-1c04-4291-9617-d70ef9f22ea2">
+    <name>ВидДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>0 - С покупателем
+1 - С поставщиком
+2 - Прочее</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="33a9017f-1059-4905-a80e-a62f8b7097f6">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер договора</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="db638fd8-a307-4558-8d5c-1bf0ac5272c9">
+    <name>ДатаДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>от</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da479b9e-c8ac-457c-aeee-f32907bce965">
+    <name>ДатаПосдеднегоИзмененияСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата посдеднего изменения состояния</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2b8bfc63-7409-4178-9e11-fcced53e3581">
+    <name>ДоступенКоробПрайс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступен коробочный прайс</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9ab86e34-4800-4edb-9671-a05d612886a2">
+    <name>КодПолучателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код получателя</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>13</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ca4c8763-d1af-4dd4-8495-2d48792792df">
+    <name>Комиссия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e558bdd7-04d7-459a-9a19-a96f6ebe155b">
+    <name>Лицензия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лицензия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДоговорыТипЛицензии</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9bf0da44-667d-45bd-962d-9e520d715920">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3f3300b9-b606-4a44-9de8-71910be998ab">
+    <name>Отсрочка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсрочка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e8b41263-8637-4988-9919-c3421d2b50d4">
+    <name>СкладОприходования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад оприходования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="72de4385-0e4c-40a2-adac-feba6a77a0e1">
+    <name>СкладТранзита</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад транзита</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a4384b5f-196d-42bd-8bec-adc8f987d510">
+    <name>СостояниеДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДоговорыСостояниеДоговора</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="860cb8c6-e62e-4b17-a21b-028243f1d172">
+    <name>СостояниеЛицензии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние лицензии</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДоговорыСостояниеЛицензии</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4d773e3b-a682-4bc4-9613-13a87f839b59">
+    <name>СрокДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b1e1a94-0533-4634-9333-3fab731c55fb">
+    <name>СрокДействияЛицензии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия лицензии</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9ffbb08b-d309-46d0-80d1-58a768b4c7a8">
+    <name>ТипДоговора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип договора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДоговорыТипДоговора</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f960dded-fc32-4cf5-a5b7-537113159469">
+    <name>Фирма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фирма</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Фирмы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="05653b81-3eff-44db-86f6-da26a0069f9b">
+    <name>ФормаСобственности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма собственности</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДоговорыФормаСобственности</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cefbdb73-048f-454d-945b-348eef0e6cb2">
+    <name>КоэфКорректировкиОстатка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэф корректировки остатка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5fd8b96b-4bbc-4d0d-9db3-3a0563abf30f">
+    <name>МинСрокГодности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мин срок годности (дней)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8fc70cda-a292-4b87-9e5f-1438f5621c99">
+    <name>ЧастотаЗагрузкиПрайса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Частота загрузки прайса</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bb559546-906a-48c7-a7af-c8f472d5db3a">
+    <name>СрокГодностиПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок годности по умолчанию</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b59c0f40-c3de-43b2-a329-a663f8ffbb03">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f907782e-efb3-4d62-988c-4d55a55c5da6">
+    <name>delФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Del форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b83c62d5-cf3f-4bea-b955-f97ac4a13c49">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

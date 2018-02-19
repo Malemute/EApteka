@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6404103-9e92-44e1-a6db-86b826cf0815">
+  <producedTypes>
+    <selectionType typeId="04ab1d65-8666-4099-bb82-a18f54d16212" valueTypeId="9871cac4-073e-4faf-bde7-f1dc411a0d22"/>
+    <listType typeId="1e1f2ea6-458b-4f8d-a476-f6ce98bbd6f8" valueTypeId="3320588a-67c3-4825-9d83-8df520303934"/>
+    <managerType typeId="40e31305-fc0d-4f0b-aee7-09011b27a959" valueTypeId="772f613f-7eef-413c-9168-320d37961a6f"/>
+    <recordSetType typeId="90ba5437-9097-4c49-acc6-684604463516" valueTypeId="81ec32a0-d6b8-4d3c-94b4-e32f9c7fa68e"/>
+    <recordKeyType typeId="50384193-c5d2-440f-920a-c0f0fb180bc2" valueTypeId="3af2cbc5-6a80-4010-89db-84cc8baeb735"/>
+    <recordType typeId="4c00dad2-09b3-478c-9910-ea44f47fc77a" valueTypeId="6b437a45-5e72-4f3d-a8c5-abde3e17b67c"/>
+    <recordManagerType typeId="8c4abd44-0951-4c2b-a610-ed82915b79cb" valueTypeId="10c15a60-d9df-4c6b-afe4-a58feed91371"/>
+  </producedTypes>
+  <name>БэкМаржа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бэк маржа</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9e92ab26-6d62-4d24-a215-6ed4787008b0">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="62e91058-1167-46bb-bd49-e90c429e7f00">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

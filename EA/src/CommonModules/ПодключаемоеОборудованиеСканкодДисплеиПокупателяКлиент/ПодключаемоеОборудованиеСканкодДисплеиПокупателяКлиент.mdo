@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="faf9c1bb-f705-48bd-9095-c18e41c68523">
+  <name>ПодключаемоеОборудованиеСканкодДисплеиПокупателяКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработчик драйвера &quot;SCANCODE: Дисплеи покупателя&quot;</value>
+  </synonym>
+  <comment></comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

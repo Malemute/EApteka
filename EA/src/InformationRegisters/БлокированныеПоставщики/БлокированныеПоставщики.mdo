@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05d06645-5ba3-4971-8ccf-91958d0afdd6">
+  <producedTypes>
+    <selectionType typeId="342e5129-35e3-4706-b080-6f28ae224e6b" valueTypeId="c5d9f808-44ff-47cd-a2ee-e446816eee44"/>
+    <listType typeId="786edeeb-2392-4b29-9805-188e002918a3" valueTypeId="38f5558d-44de-491a-9aa1-e2dd6f04a9c4"/>
+    <managerType typeId="0270a2a4-b2af-4e4f-8638-3c27b5f099de" valueTypeId="e2b01601-9cf6-4995-899e-8a937303c6ce"/>
+    <recordSetType typeId="72d1a3a4-ca59-477f-a89b-7749c880785c" valueTypeId="98fad7f0-8db5-42c5-bddd-fa987d26d52e"/>
+    <recordKeyType typeId="e59da928-aeeb-4668-9c45-4285d942ab6c" valueTypeId="fb30b84d-e3fb-4ae8-b8f9-3eff1c3e63cb"/>
+    <recordType typeId="89cb627c-db61-444f-90fe-ae1f5d1d0793" valueTypeId="65ebfa47-d532-41d0-a23c-e4ebbbf8359d"/>
+    <recordManagerType typeId="e1172511-393a-403d-a7b6-eddefd7879c4" valueTypeId="d395f976-85e6-4bb5-a12a-dbdc77b6a370"/>
+  </producedTypes>
+  <name>БлокированныеПоставщики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Блокированные поставщики</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="74910f84-1d99-4fb6-9779-ac112f05655d">
+    <name>Разрешен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="644280f2-2454-40ce-b7bf-f28f614b9b78">
+    <name>ДатаПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата поставки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="4b2602b3-600e-45a3-88d4-adfa0e6c0ede">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

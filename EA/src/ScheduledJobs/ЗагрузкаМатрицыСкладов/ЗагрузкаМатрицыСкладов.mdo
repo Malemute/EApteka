@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b80f36c6-96fa-4397-a4d1-a66dc6fdf264">
+  <name>ЗагрузкаМатрицыСкладов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка матрицы складов</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ЗагрузкаМатрицыСкладов</methodName>
+  <description>Загрузка матрицы складов</description>
+  <key></key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

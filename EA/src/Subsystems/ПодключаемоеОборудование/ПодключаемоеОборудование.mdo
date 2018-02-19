@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7e08cdf-ff48-4587-81e5-38991973c58b">
+  <name>ПодключаемоеОборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подключаемое оборудование</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Подсистема механизма внешнего оборудования</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>0</picture>
+  </picture>
+  <content>CommonModule.МенеджерОборудованияВызовСервера</content>
+  <content>Enum.ТипыПодключаемогоОборудования</content>
+  <content>Enum.ОбработчикиДрайверовПодключаемогоОборудования</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеККТОтчетОТекущемСостоянииРасчетов</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеККТЗакрытиеСмены</content>
+  <content>CommonTemplate.КомпонентаПечатиШтрихкодов</content>
+  <content>CommonCommand.ВыбратьРМТекущегоСеанса</content>
+  <content>CommonForm.ФормаНастройкиУниверсальныйДрайвер</content>
+  <content>SessionParameter.РабочееМестоКлиента</content>
+  <content>CommonModule.МенеджерОборудованияВызовСервераПереопределяемый</content>
+  <content>CommonModule.МенеджерОборудованияКлиент</content>
+  <content>CommonModule.МенеджерОборудованияКлиентПереопределяемый</content>
+  <content>CommonModule.МенеджерОборудованияКлиентПовтИсп</content>
+  <content>CommonModule.МенеджерОборудованияКлиентСервер</content>
+  <content>CommonModule.МенеджерОборудованияСерверПовтИсп</content>
+  <content>Catalog.ДрайверыОборудования</content>
+  <content>Catalog.РабочиеМеста</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеККТОткрытиеСмены</content>
+  <content>CommonModule.ПодключаемоеОборудованиеУниверсальныйДрайверКлиент</content>
+  <content>Enum.ТипыРасчетаДенежнымиСредствами</content>
+  <content>Enum.ПоляШаблоновМагнитныхКарт</content>
+  <content>CommonModule.ОбновлениеИнформационнойБазыБПО</content>
+  <content>Catalog.ПодключаемоеОборудование</content>
+  <content>CommonModule.ПодключаемоеОборудованиеУниверсальныйДрайверАсинхронноКлиент</content>
+  <content>DefinedType.ОрганизацияБПО</content>
+  <content>DefinedType.КассаБПО</content>
+  <content>CommonModule.МенеджерОборудованияКлиентСерверПереопределяемый</content>
+  <content>Enum.ТипыОплатыККТ</content>
+  <content>DataProcessor.ТестированиеПодключаемогоОборудования</content>
+  <subsystems>СканерыШтрихкода</subsystems>
+  <subsystems>ККТ</subsystems>
+  <subsystems>ДисплеиПокупателя</subsystems>
+  <subsystems>ФискальныеРегистраторы</subsystems>
+  <subsystems>ЭквайринговыеТерминалы</subsystems>
+</mdclass:Subsystem>

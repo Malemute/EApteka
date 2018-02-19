@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8695d7b-3a14-4808-b215-3b43c6bc7904">
+  <producedTypes>
+    <objectType typeId="d35bc464-4c90-49be-a3c1-642088359738" valueTypeId="70cbb475-f627-4bfb-afd8-b6d6e89cd002"/>
+    <managerType typeId="df9a09dd-8336-4482-a2df-7a121a298962" valueTypeId="7812e679-6c59-4885-aac4-a9b1e4464730"/>
+  </producedTypes>
+  <name>ТестированиеПодключаемогоОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование подключаемого оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТестированиеПодключаемогоОборудования.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="b19c94e0-39d8-44dc-a4d7-eea4d4631871">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тестирование подключаемого оборудования</value>
+    </synonym>
+    <comment></comment>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c1973c6b-f06b-48c2-850d-9637bc05a562">
+    <name>МакетЧеков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет чеков</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

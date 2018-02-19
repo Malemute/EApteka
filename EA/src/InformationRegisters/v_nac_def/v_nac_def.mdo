@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56bf6302-b79e-42a0-b136-fb8fe2b8e5f3">
+  <producedTypes>
+    <selectionType typeId="33844b15-0c44-4102-97ef-015f548b8cc8" valueTypeId="102ff0a7-527c-4a42-a850-eb11e46a48ae"/>
+    <listType typeId="4d539b58-2eb0-4edf-8d7e-eb3f84fc7bfc" valueTypeId="ea0c44c4-c2d3-4622-a107-848bd8d60655"/>
+    <managerType typeId="6570f9ff-406b-46b4-b7de-f54d22d0e305" valueTypeId="2a20712e-dbb6-492b-b419-46123934e6bb"/>
+    <recordSetType typeId="c529b41a-65ea-4936-8cc9-6ef0c33853ef" valueTypeId="88ceb255-d7b0-427b-9560-6457ce8c6a53"/>
+    <recordKeyType typeId="ffd47908-22fd-488a-a366-9d8b0762a5e2" valueTypeId="c533a261-c63d-41a3-a3f6-51ac931aacd3"/>
+    <recordType typeId="3cfe6f61-665e-4205-b1a2-b8f1df5351d0" valueTypeId="f2fa1797-54ae-4749-92bc-403a92dbefec"/>
+    <recordManagerType typeId="409163c7-04b1-4ef8-8466-55ed720155b5" valueTypeId="88744878-c851-4ec4-9043-9cd0794d8af3"/>
+  </producedTypes>
+  <name>v_nac_def</name>
+  <synonym>
+    <key>ru</key>
+    <value>CourierDS_v_nac_def</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="fb06cfc4-e56b-4fe4-8fba-e928179dacc5">
+    <name>id_tc</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id tc</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="ba4545ce-1d0d-49f7-8685-ab2aa4fd7d24">
+    <name>price_min</name>
+    <synonym>
+      <key>ru</key>
+      <value>Price min</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="a0cdc551-d063-46cd-8eae-667c6270d6dd">
+    <name>price_max</name>
+    <synonym>
+      <key>ru</key>
+      <value>Price max</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="783875b8-0e8d-4e8c-a82f-fc9a730ffcc2">
+    <name>nac</name>
+    <synonym>
+      <key>ru</key>
+      <value>Nac</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="74c07c4c-3fe8-4b24-a3df-86df27ac4f3b">
+    <name>id_reg</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id reg</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+  </dimensions>
+</mdclass:InformationRegister>

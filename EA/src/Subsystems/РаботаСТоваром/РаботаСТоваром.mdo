@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bddd36d1-a6bd-480e-ab00-0a931847c2c8">
+  <name>РаботаСТоваром</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с товаром</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.ОбработкаПретензий</content>
+  <content>Report.МатериальнаяВедомость</content>
+  <content>Report.РаскладкаСамовывозов</content>
+  <content>Report.ОтчетПоСрокамГодности</content>
+  <content>Report.НесобранныеЗаказы</content>
+  <content>Catalog.Контрагенты</content>
+  <subsystems>Приемка</subsystems>
+  <subsystems>Претензии</subsystems>
+  <subsystems>Заказы</subsystems>
+  <subsystems>Закупка</subsystems>
+</mdclass:Subsystem>

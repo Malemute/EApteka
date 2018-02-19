@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd792848-6956-4e49-a23e-e527b0e7b480">
+  <producedTypes>
+    <objectType typeId="16d0c984-433c-4f8a-bac5-bb0dadea7a3f" valueTypeId="23383c2a-498d-4919-b832-63dcc017cda0"/>
+    <refType typeId="785d4ed0-0a88-43c4-9f9f-4982d37ed98b" valueTypeId="5a7ca0fd-08ce-425f-bba1-4867495f454a"/>
+    <selectionType typeId="901500dd-b785-49fc-8d6a-ad102dd78a31" valueTypeId="837dfe8b-c511-42f2-bad8-109bb81aebd6"/>
+    <listType typeId="9f771ea9-349f-4acb-a4d3-65ade0310b89" valueTypeId="09ed62b9-63f8-4ca5-9a35-e3594ee2ad31"/>
+    <managerType typeId="cee4d2f7-ed75-4ec7-981e-a2c6bfd20dcd" valueTypeId="b03df314-a646-45d6-8257-213664f0364f"/>
+  </producedTypes>
+  <name>ПорядокОплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок оплаты по договору</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПорядокОплаты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПорядокОплаты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="39c4ddfa-e8b0-4e2b-928d-14c65b40f1ec">
+    <name>КодБух</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код бух</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

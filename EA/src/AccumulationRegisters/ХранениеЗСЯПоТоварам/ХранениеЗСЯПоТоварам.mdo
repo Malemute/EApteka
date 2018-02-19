@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8688d0f-c761-4efd-ba78-af8e8aa1aaeb">
+  <producedTypes>
+    <selectionType typeId="b20dbfb3-e2cd-4189-a307-ab445053035f" valueTypeId="b6a0dbe5-8d4b-4dc5-bd75-83b60c6ee607"/>
+    <listType typeId="b1bf3432-6dd1-4e81-a592-6af2fcc4c6e8" valueTypeId="f9175664-6555-4d0c-a3a3-c49c273299ed"/>
+    <managerType typeId="a7b2ae7e-c166-42ea-9087-d3f7fff56807" valueTypeId="43893d95-6638-4265-82d7-4498cae4b515"/>
+    <recordSetType typeId="b4f6ac7d-48bd-4584-8fa0-ad26cfee9a11" valueTypeId="05e5595a-c7b8-4ed8-9ae0-ce8eb731e16b"/>
+    <recordKeyType typeId="087047cf-515f-4648-bd60-4a822e02845f" valueTypeId="6e42f75d-cf7e-4fdf-b400-f2bb2c08e401"/>
+    <recordType typeId="1255f414-48be-4336-8c2e-fef0fdc1b2a5" valueTypeId="faac0aaf-8507-46de-b868-65f66ea55149"/>
+  </producedTypes>
+  <name>ХранениеЗСЯПоТоварам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранение ЗСЯПо товарам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="06c498cd-4680-4ed5-aa60-792b3a31b4c0">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="72060d8f-ce6b-4590-95a6-7c3704c5b60b">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7e5432ca-2fde-4373-bc25-e2e787641d9e">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Заказ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2659230e-eaac-468d-8165-6ba9de43ac2b">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f8b6f281-90e6-4c2f-a63f-60d982f15801">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Партии</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c73ffdf8-c095-4804-b931-ad67a1cb10be">
+    <name>ЗСЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗСЯ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестоЗСЯ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42dda749-4827-47a7-9c25-824baeaff55c">
+  <producedTypes>
+    <managerType typeId="b72c45b6-9ed5-4db7-ada1-6d4a896c1b00" valueTypeId="d1773f81-a1db-4979-b424-56c0c20f8c3b"/>
+    <valueManagerType typeId="d69b5e14-2804-41cf-a6df-10bcf4f2aacd" valueTypeId="971e9352-6d64-42b6-bd94-eaad08641aff"/>
+  </producedTypes>
+  <name>УслугаДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Услуга доставки</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.Номенклатура</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

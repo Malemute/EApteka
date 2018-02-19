@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7265627-c73c-4a84-9c1e-175dacf86274">
+  <producedTypes>
+    <selectionType typeId="7fad1376-bb51-4b9d-84cb-e9337b7eefe6" valueTypeId="175649ba-f368-4dee-9dc8-6aae5142b405"/>
+    <listType typeId="eae83aaf-499d-4837-a40a-bea91b8bc25b" valueTypeId="dab58f29-ec6f-4d01-95e6-1b31f1211c3b"/>
+    <managerType typeId="3c4b9107-90f5-4d62-bbd7-998e0636c153" valueTypeId="790a870d-fbac-4c4e-9595-ba82ea378260"/>
+    <recordSetType typeId="a102a277-459d-46dd-a4dd-3e782c0cecbe" valueTypeId="448df3cd-f666-4d01-b507-bf6fad79bfbf"/>
+    <recordKeyType typeId="b49d414f-8627-4cda-800c-901cd8cbf8a9" valueTypeId="e26af5f7-ba5c-4d61-afe2-acbe7931da95"/>
+    <recordType typeId="a95dbef7-3c9a-4c99-9278-f3656e2b085b" valueTypeId="b3bea455-95a5-4fb8-a3fb-d27876bce9c5"/>
+    <recordManagerType typeId="61c3b3af-eb4f-4ee7-890c-e239b5bbbd83" valueTypeId="5bda375b-f786-4524-82a8-8c020a7c35a3"/>
+  </producedTypes>
+  <name>t_rr</name>
+  <synonym>
+    <key>ru</key>
+    <value>CourierDS_t_rr</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="2fef253b-6e02-4d93-b2f3-efd22088e950">
+    <name>ДатаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата загрузки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="2d51d622-1998-4a11-9879-9f3ec976dcfa">
+    <name>id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="796104ad-52cf-41a9-b2a4-83b1b038b23e">
+    <name>id_rr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id rr</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="79ca7fe0-530a-433e-b166-1303ea3e08a6">
+    <name>name_rr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Name rr</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="e3cca3cd-db75-4323-b5dd-50645d801cda">
+    <name>_active</name>
+    <synonym>
+      <key>ru</key>
+      <value>Active</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="61fe28a7-de11-46dc-b681-558e68918c4b">
+    <name>sklad</name>
+    <synonym>
+      <key>ru</key>
+      <value>Sklad</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="d23e7b91-4357-4a4a-aa5b-05b27e4a2ecc">
+    <name>rr_code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Rr code</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="87c0d29c-88eb-42e9-9c90-921e261313e8">
+    <name>id_rr_main</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id rr main</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="e0455b0a-c5c5-4537-8a34-694496819da0">
+    <name>is_price</name>
+    <synonym>
+      <key>ru</key>
+      <value>Is price</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

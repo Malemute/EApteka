@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db048ad4-5a2d-4677-9702-96dc4c3332ba">
+  <producedTypes>
+    <refType typeId="323e4512-0820-4b95-9f7a-21ff2ea084c3" valueTypeId="88b71ac7-a4f3-4631-bd62-40dd6df77295"/>
+    <listType typeId="1aa94c3d-fd33-45c9-a848-238753242c3c" valueTypeId="30552c86-95b3-46a7-8632-31911f3fd85d"/>
+    <managerType typeId="986d0b46-4302-4a30-b9f4-d29c0fd7cd93" valueTypeId="3951fc66-1720-4d07-bfed-fe6e479da5a0"/>
+  </producedTypes>
+  <name>ВидыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды контрагентов</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="996c768f-affa-4383-b7dc-f8d434ad62d3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fb8e943d-524e-43aa-b13e-1fa458dd9664">
+    <name>ЧастноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Частное лицо</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a4f3e307-d54b-4fb0-8f4a-2700ce0879fd">
+    <name>ГосОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гос организация</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

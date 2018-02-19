@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8c5a899-f064-452f-927c-f06d37a786ed">
+  <producedTypes>
+    <objectType typeId="88bfee54-767e-48f5-82be-7370bafad68e" valueTypeId="17e2633c-7d9c-4ec0-98f0-c003992354de"/>
+    <refType typeId="2e607a24-9791-42f0-8061-b1dc98671c25" valueTypeId="09bf99f0-01ef-408f-853a-74bbe0090ac3"/>
+    <selectionType typeId="aad11f6e-b4af-47d1-8bf0-242fcf6dfa07" valueTypeId="6c3c90e0-445f-465e-86d2-f1881d35d4d7"/>
+    <listType typeId="f3329c7b-55e9-4086-8783-5ec64ef5964b" valueTypeId="eecc3a25-3342-4ae2-b51d-18b93f823b00"/>
+    <managerType typeId="1971be04-a009-4790-b2fd-3943a1e63ff3" valueTypeId="2c9ecb71-e516-4a18-9137-de96fefefee9"/>
+  </producedTypes>
+  <name>СтатусыТовараПодЗаказ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы товара под заказ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтатусыТовараПодЗаказ.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтатусыТовараПодЗаказ.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="35e1533a-6f27-4906-9235-7195de7e5f7b">
+      <name>ВставленоВЗаказ</name>
+      <description>Вставлено в заказ</description>
+      <code xsi:type="core:NumberValue">
+        <value>9</value>
+      </code>
+    </items>
+    <items id="e5130919-2636-4d1a-9ae0-6c83826b0f9e">
+      <name>ЗаказаноКлиентом</name>
+      <description>Заказано клиентом</description>
+      <code xsi:type="core:NumberValue">
+        <value>2</value>
+      </code>
+    </items>
+    <items id="ca865b58-5eda-408c-acb9-95be1757ddf2">
+      <name>ЗапрошенаПредоплата</name>
+      <description>Запрошена предоплата</description>
+      <code xsi:type="core:NumberValue">
+        <value>11</value>
+      </code>
+    </items>
+    <items id="3bdd0a4b-8481-4bd6-ad4b-01362ac541b8">
+      <name>КлиентОтказалсяОжидать</name>
+      <description>Клиент отказался ожидать</description>
+      <code xsi:type="core:NumberValue">
+        <value>6</value>
+      </code>
+    </items>
+    <items id="44d994b0-4b30-45b3-ba57-9af4cd6bd3db">
+      <name>НаСогласованииВОтделеЗакупок</name>
+      <description>На согласовании в отделе закупок</description>
+      <code xsi:type="core:NumberValue">
+        <value>4</value>
+      </code>
+    </items>
+    <items id="d5f259ec-76ec-4ca1-9900-54b4ddce3f0d">
+      <name>НаСогласованииМРК</name>
+      <description>На согласовании МРК</description>
+      <code xsi:type="core:NumberValue">
+        <value>5</value>
+      </code>
+    </items>
+    <items id="9f99b304-6aa1-4dce-a841-69f49a630501">
+      <name>НевозможноЗаказать</name>
+      <description>Невозможно заказать</description>
+      <code xsi:type="core:NumberValue">
+        <value>3</value>
+      </code>
+    </items>
+    <items id="eccbd7ff-2039-457e-9e52-8fd081219e4e">
+      <name>Нехватило</name>
+      <description>Нехватило</description>
+      <code xsi:type="core:NumberValue">
+        <value>1</value>
+      </code>
+    </items>
+    <items id="2787d40d-ac3a-40f3-a0fa-d5764f3c2464">
+      <name>ОжидаетЗаказаТовара</name>
+      <description>Ожидает заказа товара</description>
+      <code xsi:type="core:NumberValue">
+        <value>7</value>
+      </code>
+    </items>
+    <items id="3ac022a7-e6cb-44b3-8708-87358c165f46">
+      <name>ОжидаетПоставкуТовара</name>
+      <description>Ожидает поставку товара</description>
+      <code xsi:type="core:NumberValue">
+        <value>8</value>
+      </code>
+    </items>
+    <items id="9f95397d-0ab7-49b2-97f9-fb73aad8515c">
+      <name>ОжидаетПредоплаты</name>
+      <description>Ожидает предоплаты</description>
+      <code xsi:type="core:NumberValue">
+        <value>12</value>
+      </code>
+    </items>
+    <items id="489cc054-0167-4740-9f9d-0ee57b88bb79">
+      <name>ОжидаетРаскладки</name>
+      <description>Ожидает раскладки</description>
+      <code xsi:type="core:NumberValue">
+        <value>13</value>
+      </code>
+    </items>
+    <items id="3c11a3f3-41f3-4e62-aa90-c0c7260b665a">
+      <name>Отменен</name>
+      <description>Отменен</description>
+      <code xsi:type="core:NumberValue">
+        <value>10</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="93750af9-fe48-4bf8-9e79-f54ac1dad41e">
+    <name>ПередаватьНаСборку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передавать на сборку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="14406a21-fe1e-493d-b5b1-78b7d7ff612c">
+    <name>Расчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1ef5823a-349b-4082-8c11-e6d69547ebce">
+    <name>Дефектура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дефектура</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

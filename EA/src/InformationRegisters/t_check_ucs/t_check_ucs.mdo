@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51667f70-656a-4846-acf4-2a83b03179ff">
+  <producedTypes>
+    <selectionType typeId="8d81d514-190c-4306-8087-60dd067fb3df" valueTypeId="e992afbc-c17c-4d35-9262-e32aefa960d6"/>
+    <listType typeId="4c7aff89-81cb-4a38-b65c-60b4b5dbfa31" valueTypeId="e91e5991-a165-4812-b508-3a90f95ebebd"/>
+    <managerType typeId="2497847f-6357-4a72-bd3d-3652cb5cf62c" valueTypeId="147145dc-9fee-4d0f-8109-0f16b9594bc4"/>
+    <recordSetType typeId="122a3ae1-41fa-4ed7-9f8e-77055a54cf43" valueTypeId="2ee3841c-563c-4565-87d2-948477462b8d"/>
+    <recordKeyType typeId="6e8b0f18-c488-4c76-9b2a-a8cc662aca93" valueTypeId="9c93e001-e39d-4632-b633-f66a154bc7c9"/>
+    <recordType typeId="5f0762b6-5a1a-4a02-82ec-f09cdab19a5a" valueTypeId="40c1ecb4-cf3c-4cfb-aa48-cad965fb3e79"/>
+    <recordManagerType typeId="d4d83d29-21db-4572-8afe-e4926d3adac0" valueTypeId="c6dc463c-623f-4457-8075-2a6e6eb5637b"/>
+  </producedTypes>
+  <name>t_check_ucs</name>
+  <synonym>
+    <key>ru</key>
+    <value>CourierDS_t_check_ucs</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="985c3f6c-d9de-478b-9d3e-0a65d9f5d409">
+    <name>Выгружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружено</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f222e242-985f-4c55-b124-d168c0f6f6e4">
+    <name>ККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ККМ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c6b5d19b-af89-4381-83db-5a849bb17b0d">
+    <name>TerminalID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Terminal ID</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2dbb45a6-b88e-4fd6-8d0a-890f962a62f2">
+    <name>НомерЧека</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер чека</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ca3b5822-4a0e-4671-a8bd-cebc89f08aa6">
+    <name>НомерКПК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер КПК</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c0d20589-93df-42f1-bd73-214c28881831">
+    <name>НомерСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер смены</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e2ad114c-2b73-47ae-93e1-a08ae4378da4">
+    <name>ДатаТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата транзакции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f4dd5e42-6d6b-4242-aa86-1051ecd9f068">
+    <name>card_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Card id</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7f794a9f-692f-45f7-92c1-41383dba3d31">
+    <name>СуммаЧека</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма чека</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d04fbc78-3610-4958-af7e-0dcf7c870823">
+    <name>rrn</name>
+    <synonym>
+      <key>ru</key>
+      <value>Rrn</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dfae7475-e3cf-46fb-8ded-054b6d4a09d9">
+    <name>authcode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Authcode</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="530243c1-1a2e-4a64-a4e8-b09d8f24a87f">
+    <name>ТипТранзакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип транзакции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

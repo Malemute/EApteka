@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8d9c00b-1f3d-4974-9739-7e834ec05e81">
+  <producedTypes>
+    <refType typeId="8608c90a-07b9-4c97-9a9f-6923ad6e1190" valueTypeId="2c846f62-e739-4eb4-8fd0-dc1ca274774a"/>
+    <listType typeId="3ceea9af-d13a-4a5a-89e6-539a29719f28" valueTypeId="bb5f65fb-6cad-4766-bcbe-c718f39e02b2"/>
+    <managerType typeId="29ad6726-05ea-43d3-bf4c-1d37fcb2f735" valueTypeId="e8de38ef-2b4c-4963-9e61-90ff2161a617"/>
+  </producedTypes>
+  <name>ВидыМестЗСЯ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды мест ЗСЯ</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="36f7d7ec-4291-4ef8-ba2c-5ea62c2286c2">
+    <name>ХранениеМестСамовывозов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранение мест самовывозов</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="40f869ec-abe5-4fea-81dd-e9ffbc1a8c91">
+    <name>СборкаСамовывозов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка самовывозов</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9a00f7fd-249e-4e78-ac7c-b6006260bdee">
+    <name>ХранениеНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранение номенклатуры</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

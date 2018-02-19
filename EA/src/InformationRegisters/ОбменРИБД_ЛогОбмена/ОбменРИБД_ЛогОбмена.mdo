@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a33c3613-3c37-4fd8-bff2-bf2b1d295cd1">
+  <producedTypes>
+    <selectionType typeId="43272846-c8c4-4b05-a3a9-639e82fedc3f" valueTypeId="057d57a3-6986-4fab-8682-0385c7d101f7"/>
+    <listType typeId="8193d81c-8474-4bbc-9622-04abd471cafa" valueTypeId="47855cb6-d0db-46da-944c-73a5c05da3cb"/>
+    <managerType typeId="9df905a0-8623-4b6e-97c4-e3832edbf47d" valueTypeId="23afe43a-300b-4c37-a612-8aa69669d493"/>
+    <recordSetType typeId="32dd3664-7e08-463b-8085-cc540d5be2e2" valueTypeId="c3dfcb76-e29f-4e88-a7d8-cbb5a75f5803"/>
+    <recordKeyType typeId="d8db8b50-1b0f-4015-97ae-a4432ffbe707" valueTypeId="2f144257-e161-4c50-b530-c76197ea9e83"/>
+    <recordType typeId="845006ac-ade8-4df6-841a-04c7936f7a82" valueTypeId="fb611028-ce83-49d9-8f5f-be0da59df412"/>
+    <recordManagerType typeId="288bf207-939e-4c58-bf91-d8bdb42aa7ec" valueTypeId="1dcc402b-bb9f-4e6d-a4b0-2300543a1fbc"/>
+  </producedTypes>
+  <name>ОбменРИБД_ЛогОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен РИБД лог обмена</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5d69ba7e-cbe5-44d0-9e5b-190fd256131f">
+    <name>ОбъектовВОчереди</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объектов в очереди</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ad7aaa87-b398-4262-95f8-6eeafc7a62f2">
+    <name>ОбъектовВыгруженно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объектов выгруженно</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="77a11486-c3d4-49bb-acb9-2ec8e306f26f">
+    <name>ОбъектовСОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объектов с ошибками</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="985e4cd6-1dd3-416e-bdf0-9631c0e9e119">
+    <name>ЦиклОбменаЗавершен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цикл обмена завершен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ceb5fb87-da36-4e98-87f8-ac228f8d1548">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="900badf4-e439-4b97-b668-91cc91285b8c">
+    <name>Узел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ExchangePlanRef.ПланОбменаДанными</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

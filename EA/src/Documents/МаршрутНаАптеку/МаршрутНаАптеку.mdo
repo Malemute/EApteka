@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="467443ae-04e0-4687-85ff-67018029a6a0">
+  <producedTypes>
+    <objectType typeId="7a0c879c-d4c0-42fd-91f9-1cfac5796ad8" valueTypeId="3314fa2d-0189-4c43-8608-3c80cfdd6e70"/>
+    <refType typeId="4fc229e5-65f2-4e7f-b42f-52aea84687fb" valueTypeId="87c275b9-a56b-467d-a9c4-a347df995418"/>
+    <selectionType typeId="23fd55a5-1994-4fb7-ba03-7599f2459c75" valueTypeId="34653933-7377-4cd7-931e-88d250d60588"/>
+    <listType typeId="893f9df6-5945-4380-a816-1eb4f7ace75c" valueTypeId="93e408a0-9dd8-4b72-9e6d-c8164c9b1d10"/>
+    <managerType typeId="9061739f-b796-47fe-bba8-eabf5776e5dc" valueTypeId="b9ab0529-bbb4-44e6-89bc-a39b8cd51a49"/>
+  </producedTypes>
+  <name>МаршрутНаАптеку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Маршрут на аптеку</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.МаршрутНаАптеку.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.МестаЗаказов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="5f8baa73-0cde-484c-af9a-729ce7f700f0">
+    <name>АдресХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.АдресХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="80836cbf-6d3f-49e1-9834-11a10b6e5a82">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Маршрут</types>
+      <types>DocumentRef.ВводНачальныхОстатков</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="15e7e7cb-d00d-4d75-8b88-69c2a2a00639">
+    <name>НомерДокументаОснования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа основания</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>8</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="cd567c7b-c608-42a1-95f4-fd5e3eee468a">
+    <producedTypes>
+      <objectType typeId="efe36bbf-1609-4aaf-924f-d0009e29dc73" valueTypeId="2cb0346f-bda1-4271-a98c-921a6429471c"/>
+      <rowType typeId="776be57a-0ed7-461c-8a5d-3fa584427b5b" valueTypeId="b4f54ff9-1cff-47f4-85a0-6c57ae1fc627"/>
+    </producedTypes>
+    <name>Состав</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="f220d0d3-e1e6-4a13-abd8-ade70eaf7740">
+      <name>Заказ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>DocumentRef.Заказ</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8646228d-644a-4b95-b6ed-fed1e0b71a29">
+      <name>МестоЗаказа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Место заказа</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.НаклейкиМестЗаказа</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="0bc1ba26-c246-489b-a577-96c34f3f45aa">
+    <producedTypes>
+      <objectType typeId="cb41bd88-704b-4bd2-8c65-a47cc113d24b" valueTypeId="4bbee138-a8e4-4d3a-97f3-793bd21e9344"/>
+      <rowType typeId="35415827-7f8a-40c1-a9f6-bbeb847923c5" valueTypeId="0f55fab5-18f3-447c-b445-8c710d8f2310"/>
+    </producedTypes>
+    <name>КоробкиСборки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробки сборки</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="c95954f3-18b0-432a-9a26-d317820cd23a">
+      <name>Коробка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коробка</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>DocumentRef.Сборка</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

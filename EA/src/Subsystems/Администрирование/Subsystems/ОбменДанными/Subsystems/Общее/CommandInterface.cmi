@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.ИнформационныеБазы.StandardCommand.OpenList</commands>
+      <commands>Catalog.ОписателиТиповИнформационныхБаз.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СоответствиеИдентификаторовОбъектовИнформационныхБаз.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.Администрирование.Subsystem.ОбменДанными.Subsystem.ПравилаОбмена</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

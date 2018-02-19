@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7a7caf3-1d6b-463a-bdda-71fa616cf301">
+  <name>Обмен_РИБД_ПрефиксацияОбъектов_Справочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен РИБД префиксация объектов справочники</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>CatalogObject</types>
+  </source>
+  <event>OnSetNewCode</event>
+  <handler>CommonModule.ОбменАлгоритмыРИБД.Обмен_РИБД_ПрефиксацияОбъектов_ДокументыПриУстановкеНовогоНомера</handler>
+</mdclass:EventSubscription>

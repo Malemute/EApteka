@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e96a028-c3dc-4fe3-93bb-57863dc6ac64">
+  <producedTypes>
+    <refType typeId="1378f8b1-a73d-47ae-a346-787d37199bdf" valueTypeId="d9bf24ea-247d-4a89-b710-bcd7dab5171b"/>
+    <listType typeId="2e08e899-7723-4a23-9e13-81fe6c942539" valueTypeId="88970527-e388-47a1-b819-99daca62f912"/>
+    <managerType typeId="8bda07ed-7fee-42b6-a6b3-905f30b3ba86" valueTypeId="20f3b84e-c77a-4ed6-8cf5-39e114d51fa2"/>
+  </producedTypes>
+  <name>ВидыЛогов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды логов</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d70e9b22-9f5f-450f-9343-437170190d03">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="7ca7da26-3ed5-4d7f-acc3-2d16d29a4578">
+    <name>WEBСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>WEBСервис</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6a9c7d04-1123-468c-b353-5e2004482a2d">
+    <name>HTTPСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>HTTPСервис</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

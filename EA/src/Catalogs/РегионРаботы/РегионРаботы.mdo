@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="848448cc-abe0-40c6-a9d2-c3b6b4bae5d3">
+  <producedTypes>
+    <objectType typeId="f08b7faf-84d7-439b-b30c-38820c440096" valueTypeId="7237f710-c697-4b0d-9372-ee10e5514e86"/>
+    <refType typeId="a59abc7a-41c6-4a9e-8f4b-41ff3c06c4ad" valueTypeId="2f0fed07-9a27-45a1-8f26-6fc1b30ca608"/>
+    <selectionType typeId="0c25732e-f461-4e89-9ae6-92e5962491f7" valueTypeId="b36d5ede-658e-456a-ae4f-163fb4447439"/>
+    <listType typeId="d550f5e4-1a41-41af-8cf9-8b7a7d454966" valueTypeId="d8114f02-a1e2-4011-99fb-14e9bf8622e6"/>
+    <managerType typeId="05a7091c-cf08-47f4-b2a3-540fbc8bcd23" valueTypeId="3189366f-1a14-425f-925d-432ab2503d1e"/>
+  </producedTypes>
+  <name>РегионРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регион работы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РегионРаботы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.РегионРаботы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="8478c099-8ac9-4e1b-ac8e-47a8a8d492b8">
+      <name>МО</name>
+      <description>МО</description>
+      <code xsi:type="core:NumberValue">
+        <value>5</value>
+      </code>
+    </items>
+    <items id="210ad448-9a4d-4c29-b9e9-57a8e534c9f1">
+      <name>Москва</name>
+      <description>Москва</description>
+      <code xsi:type="core:NumberValue">
+        <value>1</value>
+      </code>
+    </items>
+    <items id="4311c0f3-c740-4dbf-b53b-0b03ef4b8b0f">
+      <name>СПб</name>
+      <description>СПб</description>
+      <code xsi:type="core:NumberValue">
+        <value>2</value>
+      </code>
+    </items>
+    <items id="0bb75545-1456-436c-9a60-77fcff47706b">
+      <name>Тверь</name>
+      <description>Тверь</description>
+      <code xsi:type="core:NumberValue">
+        <value>3</value>
+      </code>
+    </items>
+    <items id="d85d94b3-faa8-4ec6-b30b-191cd74236e0">
+      <name>Ярославль</name>
+      <description>Ярославль</description>
+      <code xsi:type="core:NumberValue">
+        <value>4</value>
+      </code>
+    </items>
+  </predefined>
+  <predefinedDataUpdate>DontAutoUpdate</predefinedDataUpdate>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

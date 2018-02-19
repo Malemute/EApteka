@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25d741d9-5295-4cf3-a5da-ed646d3604cf">
+  <producedTypes>
+    <objectType typeId="003208c4-5a3b-4471-8fb2-2d947fba5c1b" valueTypeId="892e967b-f6e5-403e-9079-345c51ca6443"/>
+    <refType typeId="c0db98ac-b748-453c-900d-38e5280d6f97" valueTypeId="5b61f681-fb67-4caa-96e8-3f4ad437f8eb"/>
+    <selectionType typeId="02add549-ac6c-4dfa-8010-63bbdc076193" valueTypeId="93d3cafe-10e0-4394-a26c-f927c3fece25"/>
+    <listType typeId="535da654-4c94-4925-9dba-0058ec1eb4c5" valueTypeId="3f532f3b-8f3a-47c2-8947-1855bb68b480"/>
+    <managerType typeId="c9844eba-1dcd-4d21-bdcc-053872d61924" valueTypeId="15c0de2b-5440-4b2c-ab95-522b39007016"/>
+  </producedTypes>
+  <name>Логи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Логи</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Логи.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Логи.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Логи.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="cd686794-f39e-4d02-9590-82c67baab8be">
+    <name>БазаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>База данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.АдресХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c8e4fd44-efcd-458e-9f7f-c9644d6e3c8b">
+    <name>ВидЛога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид лога</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыЛогов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="13dbf36b-412e-4498-a824-97430a60483c">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="298ea39a-b671-4524-8798-a654911d0d6e">
+    <name>ДатаЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата завершения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d36686c1-9dff-4f69-8799-06e3eb4444d5">
+    <name>РезультатВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат выполнения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидРезультатаВыполнения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="93620762-699e-494a-9507-82e100b063b5">
+    <name>ВходящиеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входящие данные</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="22162f88-b513-4184-b82c-9a15337eaa40">
+    <name>РезультатВыполненияПодробно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат выполнения подробно</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="5ff6aa73-ff1f-458f-b5b2-00d77f151d1a">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

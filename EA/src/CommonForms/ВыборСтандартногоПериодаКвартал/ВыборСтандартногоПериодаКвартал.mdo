@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="926211b4-9a20-4831-9045-2e8897debd2b">
+  <name>ВыборСтандартногоПериодаКвартал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выбор стандартного периода квартал</value>
+  </synonym>
+  <comment></comment>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <usePurposes>PersonalComputer</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:CommonForm>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36044efb-7ffd-48f6-823a-1cf0133a0130">
+  <name>Инвентаризация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инвентаризация</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.Инвентаризация</content>
+  <content>DataProcessor.Инвентаризация</content>
+  <content>InformationRegister.Инвентаризация_Сканирование</content>
+  <content>CommonCommand.РучнаяИнвентаризация</content>
+  <content>CommandGroup.Инвентаризация</content>
+  <content>Report.Инвентаризация</content>
+</mdclass:Subsystem>

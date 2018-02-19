@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f01b2755-51ae-4b6a-9b6b-669ea9ba2fc6">
+  <producedTypes>
+    <refType typeId="275f5921-6157-4972-ae1f-13deb678410e" valueTypeId="9f5557f2-b023-4783-8edc-00e17cb5484f"/>
+    <listType typeId="e32451ae-49b1-408a-b037-908cef04f197" valueTypeId="1b837374-cf2a-4619-9639-3918d6a72d8e"/>
+    <managerType typeId="be7da1b8-e60d-454a-8b8d-ef9386228cfb" valueTypeId="1ec40b63-7710-431e-8154-20005a5eaae3"/>
+  </producedTypes>
+  <name>ВидыИмпортируемыхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды импортируемых данных</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a8c5ebc7-40a8-4bbf-a7c6-f6c95b9bc4a4">
+    <name>СправочникТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник товаров</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="55b9ca51-cf90-46e7-ad9b-992d579e29c9">
+    <name>Остатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="21dd2400-16be-4fe6-af1e-cebe86e6de03">
+    <name>Закупки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закупки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e40d00e7-bebc-4de4-84d8-c1d6cbe68ff3">
+    <name>Продажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажи</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

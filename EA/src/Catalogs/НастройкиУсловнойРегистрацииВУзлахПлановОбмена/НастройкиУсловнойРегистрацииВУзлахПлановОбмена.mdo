@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34c777a5-217f-4e17-97f2-e4e1816f3484">
+  <producedTypes>
+    <objectType typeId="c489d511-4cd2-401c-b88d-bc14331659bb" valueTypeId="a03dc09e-8b98-4f2e-8e0d-de854de00f64"/>
+    <refType typeId="be980e70-51ac-42f9-b276-1ad61c1d7470" valueTypeId="96243bad-01a9-4111-bde8-1650baf9cc44"/>
+    <selectionType typeId="1e840aa6-d3fb-483c-8b55-bf2fad1993ef" valueTypeId="2128a299-1737-4bb4-935f-67e20306869a"/>
+    <listType typeId="52e3a788-223a-4478-bab2-a2fa845da00f" valueTypeId="f3af14d0-654e-468b-8ab2-4da2d602b9b3"/>
+    <managerType typeId="df1e962e-6383-48f1-9f60-8e05dfbb1cd8" valueTypeId="7db45c53-b05a-411a-aef4-62ebc2a91ee0"/>
+  </producedTypes>
+  <name>НастройкиУсловнойРегистрацииВУзлахПлановОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки условной регистрации в узлах планов обмена</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиУсловнойРегистрацииВУзлахПлановОбмена.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Настройка условной регистрации</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Настройка условной регистрации в узлах планов обмена</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Настройки условной регистрации</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Настройки условной регистрации в узлах планов обмена</value>
+  </extendedListPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НастройкиУсловнойРегистрацииВУзлахПлановОбмена.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="e8cc96be-a2fb-4b4c-8701-952e97a0404b">
+    <name>НастройкаАктивна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка активна</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62e02279-e9ff-482c-81d0-caa965c1cca4">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="4c2e657d-b8de-473a-be8a-41ae779815ad">
+    <producedTypes>
+      <objectType typeId="7cc4c67d-cdb0-45d0-8f53-f6c65a129a1a" valueTypeId="9ca93d58-549f-40a3-ba33-2c2b1603f0da"/>
+      <rowType typeId="b4e1bf00-a4c4-4a81-8658-41f1c8819260" valueTypeId="5c6f8472-5f51-4fa1-b1e5-ff4d1c128497"/>
+    </producedTypes>
+    <name>ВидыОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды объектов</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="998809a4-5573-4c64-b594-b195878f28d8">
+      <name>ВидОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид объекта</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ВидыОбъектовМ</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="78112489-068f-48f5-b007-f75833408cba">
+      <name>Регистрировать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистрировать</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8c7ce792-ab98-4175-b969-cc469ea1b234">
+      <name>ВсеБезУсловий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Все, без условий</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="3f7ae8c2-4810-4fdb-b3a8-491c88b07d8a">
+    <producedTypes>
+      <objectType typeId="8e9089ab-d397-43e1-b8c8-5267a75d0d6e" valueTypeId="8966bb8a-c8d6-44fb-9014-563eb883d2b1"/>
+      <rowType typeId="5f0c5017-d525-4847-9ca9-e31b7aa4db25" valueTypeId="bad2d026-7014-447a-97d1-a7916f65dfe0"/>
+    </producedTypes>
+    <name>УзлыПлановОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узлы планов обмена</value>
+    </synonym>
+    <comment></comment>
+    <fillChecking>ShowError</fillChecking>
+    <attributes uuid="8c4bf143-21f5-457e-89d2-8044f93c1919">
+      <name>Узел</name>
+      <synonym>
+        <key>ru</key>
+        <value>Узел</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ExchangePlanRef</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5039c325-54c1-4d4c-96dc-d8e0a86161c3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

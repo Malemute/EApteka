@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="004ad0bd-08e3-4479-80d3-6d32eeb36a22">
+  <producedTypes>
+    <objectType typeId="11f82d2c-4f8b-45f0-8e62-dbda5a722e48" valueTypeId="3ef548b5-3090-4bc3-9a38-3d2817ebacd2"/>
+    <managerType typeId="d8970b02-c41f-4e04-9ac4-d0fa32fca0e8" valueTypeId="cda3ab0d-5416-4167-a510-99a77740de09"/>
+  </producedTypes>
+  <name>ОрдернаяПриемка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приемка накладных и перемещений (Ордерная приемка)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОрдернаяПриемка.Form.Форма</defaultForm>
+  <forms uuid="96fc191d-56c4-4671-bfb8-d4a0c3029e04">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5ded498c-b391-46e5-93c4-103b96f3b1aa">
+    <name>ФормаЗаполненияСерииИСрокаГодности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнения серии и срока годности</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

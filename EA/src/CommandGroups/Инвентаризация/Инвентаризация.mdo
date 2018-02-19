@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommandGroup xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5942326-9129-4170-b87f-7e12945fd544">
+  <name>Инвентаризация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инвентаризация</value>
+  </synonym>
+  <comment></comment>
+  <representation>Auto</representation>
+</mdclass:CommandGroup>

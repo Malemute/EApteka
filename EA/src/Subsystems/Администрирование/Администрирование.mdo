@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f18ac35-ca31-4875-b3a8-23ca18b705cf">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ПодключаемоеОборудование</content>
+  <subsystems>Обмен_77</subsystems>
+  <subsystems>НастройкиПрограммы</subsystems>
+  <subsystems>ОбменРИБД</subsystems>
+  <subsystems>ОбменДанными</subsystems>
+</mdclass:Subsystem>

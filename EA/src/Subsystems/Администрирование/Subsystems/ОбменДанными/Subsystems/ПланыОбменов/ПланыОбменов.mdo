@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8712cbcf-771a-42dd-be14-740ca3466ed4">
+  <name>ПланыОбменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планы обменов</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>ExchangePlan.ОбменСкладЦБ</content>
+  <content>ExchangePlan.ПланОбменаОбновлениями</content>
+  <content>ExchangePlan.ПланОбменаДанными</content>
+  <parentSubsystem>Subsystem.Администрирование.Subsystem.ОбменДанными</parentSubsystem>
+</mdclass:Subsystem>

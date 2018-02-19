@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3654019-94f5-4152-b7d0-07cba298ba6a">
+  <producedTypes>
+    <selectionType typeId="02ba7509-cdc1-483f-b335-7f6ed67c4755" valueTypeId="362e9c34-a876-415a-808b-bafb1a26cf0c"/>
+    <listType typeId="58e08431-4a56-4ea2-a4e9-905674ac1119" valueTypeId="65decc62-5a14-4222-8ddc-6243aa948cfa"/>
+    <managerType typeId="cea3acd7-529d-45dd-964f-226cd2e69a5d" valueTypeId="6a26b9fb-e22b-4c19-b58e-44a34effc330"/>
+    <recordSetType typeId="e66c2269-a5e5-4f32-a8a3-77f9f8c0bc4b" valueTypeId="43b4bda7-3861-45aa-8cea-c057659375ce"/>
+    <recordKeyType typeId="5985dd83-f0bf-4ba6-ae99-4afbc1376e3c" valueTypeId="bdbefd75-f1da-42c9-b9ee-55ea2d52d303"/>
+    <recordType typeId="223b46ef-9c01-4845-ba24-bfece5a5031c" valueTypeId="3c0a4e30-eb9b-48b0-b9ef-060a69234b8f"/>
+    <recordManagerType typeId="6246beec-4455-4f3b-9423-ad91c80f6724" valueTypeId="0efb624a-1c29-40e7-8f3b-61da3f19e3a0"/>
+  </producedTypes>
+  <name>ПриемкаСамовывозов_РаскаладкаЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приемка самовывозов раскаладка заказов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="52d24bd6-a57c-4c09-b60c-53bb65437b3c">
+    <name>ЗСЯ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗСЯ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестоЗСЯ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5a98f5ef-dfc4-4f46-aef1-5e4a3ed17c7c">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="aed2fe50-37b1-47cf-9d54-925f5b203f20">
+    <name>Маршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрут</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.МаршрутНаАптеку</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f1dfbd49-73a4-4c0d-9621-a8a8a2705fa9">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Заказ</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ba12c63a-caa2-4daa-8a22-25da218c138a">
+    <name>МестоЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место заказа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НаклейкиМестЗаказа</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

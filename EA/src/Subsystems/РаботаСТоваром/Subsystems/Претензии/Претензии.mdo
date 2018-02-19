@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c418df13-57b5-49eb-8e9d-87af467346f1">
+  <name>Претензии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Претензии</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.Претензия</content>
+  <content>Document.Перемещение</content>
+  <content>Document.СписаниеПретензии</content>
+  <content>Document.Расходная</content>
+  <content>DataProcessor.ОбработкаПретензий</content>
+  <parentSubsystem>Subsystem.РаботаСТоваром</parentSubsystem>
+</mdclass:Subsystem>

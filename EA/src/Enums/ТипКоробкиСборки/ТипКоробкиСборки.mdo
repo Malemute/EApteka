@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66bcc742-934a-469c-bb48-d72e4d0aa952">
+  <producedTypes>
+    <refType typeId="a3940261-c1a6-4c16-85bf-71b9a9760eb6" valueTypeId="62521339-f970-4353-9e0e-d3c0b1ea879d"/>
+    <listType typeId="cab94ae8-17d9-4ad4-b5d6-92f094da00f3" valueTypeId="1c8f46f7-0344-436f-b775-45fdcc0c5408"/>
+    <managerType typeId="27953f21-a756-4917-a632-b7ea4eab9904" valueTypeId="a8028e68-f818-4b6a-942f-bdf8fa36f4cb"/>
+  </producedTypes>
+  <name>ТипКоробкиСборки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип коробки сборки</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ec86c07d-f006-4a28-bd26-3118f06b6189">
+    <name>Простая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Простая</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f06afe6d-28f7-4e1c-a2cc-eec98ec85196">
+    <name>ПодЗаказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Под заказ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a639d80f-e5be-4a5b-a197-6c86eac01301">
+    <name>НеНайдено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не найдено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="7746bf77-fd6e-4881-aba2-c07bc003ad5f">
+    <name>Ошибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="915ceaff-1285-4b31-be39-281d8928662d">
+    <name>Резерв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резерв</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="af06a7f0-9118-4d13-bac5-add771c5f56c">
+    <name>Робот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Робот</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

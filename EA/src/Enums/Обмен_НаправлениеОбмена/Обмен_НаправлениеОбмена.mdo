@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1762a083-b91f-48e6-83c0-144c4846410f">
+  <producedTypes>
+    <refType typeId="433f7c6b-6782-4973-82f7-5b0f0c31543c" valueTypeId="70a2c053-af42-4f26-944d-b50bd819151c"/>
+    <listType typeId="6b28bea8-8de5-40bc-9b5a-170d74afae4a" valueTypeId="665a9456-d3e7-4f93-8e24-4f3b7e21ed94"/>
+    <managerType typeId="093af30f-dff1-4f0d-b951-42140ec36ba3" valueTypeId="377425da-4d96-479e-82ca-721360b30317"/>
+  </producedTypes>
+  <name>Обмен_НаправлениеОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен направление обмена</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="591684aa-bab1-412c-a475-ef41ba73847a">
+    <name>ВПодчиненныйУзел</name>
+    <synonym>
+      <key>ru</key>
+      <value>В подчиненный узел</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e779f8a8-37b4-4ca3-9a20-4d7fc742b05f">
+    <name>ВЦентральныйУзел</name>
+    <synonym>
+      <key>ru</key>
+      <value>В центральный узел</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2d2b4e1e-c95d-4399-8a08-26fe3674a6f9">
+    <name>ПоАдресуХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>По адресу хранения</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

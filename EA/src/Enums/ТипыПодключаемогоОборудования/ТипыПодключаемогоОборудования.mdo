@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6919888-090e-444a-b674-039f79814fe6">
+  <producedTypes>
+    <refType typeId="4fdc847d-32ea-4204-8aff-0384bf06e4b7" valueTypeId="b3a4b002-99b9-4f18-a2cd-1ad5de825c2f"/>
+    <listType typeId="d17fa3f4-6afd-456f-86f9-7ff4f7b71232" valueTypeId="ca92f19c-1f30-489e-b7c6-3681964097c9"/>
+    <managerType typeId="166f01e9-e484-4b05-a14d-ddd85221c59b" valueTypeId="12e5dcfc-69df-4bc2-a7fc-2540cd35d154"/>
+  </producedTypes>
+  <name>ТипыПодключаемогоОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы подключаемого оборудования</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="faf25fcb-0835-4e6c-baed-69603a753312">
+    <name>ККТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ККТ с передачей данных</value>
+    </synonym>
+    <comment>KKT</comment>
+  </enumValues>
+  <enumValues uuid="a4d0aa55-a17a-49b2-b8de-217bf1500a91">
+    <name>СканерШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканеры штрихкода</value>
+    </synonym>
+    <comment>Scanner</comment>
+  </enumValues>
+  <enumValues uuid="4b71fa9d-359a-448d-9e4f-299c6757a839">
+    <name>ДисплейПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисплеи покупателя</value>
+    </synonym>
+    <comment>LineDisplay</comment>
+  </enumValues>
+  <enumValues uuid="4d438f96-d7e4-49b1-be10-270b5b4dc5ea">
+    <name>ЭквайринговыйТерминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эквайринговые терминалы</value>
+    </synonym>
+    <comment>AcquiringTerminal</comment>
+  </enumValues>
+  <enumValues uuid="e3f0f351-c427-4f58-9978-919c68f0cbaf">
+    <name>ФискальныйРегистратор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фискальные регистраторы</value>
+    </synonym>
+    <comment>FiscalPrinter</comment>
+  </enumValues>
+  <enumValues uuid="99a50f34-c996-4ea1-982e-7e25b2b11629">
+    <name>ККМОфлайн</name>
+    <synonym>
+      <key>ru</key>
+      <value>Офлайн оборудование</value>
+    </synonym>
+    <comment>ECROffline</comment>
+  </enumValues>
+  <enumValues uuid="84507e6c-8d81-4499-a6b8-57ebb963db3d">
+    <name>ПринтерЧеков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принтеры чеков</value>
+    </synonym>
+    <comment>ReceiptPrinter</comment>
+  </enumValues>
+</mdclass:Enum>

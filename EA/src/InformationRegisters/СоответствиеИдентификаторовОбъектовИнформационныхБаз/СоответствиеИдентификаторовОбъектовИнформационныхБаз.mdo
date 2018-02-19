@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a28c5c26-5661-4f83-adc2-a01832d6153f">
+  <producedTypes>
+    <selectionType typeId="c1824ec7-d470-49fa-b05e-6298fee0043d" valueTypeId="98bce411-83a4-410c-90d1-2263ff149bd6"/>
+    <listType typeId="0b5bba02-0bed-4a4a-a5bf-e4f302b2be7f" valueTypeId="07ad3736-7e9f-452e-a0ba-36bbad3ef829"/>
+    <managerType typeId="af8ee9c9-c774-426c-92c7-b529fad557db" valueTypeId="ae0a6ed2-4939-43fa-9dcf-234bf991d30c"/>
+    <recordSetType typeId="53b0fab9-bf51-41f7-831b-8e4d28015149" valueTypeId="d1077a5b-51b0-4c2f-88e1-04c181b929f7"/>
+    <recordKeyType typeId="4ce5e4a1-6d9a-421f-a40d-7734c903f5da" valueTypeId="909178e9-05bd-43a7-a441-1e2dec31a995"/>
+    <recordType typeId="21bc98b3-4a5a-4c3c-9262-6db4aac93e39" valueTypeId="d313910d-d878-4e65-8029-ca1686f0802e"/>
+    <recordManagerType typeId="4a584f57-edc6-4cd6-8d19-9e33c7198bed" valueTypeId="6f2b5b96-97ec-4df2-91dd-06a80af73b49"/>
+  </producedTypes>
+  <name>СоответствиеИдентификаторовОбъектовИнформационныхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие идентификаторов объектов информационных баз</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СоответствиеИдентификаторовОбъектовИнформационныхБаз.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Служит для хранения соответствия индетификаторов объектов информационных баз и ссылок в текущей базе.
+Используется в тех механихмах обмена, в которых не используется идентификация объектов по внутреннему идентификатору (УИД).</value>
+  </explanation>
+  <resources uuid="858d1d24-364b-4baa-9fa9-b1d12c41be41">
+    <name>СсылкаТекущейБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка текущей базы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="7392513d-943f-4f36-b761-3ac911252db2">
+    <name>ИнформационнаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информационная база</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ИнформационныеБазы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ccc38553-52bb-4038-9601-42294bb71f5e">
+    <name>ОписательТипа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описатель типа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ОписателиТиповИнформационныхБаз</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.СоответствиеИдентификаторовОбъектовИнформационныхБаз.Dimension.ИнформационнаяБаза</field>
+    </choiceParameterLinks>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ff123626-1665-4d98-96bb-31b727500bbe">
+    <name>УникальныйИдентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный идентификатор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="32323b85-ccf6-44d9-9fbe-65f476b2386a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

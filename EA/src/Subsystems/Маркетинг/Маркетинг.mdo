@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="911f5471-758e-4d50-b2bf-b226184cf86e">
+  <name>Маркетинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Маркетинг</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ДержателиКонтракта</content>
+  <content>Catalog.Контракты</content>
+  <content>InformationRegister.НоменклатураКонтракта</content>
+  <content>InformationRegister.УчетныеЦеныНоменклатурыКонтрактов</content>
+  <content>Document.УстановкаУчетныхЦенКонтрактов</content>
+  <content>Enum.ТипыКонтрактов</content>
+  <content>Catalog.ШкалыПлановКонтрактов</content>
+  <content>InformationRegister.ПоставщикиКонтрактов</content>
+  <content>CommonTemplate.ОтборНоменклатуры</content>
+  <content>CommonModule.КомпоновкаДанныхКлиентСервер</content>
+  <content>DataProcessor.ЗагрузкаДанныхИзВнешнихФайлов</content>
+  <content>SessionParameter.БуферОбмена</content>
+  <content>CommonPicture.КопированиеСтрок</content>
+  <content>CommonPicture.Информация32</content>
+  <content>CommonPicture.ВставкаСтрок</content>
+  <content>Catalog.НоменклатураКонтрагентов</content>
+  <content>InformationRegister.СоответствиеНоменклатурыКонтрагентов</content>
+  <content>Catalog.ШаблоныФайловОбмена</content>
+  <content>Enum.ФорматыФайловОбмена</content>
+  <content>Enum.ВидыИмпортируемыхПолей</content>
+  <content>InformationRegister.ОстаткиНоменклатурыКонтрагентов</content>
+  <content>AccumulationRegister.ПродажиКонтрагентов</content>
+  <content>AccumulationRegister.ЗакупкиКонтрагентов</content>
+  <content>Document.ИмпортДанныхКонтрагентов</content>
+  <content>Enum.ВидыИмпортируемыхДанных</content>
+  <content>InformationRegister.ШаблоныФайловОбменаКонтрагентов</content>
+  <content>CommonForm.ИмпортДанныхКонтрагента</content>
+  <content>CommonModule.ОбменДаннымиСКонтрагентамиКлиент</content>
+  <content>CommonModule.ОбменДаннымиСКонтрагентами</content>
+  <content>CommonModule.ОбменДаннымиСКонтрагентамиВызовСервера</content>
+  <content>CommonModule.ОбменДаннымиСКонтрагентамиКлиентСервер</content>
+  <content>Catalog.ПоставщикиКонтрагентов</content>
+  <content>InformationRegister.СоответствиеПоставщиковКонтрагентов</content>
+  <content>Role.Маркетинг</content>
+</mdclass:Subsystem>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdc7ac5c-7980-4882-b2f5-443401fcafb6">
+  <producedTypes>
+    <objectType typeId="346e6a82-dbbe-4c4d-8bc5-d161ddaf074b" valueTypeId="2e042999-945c-4767-a8c1-cd4ed3c1d672"/>
+    <refType typeId="3ed50e7a-ee88-4f1d-a761-8722f10bbcb1" valueTypeId="99f736ed-a7c2-4470-8003-b9c1105749ee"/>
+    <selectionType typeId="d9c3e094-5b2a-4e72-a1f5-a31b2e1c26d0" valueTypeId="09f09647-fac2-48f9-b955-b4651802380a"/>
+    <listType typeId="bcaeea07-7bd0-44df-b399-bfdb7cb64bc5" valueTypeId="522f1a8c-89ac-47f9-92e9-0bc7d6980869"/>
+    <managerType typeId="5eb8cd14-3e7e-4253-9a67-448b2415983e" valueTypeId="67dea69c-eb1a-41c9-911c-65a2c7d78ee6"/>
+  </producedTypes>
+  <name>ТипЦены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип цены</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТипЦены.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТипЦены.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="81f8e018-0a1c-484e-b938-bf22d38d3e24">
+      <name>ЕА</name>
+      <description>EAPTEKA.RU</description>
+      <code xsi:type="core:NumberValue">
+        <value>2</value>
+      </code>
+    </items>
+    <items id="d7fe225b-1510-43b4-9dfc-f3073d786e78">
+      <name>ПИ</name>
+      <description>PILULI.RU</description>
+      <code xsi:type="core:NumberValue">
+        <value>3</value>
+      </code>
+    </items>
+    <items id="67cac824-8a84-4c76-8055-1fd7beef91dc">
+      <name>СМ</name>
+      <description>SMED.RU</description>
+      <code xsi:type="core:NumberValue">
+        <value>1</value>
+      </code>
+    </items>
+    <items id="128a43b6-2f72-4dfd-8074-9f7e4da658fa">
+      <name>LX</name>
+      <description>Аптека XL</description>
+      <code xsi:type="core:NumberValue">
+        <value>6</value>
+      </code>
+    </items>
+    <items id="60d1237a-dd35-4676-8c70-e8542c66e9e2">
+      <name>НА</name>
+      <description>Аптека еАптека</description>
+      <code xsi:type="core:NumberValue">
+        <value>5</value>
+      </code>
+    </items>
+    <items id="fe513e5a-3301-446d-b746-e7424fb7dd8f">
+      <name>САП</name>
+      <description>САП</description>
+      <code xsi:type="core:NumberValue">
+        <value>4</value>
+      </code>
+    </items>
+  </predefined>
+  <predefinedDataUpdate>DontAutoUpdate</predefinedDataUpdate>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

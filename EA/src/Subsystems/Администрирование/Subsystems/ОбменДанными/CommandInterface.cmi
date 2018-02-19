@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <subsystemsOrder>
+    <subsystems>Subsystem.Администрирование.Subsystem.ОбменДанными.Subsystem.Общее</subsystems>
+    <subsystems>Subsystem.Администрирование.Subsystem.ОбменДанными.Subsystem.ПланыОбменов</subsystems>
+    <subsystems>Subsystem.Администрирование.Subsystem.ОбменДанными.Subsystem.ПравилаОбмена</subsystems>
+    <subsystems>Subsystem.Администрирование.Subsystem.ОбменДанными.Subsystem.СценарииОбмена</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

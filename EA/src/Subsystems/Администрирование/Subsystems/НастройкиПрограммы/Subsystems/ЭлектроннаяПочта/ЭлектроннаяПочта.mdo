@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87f34918-8f51-48ab-a2b1-57e65195c95b">
+  <name>ЭлектроннаяПочта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Электронная почта</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.РасписаниеРассылокПоЭлектроннойПочте</content>
+  <content>InformationRegister.ЛогРассылкиПоЭлектроннойПочте</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <content>Catalog.ШаблоныРассылкиПоЭлектроннойПочте</content>
+  <parentSubsystem>Subsystem.Администрирование.Subsystem.НастройкиПрограммы</parentSubsystem>
+</mdclass:Subsystem>

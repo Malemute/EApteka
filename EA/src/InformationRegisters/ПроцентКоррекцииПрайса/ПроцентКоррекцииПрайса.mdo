@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06210e9c-0101-498e-9418-a54e7dd09e04">
+  <producedTypes>
+    <selectionType typeId="6566f2ac-0529-408c-bece-0cd5397e6db5" valueTypeId="5b57632e-5375-4240-a13e-fcf1cef33ee3"/>
+    <listType typeId="520e385e-a702-4288-bb56-e3e439c6dc5e" valueTypeId="a264985a-5280-4b3b-8798-aea68be5f572"/>
+    <managerType typeId="7cf47842-f3dc-4444-a141-f4ec99e43be5" valueTypeId="8fbc659a-d895-405a-9944-d13b81bfd345"/>
+    <recordSetType typeId="35f68196-340a-4f84-a401-687388f6027b" valueTypeId="02116724-94e6-40df-84ae-14c9b3433c52"/>
+    <recordKeyType typeId="667f50b1-e17b-4b3c-a611-9f9ab40b996d" valueTypeId="ab8143a9-85d5-488f-bba2-041b9d0bd487"/>
+    <recordType typeId="5643c6a8-e8d2-48c6-9b45-e2ab940f0b63" valueTypeId="ff3c073a-4a64-4177-b92b-847885986b17"/>
+    <recordManagerType typeId="1b7366f8-5aad-4ae8-8a52-6b5c74107034" valueTypeId="ca484c9e-b880-42c0-802f-3d283e48adb6"/>
+  </producedTypes>
+  <name>ПроцентКоррекцииПрайса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процент коррекции прайса</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="85e7fd44-0648-4121-bb09-8da1b289b551">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d5b19f7c-5c57-4a1c-8de9-92532f0c9308">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ПроцентКоррекцииПрайса.Dimension.Поставщик</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d82984af-a03b-47e6-b4d1-3a10520676d1">
+    <name>МаксЦена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макс цена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="afbf5c28-e98c-40f3-bc12-a4180bf5c08f">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34aa2b32-fb2a-4c42-a065-650677391d54">
+  <producedTypes>
+    <selectionType typeId="b02e4c11-e726-488d-bf33-b5b8d3eb93c4" valueTypeId="72cd0069-3c8b-42dd-9ac8-6079e7d68ad2"/>
+    <listType typeId="835ea71c-76b1-4aeb-b71e-6a21882300d5" valueTypeId="463a2f2e-2363-4ecc-8b1c-bfe0ac3abe3f"/>
+    <managerType typeId="f27d0974-1773-48ce-b094-09bbd5451692" valueTypeId="7d20c6c4-ec22-46f3-a8d8-c4ab36df192c"/>
+    <recordSetType typeId="3de2a3f0-bfa8-46b3-b131-4029ba66d4f7" valueTypeId="663d00f7-33c9-4e64-852e-a6d3bf6360a4"/>
+    <recordKeyType typeId="3896d964-4439-403b-a0b2-32a3c4b9dba3" valueTypeId="1df448d2-d93c-4acc-ae53-9fd2444069b0"/>
+    <recordType typeId="a406cad6-c553-4ec7-8bd8-b6a9b92f12b6" valueTypeId="14064dc3-4e6d-4a33-99f8-2e6e846f9f44"/>
+    <recordManagerType typeId="5f51990a-fdf0-4d1b-902e-558c862c702b" valueTypeId="a4e88f64-46ca-48d7-b5a6-072ba5e034f0"/>
+  </producedTypes>
+  <name>ЛогЗагрузкиПрайсовПоставщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лог загрузки прайсов поставщиков</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="27a8502e-56c1-4769-b64f-2f9cad1b23e9">
+    <name>Загружен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ae86dfda-70f4-4267-9eee-22df7a941ea4">
+    <name>ДатаОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата операции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0e98bedb-0fde-421f-a7d3-abbb6f53bce3">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ce71703c-b2d1-42b1-95c3-e7d4e8c87b53">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ЛогЗагрузкиПрайсовПоставщиков.Dimension.Поставщик</field>
+    </choiceParameterLinks>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="10b3774e-7a1c-4803-a118-0ea42bd17a2b">
+    <name>Файл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21ef1d5b-ef87-41f6-8e10-75c03464a135">
+  <producedTypes>
+    <managerType typeId="d261780a-f52b-4970-9b7d-5edaa5ae21a9" valueTypeId="a7f365ec-6527-4519-8c6d-7a48f4cf72e5"/>
+    <valueManagerType typeId="bffe7057-fa11-4ab1-9426-9d9ef07c47d5" valueTypeId="ae432865-01f1-4574-a97b-9b99c7478117"/>
+  </producedTypes>
+  <name>АдресХраненияТекущейБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адрес хранения текущей базы</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.АдресХранения</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

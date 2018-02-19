@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86c81760-7828-46bf-ae95-72523690363f">
+  <producedTypes>
+    <refType typeId="74cb16a4-55ff-41eb-9dbf-9f53c9095920" valueTypeId="0bd60363-3e8b-4e95-b161-ade99d49d686"/>
+    <listType typeId="4596c82f-d32e-497b-b2c2-7a85fa87dd72" valueTypeId="b84d81f0-3fbe-4833-937c-3dba43f5a99a"/>
+    <managerType typeId="5b32702f-4300-4179-bf3d-265565392c11" valueTypeId="e590be76-a39a-4b75-acf6-959672560676"/>
+  </producedTypes>
+  <name>ТипыКонтрактов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы контрактов</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="95a4bda4-cc98-4011-a2cd-9b375a361b92">
+    <name>ПоЗакупкамСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>По закупкам (руб.)</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="12bee35d-0bcd-4872-8d9e-16774c0270ab">
+    <name>ПоЗакупкамКоличество</name>
+    <synonym>
+      <key>ru</key>
+      <value>По закупкам (шт.)</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="186a8062-3a60-493e-869a-fda456a16969">
+    <name>ПоПродажамСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>По продажам (руб.)</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b028b34d-d4bd-4d30-beab-05922bbe0106">
+    <name>ПоПродажамКоличество</name>
+    <synonym>
+      <key>ru</key>
+      <value>По продажам (шт.)</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

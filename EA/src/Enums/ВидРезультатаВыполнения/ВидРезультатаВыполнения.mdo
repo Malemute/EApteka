@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7245d93-c2e7-4420-93b4-07ff59991a55">
+  <producedTypes>
+    <refType typeId="dceef550-79d9-4abe-8cab-02d67447a780" valueTypeId="8051d62c-5c03-41f7-a29e-d3b0bca3341e"/>
+    <listType typeId="6a9d4fef-ffba-4bba-a2de-46d3b859b251" valueTypeId="ea903310-5cc6-4d65-81a0-06dbfa26c301"/>
+    <managerType typeId="9ae852cc-547e-4e67-827a-abd26afc354e" valueTypeId="893aacf3-46da-4e00-835e-4bdc77d41839"/>
+  </producedTypes>
+  <name>ВидРезультатаВыполнения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид результата выполнения</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e663d794-d1f3-4d14-adfe-6c5f96a3375d">
+    <name>ЗавершеноСОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершено с ошибками</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d7f68af9-cef7-4e03-ae84-fa7290baba63">
+    <name>УспешноЗавершено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Успешно завершено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f31866ab-d6ac-4e9e-aae0-9936182887f3">
+    <name>НеЗавершено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не завершено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

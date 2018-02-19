@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd451599-46d0-4cb6-bf9a-417dd45ee0e5">
+  <producedTypes>
+    <selectionType typeId="15dbd04d-1cd4-40e7-a5d5-1b0f86252b07" valueTypeId="a25f753b-aa8d-434a-9842-f7f0ac48fed1"/>
+    <listType typeId="8476e40a-0bab-4905-8492-24d59eecc968" valueTypeId="e445a033-77a8-4c00-88b0-208812db1a08"/>
+    <managerType typeId="a90dac51-a449-4ca2-927f-57993e906141" valueTypeId="38f09858-6503-4ed3-9a59-99e7fbd27977"/>
+    <recordSetType typeId="ddcd4962-6d16-4e79-b76e-e4a849e3d406" valueTypeId="4b62b4a3-9919-46d3-8bbf-0c3a88101d98"/>
+    <recordKeyType typeId="654d95e3-537e-44e4-902c-cf1855666d8f" valueTypeId="74f2c88f-1591-44a6-9c9e-1c7aa339c086"/>
+    <recordType typeId="43ba2ca9-1265-42f6-abc1-0490c2d3cba5" valueTypeId="b9db901e-68b5-4a9e-891f-6e12e7d121ad"/>
+    <recordManagerType typeId="43b3a683-73f2-4965-9c55-a67a552571ce" valueTypeId="af7388b6-3a70-4744-8aeb-4f6778ee5dc9"/>
+  </producedTypes>
+  <name>t_rr_sklad</name>
+  <synonym>
+    <key>ru</key>
+    <value>CourierDS_t_rr_sklad</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="2fa0553f-1ecb-41cd-98e3-65d12abd4b32">
+    <name>ДатаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата загрузки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="c18f192b-474e-45b7-ae50-0977f431e2fd">
+    <name>id_rr</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id rr</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="33b7b521-911a-4ed9-8a6a-3abf4e87b51f">
+    <name>id_sklad</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id sklad</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>9</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="4c984553-e433-47c5-9600-317fd82d4dda">
+    <name>is_own</name>
+    <synonym>
+      <key>ru</key>
+      <value>Is own</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="517fe409-e592-40ef-96a5-fc0347e70f15">
+    <name>tc</name>
+    <synonym>
+      <key>ru</key>
+      <value>Tc</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="4c8ac71b-27eb-4e05-8809-3188b1da053c">
+    <name>code_asna</name>
+    <synonym>
+      <key>ru</key>
+      <value>Code asna</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="69492fe0-66e6-45c7-88e5-b167909226ef">
+    <name>isSite</name>
+    <synonym>
+      <key>ru</key>
+      <value>Is site</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="c8942310-0c9f-4a1b-bd0d-a43444f18220">
+    <name>isPharm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Is pharm</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="57ae3268-c9fb-4c6f-babb-2805fc9af9bd">
+    <name>isRobot</name>
+    <synonym>
+      <key>ru</key>
+      <value>Is robot</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="2ada771f-77fd-4526-8fe6-d20f9cd62772">
+    <name>phone</name>
+    <synonym>
+      <key>ru</key>
+      <value>Phone</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+  <dimensions uuid="6e4fb26e-ded2-46d6-93f4-fcacf09ec076">
+    <name>isVPharm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Is v pharm</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="18a2e8c9-abc3-4ac9-b667-5d83d94a12e7">
+    <name>vtc</name>
+    <synonym>
+      <key>ru</key>
+      <value>Vtc</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="996b1ec3-e8a1-441c-a38f-a2bc905d7d78">
+    <name>isWork</name>
+    <synonym>
+      <key>ru</key>
+      <value>Is work</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

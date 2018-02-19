@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49cc0262-66c6-4d72-97bf-eeef08afb8d2">
+  <name>КопированиеСтрок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Копирование строк</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>

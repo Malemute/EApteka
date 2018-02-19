@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b3c2005-d5c6-4892-9ca7-b17fb5dd6fed">
+  <producedTypes>
+    <selectionType typeId="3fc48aca-2304-46d5-bccc-96a99bb3c93f" valueTypeId="39b3a43f-fb06-4aa6-bda6-82e2c1bae15d"/>
+    <listType typeId="8e6ce86d-184c-4692-997a-d8363eb54fab" valueTypeId="404a8d0a-8ebc-4ed6-b894-5c148312d72d"/>
+    <managerType typeId="5d383a96-408c-438e-86a6-2492ae6a49dc" valueTypeId="6a351b1a-a9eb-4449-bc74-b30b8ce59c3b"/>
+    <recordSetType typeId="7f457e1a-229c-45fb-806f-6ed6d6d0465f" valueTypeId="f488af81-79e5-4f50-89c0-0bc506f370df"/>
+    <recordKeyType typeId="246d9ac3-841e-4eb6-aec1-d529f037d262" valueTypeId="8be81ae0-b761-4657-867b-e0bc793c568a"/>
+    <recordType typeId="53eec680-ef0d-43a4-a383-ad5f7670b468" valueTypeId="e60901d6-79ff-4a29-8de7-85f5228f0af9"/>
+    <recordManagerType typeId="b153e76b-a286-452e-86cc-6d0f2525b563" valueTypeId="c0366c2a-304d-4b48-8f87-f474732353af"/>
+  </producedTypes>
+  <name>НоменклатураКонтракта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура контракта</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НоменклатураКонтракта.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НоменклатураКонтракта.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="68b4112d-13c9-4b12-a691-f3a5bee76655">
+    <name>УчитыватьНаличие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать наличие</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4b08194a-3b9f-49b9-bcb2-9723d2be45f0">
+    <name>МинимальныйЗапас</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальный запас</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a46b00c4-75cb-40c8-af63-c18aa442a49b">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="abdee542-45d0-4613-945b-b420a13c457b">
+    <name>Контракт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контракты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ec434375-c9bd-439e-9a04-b403bef6ba9d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6c6511cc-fd3c-4885-bf55-b1c3dc3d25a7">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9a735416-f9e7-4c64-8216-7faf8e47e7c2">
+    <name>ЗаполнениеНоменклатурыПоОтбору</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнение номенклатуры по отбору</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f18330d-0037-46bd-9392-3fc94f617625">
+  <name>ДрайверАТОЛККТ54ФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Драйвер &quot;АТОЛ:ККТ с передачей данных в ОФД (54-ФЗ)&quot;</value>
+  </synonym>
+  <comment></comment>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56194443-f738-49bf-af7c-190a3bfe48b1">
+  <producedTypes>
+    <objectType typeId="f4938511-669e-4218-b6a4-4afbcf4204cf" valueTypeId="40a646e8-cc5e-42de-86a7-a8061210cfe1"/>
+    <managerType typeId="5c92c7c4-dd7e-4355-81c5-7c8c60c1e975" valueTypeId="c6471852-ad11-437f-9376-7c5f31fb31b7"/>
+  </producedTypes>
+  <name>Инвентаризация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Итог инвентаризации</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Инвентаризация.Form.Форма</defaultForm>
+  <tabularSections uuid="4a5dd472-6378-4d13-a303-ef003a2f0adb">
+    <producedTypes>
+      <objectType typeId="cecb4717-245d-4201-b1fb-be6d9352dc31" valueTypeId="90e24f27-71c1-40ec-8282-9070be237d37"/>
+      <rowType typeId="58eb657a-c306-43cf-bfef-2d7c7f87a1b9" valueTypeId="9b5b87af-9d2e-43fb-91d0-5188992aa0f7"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="2fca06a8-a9e0-41ff-8bb9-08f039174e18">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceForm>Catalog.Номенклатура.Form.ФормаВыбораСОграничениемПоСпискуНоменклатуры</choiceForm>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aa2af9b4-e494-432c-876f-fa174030625e">
+      <name>Факт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Факт</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="dccda7e6-6c3d-4c8c-9988-092ac7564c20">
+      <name>ПоБазе</name>
+      <synonym>
+        <key>ru</key>
+        <value>По базе</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="39687055-43b2-47a0-8163-a29868ec557c">
+      <name>ДобавленноВручную</name>
+      <synonym>
+        <key>ru</key>
+        <value>Добавленно вручную</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="a8d8444e-b734-4372-97e5-7104f1dda21f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

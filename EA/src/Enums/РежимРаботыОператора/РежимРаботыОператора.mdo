@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4993611-f23b-4854-b56d-b223039c5742">
+  <producedTypes>
+    <refType typeId="bfabe272-d093-4c96-b95a-8f9d9e5b2037" valueTypeId="ed42b388-be8d-42a9-868a-7c9eefb064a2"/>
+    <listType typeId="e2193e59-34de-4a94-b80f-efb1f5b7d196" valueTypeId="137db513-28cb-4a00-ba96-0ce2d009c0bc"/>
+    <managerType typeId="058d0b57-8dcd-4288-b2df-7478263f5aad" valueTypeId="1a1c4597-9f38-4705-b5eb-5660c9d071f2"/>
+  </producedTypes>
+  <name>РежимРаботыОператора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Режим работы оператора</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4cd15b67-e778-4777-a336-0347cee6c787">
+    <name>ВыборРежима</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор режима</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="5aca5d28-8e24-4d07-bc9e-67f5f91c0b5a">
+    <name>ЗаменаМестаХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замена места хранения</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fc18ef54-f2a0-4309-938e-ed8d3d27b103">
+    <name>ПриемкаИРаскладкаСамовывозов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приемка и раскладка самовывозов</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2d96233e-2a27-42b1-9fa5-bebd2d896ce2">
+    <name>СборкаСамовывозов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка самовывозов</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="bb917818-3526-49ad-ad84-54589f11b8d2">
+    <name>КомплектацияСамовывозов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комплектация самовывозов</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9bed07fe-ae07-4376-813b-959e955490dd">
+    <name>ИнформацияПоШтрихКоду</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация по штрих коду</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e3544af6-961b-472d-8fec-320a49c66197">
+    <name>Инвентаризация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инвентаризация</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="5ac5bc1e-6954-46d5-afa2-a3d08e17061c">
+    <name>ПечатьЦенников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать ценников</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="90cc9ef3-0c00-4142-8149-3922927f5910">
+    <name>СборкаПеремещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сборка перемещения</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

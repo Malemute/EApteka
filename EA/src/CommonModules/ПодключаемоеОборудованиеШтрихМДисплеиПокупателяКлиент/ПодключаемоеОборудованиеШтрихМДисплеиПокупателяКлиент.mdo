@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63ed4352-416d-4d3a-970c-1321c0ff6c74">
+  <name>ПодключаемоеОборудованиеШтрихМДисплеиПокупателяКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработчик драйвера &quot;ШТРИХ-М: Дисплеи покупателя&quot;</value>
+  </synonym>
+  <comment></comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

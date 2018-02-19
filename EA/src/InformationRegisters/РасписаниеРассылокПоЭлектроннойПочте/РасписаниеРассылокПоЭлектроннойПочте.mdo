@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c240c02a-a758-4fa5-b0cc-f2ea00906e0b">
+  <producedTypes>
+    <selectionType typeId="d3b9a9d7-d541-4f96-841a-32b74e517685" valueTypeId="c2e5f79e-ab96-42cd-bf04-0efec88446ad"/>
+    <listType typeId="6286cdb3-9a48-4d11-9366-ee465db05fd9" valueTypeId="a0e887c0-0130-4992-8ef9-f1220ba0c699"/>
+    <managerType typeId="a05f9bc5-30e7-47cc-8840-8523b1fef8a4" valueTypeId="04145be9-a4a7-417e-a961-ec7622d91bbe"/>
+    <recordSetType typeId="7df73e05-832c-4e7d-9232-aaa090aba031" valueTypeId="1bb60e70-62e5-4b31-9b5a-a7dc2a86032a"/>
+    <recordKeyType typeId="6160d66c-ec36-49d0-bd8a-9336a98ddece" valueTypeId="4477d70e-63cf-4872-ba04-c99029c18827"/>
+    <recordType typeId="b6653677-a833-4dcb-ac1c-b86118c2ebf6" valueTypeId="d5c12943-ce41-4a39-bf71-90aa149c0905"/>
+    <recordManagerType typeId="0f7d789d-91c2-4546-8ff7-a906db44a01c" valueTypeId="3ee54304-246c-4450-9340-c31af2e66455"/>
+  </producedTypes>
+  <name>РасписаниеРассылокПоЭлектроннойПочте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расписание рассылок по электронной почте</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b4604b38-0a94-49f0-ae52-13108cc5fa9d">
+    <name>ЧастотаРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Частота рассылки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ЧастотаРассылки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="af7c7d27-7da7-451a-82cb-96751613d771">
+    <name>ШаблонРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон рассылки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ШаблоныРассылкиПоЭлектроннойПочте</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

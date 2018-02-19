@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c5d5e4a-7ae0-4bf0-8b47-74f0ee7e4fb0">
+  <producedTypes>
+    <refType typeId="a59b28b5-4b7d-4c66-9baf-99baed4674c5" valueTypeId="f806fe64-e781-4c1f-9122-ba5ba6c07c4e"/>
+    <listType typeId="90130b48-6cb4-4062-a895-3cdbafd1ac4a" valueTypeId="498a1aa4-9748-4d60-9365-a2b641103080"/>
+    <managerType typeId="d1196c46-eaec-4701-9e67-e31933e974d0" valueTypeId="05e03f11-b014-4d17-aa7a-942d93d61992"/>
+  </producedTypes>
+  <name>ТипыГруппНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы групп номенклатуры</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8eb33bc8-cafa-4809-aa52-ae73b02a0895">
+    <name>ГруппаТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа товаров</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="8cd628b0-78fa-4185-9b6f-b9b861b9cf69">
+    <name>ГруппаМедикаментов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа медикаментов</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

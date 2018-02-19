@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25900fea-9fd9-4e73-9b46-f9a1f7f55c10">
+  <name>РассылкаПоШаблонамНаЭлектроннуюПочту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка по шаблонам на электронную почту</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.РассылкаПоШаблонамПоЭлектронойПочте</methodName>
+  <description>Рассылка по шаблонам на электронную почту</description>
+  <key></key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

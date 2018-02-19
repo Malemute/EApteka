@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36e9ecb9-6cbf-4ece-9408-632f3ba6c341">
+  <name>ФискальныеРегистраторы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фискальные регистраторы</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <content>CommonCommand.УправлениеФискальнымУстройством</content>
+  <content>CommonTemplate.Драйвер1СФискальныйРегистратор</content>
+  <content>CommonModule.ПодключаемоеОборудованиеАтолФискальныеРегистраторыКлиент</content>
+  <content>CommonTemplate.ДрайверАТОЛФискальныеРегистраторы8X</content>
+  <content>CommonTemplate.ДрайверККСФискальныеРегистраторы</content>
+  <content>CommonTemplate.ДрайверШтрихМФискальныеРегистраторы</content>
+  <content>CommonForm.ФормаНастройкиАтолФискальныеРегистраторы</content>
+  <content>CommonForm.ФормаНастройкиВерсияТФискальныеРегистраторы</content>
+  <content>CommonForm.ФормаНастройкиККСФискальныеРегистраторы</content>
+  <content>CommonForm.ФормаНастройкиОРИОНФискальныеРегистраторы</content>
+  <content>CommonForm.ФормаНастройкиШтрихМФискальныеРегистраторы</content>
+  <content>CommonModule.ПодключаемоеОборудованиеВерсияТФискальныеРегистраторыКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеККСФискальныеРегистраторыКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеОРИОНФискальныеРегистраторыКлиент</content>
+  <content>CommonModule.ПодключаемоеОборудованиеШтрихМФискальныеРегистраторыКлиент</content>
+  <content>CommonTemplate.ДрайверДримкасФискальныеРегистраторыVikiPrint</content>
+  <content>CommonTemplate.ДрайверКристаллСервисФискальныеРегистраторыPirit</content>
+  <content>CommonTemplate.Драйвер1СРарусФискальныеРегистраторыМебиус</content>
+  <content>CommonTemplate.Драйвер1СРарусФискальныеРегистраторыФеликс</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеФискальныйРегистратор16</content>
+  <content>CommonPicture.ПодключаемоеОборудованиеФискальныйРегистратор32</content>
+  <content>CommonTemplate.ДрайверИскраФискальныеРегистраторыПрим</content>
+  <content>Document.КассоваяСмена</content>
+  <content>Enum.СтатусыКассовойСмены</content>
+  <content>CommonModule.КассовыеСменыВызовСервера</content>
+  <content>CommonModule.КассовыеСменыКлиентПереопределяемый</content>
+  <content>CommonModule.КассовыеСменыПереопределяемый</content>
+  <content>InformationRegister.НумерацияЧековККТ</content>
+  <parentSubsystem>Subsystem.ПодключаемоеОборудование</parentSubsystem>
+</mdclass:Subsystem>

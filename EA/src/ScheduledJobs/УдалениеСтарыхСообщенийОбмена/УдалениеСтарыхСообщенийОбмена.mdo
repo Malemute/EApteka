@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="955b674a-bbb1-4290-833c-02ab5d29c0f4">
+  <name>УдалениеСтарыхСообщенийОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление старых сообщений обмена</value>
+  </synonym>
+  <comment></comment>
+  <methodName>CommonModule.ОбменДаннымиСервер.УдалениеСтарыхСообщенийОбмена</methodName>
+  <description>Удаление старых сообщений обмена</description>
+  <key></key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

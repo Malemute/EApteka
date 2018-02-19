@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2fab0ff6-03f6-4cbe-85cf-296e23a858ce">
+  <producedTypes>
+    <selectionType typeId="19988e3a-55c8-4251-9b81-1815dc2de7ae" valueTypeId="b7fc19d1-7f7b-44db-91fe-b89df9843862"/>
+    <listType typeId="e0ebd5b7-0b7f-48f0-ba0c-9a89b39f1532" valueTypeId="1da57a16-937f-4226-98d2-57d0069ef8a4"/>
+    <managerType typeId="022c0696-a5ec-4bbf-a944-7eb6bf0d4213" valueTypeId="295e2f15-29a6-47e7-9e01-c0f1e0b2d10c"/>
+    <recordSetType typeId="b3197546-0f9d-48d0-8b09-0f4d6044ee5f" valueTypeId="2d9b3f56-1617-4b80-879d-3ce3eed3c7d4"/>
+    <recordKeyType typeId="f0a42140-a354-48d3-bd94-feaeba4956d5" valueTypeId="8ecea5d3-749a-4080-bf24-741eaa79d302"/>
+    <recordType typeId="014dd35c-a79b-44fa-9e01-fdee16f59111" valueTypeId="f88e722d-252e-49c5-b6c4-bb3733e20d6c"/>
+  </producedTypes>
+  <name>ТоварыКСборке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Товары к сборке</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="a4d51fb6-5d95-44cd-9008-213a96c1594c">
+    <name>КоличествоКСборке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество к сборке</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="21a22983-d372-44b8-8762-98665a2fec4f">
+    <name>КоличествоНаКомплектации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество на комплектации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="9e167410-9d17-4b99-97a0-590767574915">
+    <name>КоличествоНеХватило</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество не хватило</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="eb3b5ab1-a5d2-459b-89fc-00481edf6e8e">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0c4c6271-8930-4c66-a63c-cf358a716dd9">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DefinedType.ДокументыРезервирующиеТовар</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b180334c-5089-4bb0-9760-c95607e169df">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ca531045-86f4-40a4-af9c-74a0ada7b82b">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Партии</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="614a968d-513b-4272-9279-2e4571f3ecf5">
+    <name>ТипСборки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сборки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ТипСборки</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

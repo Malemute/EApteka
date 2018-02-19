@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://www.1c.ru/ExchangeFromUniversalXML"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://www.1c.ru/ExchangeFromUniversalXML"
+		name="ExchangeFromUniversalXML"
+		targetNamespace="http://www.1c.ru/ExchangeFromUniversalXML">
+	<types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xs1="http://www.1c.ru/ExchangeFromUniversalXML"
+				targetNamespace="http://www.1c.ru/ExchangeFromUniversalXML"
+				elementFormDefault="qualified">
+			<xs:element name="PutMessage">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="NamePlane"
+								type="xs:string"/>
+						<xs:element name="CodeHub"
+								type="xs:string"/>
+						<xs:element name="StructMessage"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PutMessageResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetNextMessage">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="NamePlane"
+								type="xs:string"/>
+						<xs:element name="CodeHub"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetNextMessageResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</types>
+	<message name="PutMessageRequestMessage">
+		<part name="parameters"
+				element="tns:PutMessage"/>
+	</message>
+	<message name="PutMessageResponseMessage">
+		<part name="parameters"
+				element="tns:PutMessageResponse"/>
+	</message>
+	<message name="GetNextMessageRequestMessage">
+		<part name="parameters"
+				element="tns:GetNextMessage"/>
+	</message>
+	<message name="GetNextMessageResponseMessage">
+		<part name="parameters"
+				element="tns:GetNextMessageResponse"/>
+	</message>
+	<portType name="ExchangeFromUniversalXMLPortType">
+		<operation name="PutMessage">
+			<input name="PutMessageRequest"
+					message="tns:PutMessageRequestMessage"/>
+			<output name="PutMessageResponse"
+					message="tns:PutMessageResponseMessage"/>
+		</operation>
+		<operation name="GetNextMessage">
+			<input name="GetNextMessageRequest"
+					message="tns:GetNextMessageRequestMessage"/>
+			<output name="GetNextMessageResponse"
+					message="tns:GetNextMessageResponseMessage"/>
+		</operation>
+	</portType>
+	<binding name="ExchangeFromUniversalXMLSoapBinding"
+			type="tns:ExchangeFromUniversalXMLPortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="PutMessage">
+			<soapbind:operation style="document"
+					soapAction="http://www.1c.ru/ExchangeFromUniversalXML#ExchangeFromUniversalXML:PutMessage"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetNextMessage">
+			<soapbind:operation style="document"
+					soapAction="http://www.1c.ru/ExchangeFromUniversalXML#ExchangeFromUniversalXML:GetNextMessage"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="ExchangeFromUniversalXMLSoap12Binding"
+			type="tns:ExchangeFromUniversalXMLPortType">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="PutMessage">
+			<soap12bind:operation style="document"
+					soapAction="http://www.1c.ru/ExchangeFromUniversalXML#ExchangeFromUniversalXML:PutMessage"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetNextMessage">
+			<soap12bind:operation style="document"
+					soapAction="http://www.1c.ru/ExchangeFromUniversalXML#ExchangeFromUniversalXML:GetNextMessage"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="ExchangeFromUniversalXML">
+		<port name="ExchangeFromUniversalXMLSoap"
+				binding="tns:ExchangeFromUniversalXMLSoapBinding">
+			<documentation> 
+				<wsi:Claim xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"
+						conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soapbind:address location="http://127.0.0.1:8765/Base3/ws/ExchangeFromUniversalXML"/>
+		</port>
+		<port name="ExchangeFromUniversalXMLSoap12"
+				binding="tns:ExchangeFromUniversalXMLSoap12Binding">
+			<soap12bind:address location="http://127.0.0.1:8765/Base3/ws/ExchangeFromUniversalXML"/>
+		</port>
+	</service>
+</definitions>

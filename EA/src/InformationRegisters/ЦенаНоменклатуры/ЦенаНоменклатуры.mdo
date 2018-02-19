@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9476fb93-bacf-4af2-8d30-1192d8c6e980">
+  <producedTypes>
+    <selectionType typeId="2c1fa0c7-c9c3-45ec-a3f5-54c02816857e" valueTypeId="9abfce62-795a-453b-9e8d-8cfb2eb74631"/>
+    <listType typeId="45d227f0-4d85-4f33-a5e7-fb91eefbe263" valueTypeId="78668285-9f6c-4068-b188-bdb19f5d3667"/>
+    <managerType typeId="c0c37144-d5de-4eba-a688-deab95718c61" valueTypeId="071fa3a3-e6e0-4eac-845d-6d92ab938b39"/>
+    <recordSetType typeId="2ba44dab-2a5b-4b26-a3f2-18281c711f52" valueTypeId="cecaccc4-21d4-46d2-bf74-088fb47a09e0"/>
+    <recordKeyType typeId="6782681d-f548-417b-8f08-0dc0e82bf0df" valueTypeId="4c332314-49f5-4c27-bce7-c6dd12f58760"/>
+    <recordType typeId="e3862299-e183-4886-9f0f-cf9ce59e7386" valueTypeId="13b20e1d-dc27-4499-a647-4aef5df936be"/>
+    <recordManagerType typeId="56e1baa0-2b03-437c-a0ce-274a0dde64eb" valueTypeId="dba1882d-703e-4864-8217-874e505baf14"/>
+  </producedTypes>
+  <name>ЦенаНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цена номенклатуры</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ЦенаНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="857e8302-d91b-41c2-a00b-487ce87d6bf6">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5fd95343-363a-412b-9a06-3b8fc929ab6f">
+    <name>ФиксЦена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фикс цена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0ef88d4e-797f-4944-a017-2ee3863f12e3">
+    <name>ПроцентНаценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент наценки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4da9f42f-64a2-4f60-b3ac-f893cf4b0aa1">
+    <name>ПроцентНаценкиМакс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент наценки макс</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2604f5a0-9f13-43c2-b16a-9e2ad886da70">
+    <name>СпецЦена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец цена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c5ff62bc-071f-4709-a96f-a0b2974aed64">
+    <name>СпецПредложение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец предложение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a0979ed8-26bb-4373-bffb-749fbc2ede94">
+    <name>ЦенаПрайсЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена прайс листа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЦеныПрайсЛиста</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d75d6f02-061d-4d9a-8f57-689883b4c00e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

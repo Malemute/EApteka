@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9dfe2ea0-8fd6-47bf-ab71-1ab7736f6102">
+  <producedTypes>
+    <objectType typeId="b01411bd-badd-4b5f-8297-7a88d47c5c15" valueTypeId="7e49381f-fb83-4def-83e2-3129521237b4"/>
+    <refType typeId="552f476b-95ec-49a5-ad33-4d4a1ca9ae0b" valueTypeId="a985c256-2f95-4f88-ad72-5506bbd3e686"/>
+    <selectionType typeId="a2a645d2-48ae-4f92-b74b-f3a09bd186af" valueTypeId="b3224510-7fd9-4311-a4ae-cdd9b6361c9a"/>
+    <listType typeId="693f38d0-2bf4-4fd3-b917-305bc93b45a9" valueTypeId="a8e521ce-4547-48cc-9355-8eec676a1567"/>
+    <managerType typeId="3761ec68-8906-49ef-a4fa-a16c7497f391" valueTypeId="818d78ce-1f69-40ea-958c-6bfa13f2c535"/>
+  </producedTypes>
+  <name>НастройкиПодключения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки подключения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиПодключения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.НастройкиПодключения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="d9e4ceb1-120b-4949-a7e6-a5bf6fd9a242">
+      <name>Nagat77</name>
+      <description>Nagat 77</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="ed53af88-2f7f-4775-8ad6-be221bf7355f">
+      <name>БазаCourierDS</name>
+      <description>База courier DS</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="60a2eef0-b23f-4705-9e94-32c29d6ac125">
+    <name>Сервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e00c6fd9-de7f-403b-8ddf-f606fb65ef83">
+    <name>БазаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>База данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9eb4f6cd-d9af-4b4c-8628-85bc2fb48dd0">
+    <name>Логин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="416007cd-bcbe-4ba4-ada8-9c9b8ca0e185">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <passwordMode>true</passwordMode>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="89d320a2-cbc7-4883-9971-6366c10c2a29">
+  <producedTypes>
+    <selectionType typeId="256b2753-ec23-4987-b014-2a02f0bf59ba" valueTypeId="726f8a39-da9f-4dae-b261-650863319dd9"/>
+    <listType typeId="bf18a794-bc1a-4cf3-b62d-361ec59896ae" valueTypeId="0addd03f-0582-447f-9089-79af19dc9250"/>
+    <managerType typeId="192fd78b-c0df-4f48-ab1c-f1beba6ab169" valueTypeId="c2478e9b-7fae-427b-b05e-b02a71e1e704"/>
+    <recordSetType typeId="15a05762-cc31-456b-9735-41d22b20c043" valueTypeId="4ec5c2a4-d950-4cb8-b743-c78b5cf9efae"/>
+    <recordKeyType typeId="e2d9b8fd-5853-43db-8f34-4dbe4c8ff3ad" valueTypeId="cbb8d18b-0edb-4427-a9f6-4477d7e0d49d"/>
+    <recordType typeId="2545a374-d601-47b7-8309-b12800fd16fd" valueTypeId="60c93a69-5c68-4079-9487-d005eb1f9309"/>
+    <recordManagerType typeId="4b79ed22-7a0f-457b-81f9-894c9a15e7fa" valueTypeId="7ab2be55-2d3f-4dc9-afd8-35535e5a6ff4"/>
+  </producedTypes>
+  <name>ПроцентДозаказаУпаковка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процент дозаказа упаковка</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПроцентДозаказаУпаковка.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="c3a19695-b855-4f5b-810e-42762152e9f5">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8e9b4e67-eec7-4ebf-9319-d935c335ead9">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ПроцентДозаказаУпаковка.Dimension.Поставщик</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="24958fe1-c54d-42a6-b5a5-f4ef2a72f37f">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>0:e34c7148-4fe2-4e78-b1bb-384b6b843d15</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="382a8a72-9953-4545-ab33-1fd8a9bbfb88">
+    <name>ТипПрайса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип прайса</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>0 - Обычный
+1 - Коробочный
+2 - Спец.предложение</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="44152973-24a3-4732-9eaa-f968fefaa153">
+    <name>ТипПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип поставки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ДоговорыТипДоговора</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ca98b1e8-e7e2-4d7b-9e10-be131f7f4f2b">
+    <name>ЦенаУпаковки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена упаковки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9f5f42c0-1fc5-4b0d-b2dd-b95beddd5f50">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2999631b-6ea1-4009-a2a2-88548bae6fb7">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76629e70-9ecd-4c94-9acf-aef2af2a2963">
+  <name>Драйвер1СФискальныйРегистратор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Драйвер &quot;1С:Фискальный регистратор&quot;</value>
+  </synonym>
+  <comment></comment>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

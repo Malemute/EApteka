@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa66e9e8-05cd-4781-a6c7-ca9b1385558c">
+  <producedTypes>
+    <containerType typeId="e093b176-cdaa-4521-b32b-e94026c24387" valueTypeId="05284760-4f22-4aeb-9ba4-bc5fc0e8090d"/>
+  </producedTypes>
+  <name>ДокументыРезервирующиеТовар</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы резервирующие товар</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>DocumentRef.Заказ</types>
+    <types>DocumentRef.Перемещение</types>
+  </type>
+</mdclass:DefinedType>

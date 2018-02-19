@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f53d0daf-529b-42b9-87f1-44425bc1e6f4">
+  <producedTypes>
+    <selectionType typeId="4c1501d6-a54f-4e13-8dea-7cc46f7735de" valueTypeId="2aab30be-7904-48b1-b223-2419596441c0"/>
+    <listType typeId="78d5f708-ebb7-4485-b420-573121ecc97a" valueTypeId="2a636a51-45fd-43ce-8f5b-519b346152d0"/>
+    <managerType typeId="dc49455d-ab8f-4172-8d0e-9bb0ede6114d" valueTypeId="b075f201-ad37-4019-a139-7709e7a334ba"/>
+    <recordSetType typeId="22cf751e-c709-4049-a401-f2dcf61c69fc" valueTypeId="adf342bd-bdb3-4965-adbe-ce69cd3ad33e"/>
+    <recordKeyType typeId="34f7ac0a-a69e-4568-82c1-8b870f9d4017" valueTypeId="f8067ef1-9400-42eb-9fc0-b319d71cbc60"/>
+    <recordType typeId="f85d4230-7eac-42dc-92f6-0ff0e0d4402a" valueTypeId="a3f0be4d-b125-4805-8087-ac969ea2385c"/>
+    <recordManagerType typeId="32de7536-64fc-4f11-adba-9904108f5453" valueTypeId="3eadeaf8-6cc0-4525-8ab4-81a5c0dc9cf3"/>
+  </producedTypes>
+  <name>ОстаткиНоменклатурыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки номенклатуры контрагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="984621d9-2864-4383-a6b8-1d5cfe3d118b">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7f277814-6244-4704-a766-58269727f987">
+    <name>НоменклатураКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура контрагента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НоменклатураКонтрагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

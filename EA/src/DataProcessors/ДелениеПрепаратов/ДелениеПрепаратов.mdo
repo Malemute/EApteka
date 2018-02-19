@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="175b83f8-1d7a-41f7-ab85-28bddfa59b77">
+  <producedTypes>
+    <objectType typeId="f229556d-df07-4163-a8e5-20664a6ee79d" valueTypeId="2d5ebd57-39ad-4970-8980-62338d6d1ff2"/>
+    <managerType typeId="37825916-1a8d-4755-9209-061a52afd006" valueTypeId="1eaafda9-b6c3-4b71-988b-8825869bc977"/>
+  </producedTypes>
+  <name>ДелениеПрепаратов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Деление препаратов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ДелениеПрепаратов.Form.Форма</defaultForm>
+  <attributes uuid="510c84cf-c4ed-4e44-8eb3-be52edf458b8">
+    <name>Отдел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдел</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="17e79f4e-3647-4841-9d04-6eaf7f8995d8">
+    <producedTypes>
+      <objectType typeId="c291dd26-bcc9-41c0-80e9-8bf6e90f4fde" valueTypeId="dc49e3ed-5f51-476e-a2a9-21e4cdeb531e"/>
+      <rowType typeId="7a08b17f-b5b5-40e3-8115-6d44b34860ab" valueTypeId="9e423bbb-ab66-4bb7-9233-e707c1bb3f55"/>
+    </producedTypes>
+    <name>Деление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Деление</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="a7ac016e-fef6-4d26-b19a-d1a423daec6c">
+      <name>ТоварДелимый</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар делимый</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ef177eae-c54c-476f-b62f-f0de8386a1ca">
+      <name>Партия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партия</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Партии</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f871ed88-6489-49d7-b087-730fabacdcd2">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1fca4356-64d5-428b-92fa-ae7f0a2feda4">
+      <name>Коэффициент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коэффициент</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c6e7adea-fff3-46ed-8cba-2587dcc84733">
+      <name>ТоварПолучаемый</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар получаемый</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4cd6d10b-07c0-4b1d-873c-baaec85f39d9">
+      <name>КоличествоПолучаемое</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество получаемое</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a52a284c-ded2-4043-a54d-dabc619b5ad4">
+      <name>ПравилоДеления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Правило деления</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Деление</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b1ed6515-5762-4e35-94fa-ff105d0f1180">
+      <name>Остаток</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="592ecf27-c90e-43a2-8817-046f248fbcf2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

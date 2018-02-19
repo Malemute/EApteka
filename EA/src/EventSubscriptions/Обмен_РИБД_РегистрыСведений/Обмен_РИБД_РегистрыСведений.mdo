@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9500bf6-d5d8-4048-ba68-a4f7a1c594da">
+  <name>Обмен_РИБД_РегистрыСведений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен РИБД регистры сведений</value>
+  </synonym>
+  <comment></comment>
+  <source>
+    <types>InformationRegisterRecordSet</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбменАлгоритмыРИБД.Обмен_РИБД_РегистрыСведенийПриЗаписи</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19c40db6-27b9-40e6-aff2-fed6b2a311d6">
+  <producedTypes>
+    <selectionType typeId="66a91cef-7b60-45c3-ade0-6da5b142f3a1" valueTypeId="38db4b7b-600a-4778-80c2-0706e9dd415b"/>
+    <listType typeId="fd031305-41fb-4d5a-81e9-72ea6f651d21" valueTypeId="d105f3a5-9751-4a4b-9185-3640967411ab"/>
+    <managerType typeId="157b4f6a-ad29-4a94-a7e4-e8a305ac1b08" valueTypeId="26c46bba-aba5-4d18-a48d-c8cd51f75f2c"/>
+    <recordSetType typeId="4bc64827-9688-4c14-915a-0c3858111b75" valueTypeId="6c39d66c-2066-4d23-8c0d-4e244a0fdc79"/>
+    <recordKeyType typeId="167ad254-de55-4842-ad0d-5ac8d6e0bf2c" valueTypeId="38ad14a4-329e-4e1c-8570-9201884fbbe0"/>
+    <recordType typeId="c6dfd6d0-ca09-4657-86d1-518604b9aee6" valueTypeId="a8fb8496-5589-40f6-9f8d-4beefd4b5d2d"/>
+    <recordManagerType typeId="78a78444-5a90-4a7c-be31-2ea5ad12f55b" valueTypeId="8acb6408-2f6e-41ca-8bee-16760095e57d"/>
+  </producedTypes>
+  <name>ШаблоныФайловОбменаКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны файлов обмена контрагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ae66281e-d410-441a-9874-5ba678863827">
+    <name>ШаблонФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон файла</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ШаблоныФайловОбмена</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fd1629d0-b355-4f28-ab63-b225252274a9">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5b0b138a-e539-4a04-a142-0580164e186d">
+    <name>ВидИмпортируемыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид импортируемых данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыИмпортируемыхДанных</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

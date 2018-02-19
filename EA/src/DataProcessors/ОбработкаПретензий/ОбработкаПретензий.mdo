@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4e817c2-a315-4c28-aa7a-51485d1d0efc">
+  <producedTypes>
+    <objectType typeId="cf85e94b-5c90-44f3-91b0-f9c46268516f" valueTypeId="8614ee57-a91f-445f-839f-e3f8efa4cb4d"/>
+    <managerType typeId="c7d17f1c-d66a-4b72-8781-4157656ff886" valueTypeId="2e9f17c2-fcd0-4396-8076-b8bf4c57e492"/>
+  </producedTypes>
+  <name>ОбработкаПретензий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка претензий</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбработкаПретензий.Form.Форма</defaultForm>
+  <tabularSections uuid="c055eae1-a4e9-4a33-b647-0528b8245555">
+    <producedTypes>
+      <objectType typeId="7de77389-7baf-40ca-b343-943f269c95d0" valueTypeId="ca611f1d-276f-4f43-b759-2c3cfe6a84e7"/>
+      <rowType typeId="3d641cdc-0b0a-450b-9b3e-8f088c333132" valueTypeId="6029214c-ac52-4d49-9345-e07e93182261"/>
+    </producedTypes>
+    <name>Претензии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Претензии</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="68c3070b-65b2-49fa-9c08-4b3e8ddf20f1">
+      <name>Обрабатывать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обрабатывать</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6fd642e8-3c6d-410d-a07a-c69ece5d436b">
+      <name>Склад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Склад</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.МестаХранения</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e321e2fb-ff8e-4eaf-9e3a-d75a1c93ee16">
+      <name>ДатаПретензии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата претензии</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aa7c879e-ad06-4adb-8bab-6d966bf33700">
+      <name>Накладная</name>
+      <synonym>
+        <key>ru</key>
+        <value>Накладная</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>DocumentRef.Приходная</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9f4c9b4a-a082-4e37-8818-aa6199f4d68f">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2ec0387e-961b-4736-ada5-852264e476ff">
+      <name>Серия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Серия</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="7cc30ffc-8cbb-47a2-9bb9-fda758964279">
+      <name>Претензия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Претензия</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Претензии</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1c9e4969-ea58-46e6-981a-d25db89ff637">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ed9b4a22-063e-4a00-9442-858a094e7524">
+      <name>ДокументПретензии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ претензии</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>DocumentRef.Претензия</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0ea7ba55-d71a-4120-bf83-8d21f5847cac">
+      <name>Партия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партия</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Партии</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0b414f08-0763-4cc8-bb7c-0e0ee5cb8771">
+      <name>Сум</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сум</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ea088cd2-85cb-4f01-b5a6-10f0d7229ce9">
+      <name>Кол</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кол</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a7c86b11-4810-411c-b2bc-ee5c992182d5">
+      <name>Отправлена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отправлена</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="596374d7-54cc-45df-8d38-72390e648f76">
+      <name>Поставщик</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поставщик</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0c5800b6-0222-4b8a-947b-902ceb96eefc">
+      <name>ЭтоОрдернаяПриемка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Это ордерная приемка</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="700fa890-c93a-4bbf-bdc6-2619e62042c4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

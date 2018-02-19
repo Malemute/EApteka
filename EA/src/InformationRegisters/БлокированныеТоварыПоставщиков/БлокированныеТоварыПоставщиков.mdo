@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e341f670-da6c-4d7c-aa37-12f7442e7d60">
+  <producedTypes>
+    <selectionType typeId="52392aa6-10f5-4b5a-a6ba-85f968ebaba7" valueTypeId="00bd6b1b-b900-4cea-beb7-e45a207d483d"/>
+    <listType typeId="2e97399f-3711-44bf-bb38-3d2422d56982" valueTypeId="ceb19361-359b-4ed7-aa20-64d34c0c4453"/>
+    <managerType typeId="e50373c6-c5f8-4ded-b1e5-2d530e758863" valueTypeId="dd32129a-806a-43bb-b8d4-ef5d2e5f1fc6"/>
+    <recordSetType typeId="12373ab3-504a-4393-9d90-a3ef8cc2be96" valueTypeId="74a9f7e8-11d9-4a09-a230-a32a85791f01"/>
+    <recordKeyType typeId="e842a5a3-9ee6-4716-a8d8-164bfaca51fb" valueTypeId="69324658-21c2-469d-8ad8-b6084ab2833d"/>
+    <recordType typeId="5ddbcf7c-0e0d-4ee4-8062-69f3778dbb41" valueTypeId="93d1d3f7-83c6-4f98-b7ee-2d91a97a9049"/>
+    <recordManagerType typeId="27ad1465-e283-4c22-bd13-7acfa5ce0fd9" valueTypeId="e2d33237-78e0-4056-8fe9-6d24145a7260"/>
+  </producedTypes>
+  <name>БлокированныеТоварыПоставщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Блокированные товары поставщиков</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="55163eef-8fc2-44b8-85eb-448e0b69597a">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9bea56a1-0f7e-4348-963e-5dea9621420f">
+    <name>Остаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остаток</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f53e139-8b8b-4202-894a-00f1b81cd09f">
+    <name>ДатаУстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата установки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f9d3f82a-505f-4928-9316-a47a9a440b94">
+    <name>Активно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активно</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f57439f4-1e2a-48ab-bc5b-3ed0b83eac22">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="06470076-78a9-4296-a347-c3b1965e92c7">
+    <name>КодТовараПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код товара поставщика</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

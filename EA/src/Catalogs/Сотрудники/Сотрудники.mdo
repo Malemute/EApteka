@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0ca2cef-5928-49d1-bb27-c37ac7e2cc12">
+  <producedTypes>
+    <objectType typeId="3cc73df5-6e85-420e-bc40-e8969419cd5a" valueTypeId="4a079fb7-dcfe-4e30-a814-c541a2b02038"/>
+    <refType typeId="18f6ecef-0168-4a0c-a963-cd1e3d21ad9f" valueTypeId="c9c1f826-68c1-478b-b372-1e9aa2c144e1"/>
+    <selectionType typeId="a8973bf6-d39c-4d0d-b970-5eebdd3b14eb" valueTypeId="e5bed083-0346-4fdc-90cd-589411ad611f"/>
+    <listType typeId="e83e9586-0878-4205-a2df-7942708a4e2e" valueTypeId="e45f254a-1de7-461f-8338-3344b8fd39d1"/>
+    <managerType typeId="d5214ff5-f8f2-470a-919e-aefa11c51bcc" valueTypeId="d8a55690-b652-4bb9-bf02-537fbcbdae12"/>
+  </producedTypes>
+  <name>Сотрудники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Сотрудники.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Сотрудники.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>15</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.Сотрудники.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="cf5c797d-1bf7-4fe6-a825-4253bf991327">
+    <name>ШтрихКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрих код</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>13</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e2b3795-27db-4375-8114-710bd52b05b8">
+    <name>ФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>70</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="98ed9649-9a8c-4330-a14b-c7e3a4c1ef21">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

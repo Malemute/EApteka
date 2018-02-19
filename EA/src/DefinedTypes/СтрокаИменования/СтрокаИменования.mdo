@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40ecf425-4e5d-468c-a9f5-49507e62f335">
+  <producedTypes>
+    <containerType typeId="b5caf738-c40b-465e-a553-22f3b37fbfd6" valueTypeId="151acf76-1753-4dda-a134-642d2efd09ce"/>
+  </producedTypes>
+  <name>СтрокаИменования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Строка именования</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>60</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8da320f6-7140-4e17-8330-c17ef8beed19">
+  <name>РМКРегистрацияПродаж</name>
+  <synonym>
+    <key>ru</key>
+    <value>РМК регистрация продаж</value>
+  </synonym>
+  <comment></comment>
+</mdclass:CommonPicture>

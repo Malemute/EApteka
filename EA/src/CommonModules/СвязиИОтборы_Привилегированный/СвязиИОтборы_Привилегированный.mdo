@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bff815ab-ec38-4d44-bd1a-769a40dc1406">
+  <name>СвязиИОтборы_Привилегированный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связи и отборы (привилегированный)</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca34eb2d-1e21-4f07-b3df-ba6b5ff8dabd">
+  <producedTypes>
+    <selectionType typeId="099ae4d1-5443-4ae2-b50b-8a4c52dc81d3" valueTypeId="2876e211-1363-4980-b7ec-147932e6ad63"/>
+    <listType typeId="e60282b6-1c6a-4302-a761-eda5f61abf6a" valueTypeId="fb8e67be-21d6-4d5a-b59b-32e1f6504b62"/>
+    <managerType typeId="383ec715-5169-4544-9240-bd1857ac8ebb" valueTypeId="0a4dac38-c562-4790-82b2-1b59cc3e1e75"/>
+    <recordSetType typeId="380095fb-ed5d-444a-8a8a-de0ba982bd5c" valueTypeId="766a2de5-f043-43ae-8c3e-123efd8744a2"/>
+    <recordKeyType typeId="6bbce3f4-beb3-4dfc-a13e-ea94b6f3c80b" valueTypeId="0035fc6b-bd5d-40d2-884e-4d9627d458f3"/>
+    <recordType typeId="bec74d9c-23c1-4894-831e-792886d869cc" valueTypeId="48e9cabc-4ff5-4ba5-8d48-146bf3bfcf9c"/>
+    <recordManagerType typeId="def9d571-a803-45ef-8e01-2dd22ca3a664" valueTypeId="66a1a207-267b-4813-9cae-67fb344b9df6"/>
+  </producedTypes>
+  <name>t_astro_used_booklets</name>
+  <synonym>
+    <key>ru</key>
+    <value>CourierDS_t_astro_used_booklets</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d6d69257-f6a5-40c6-9c74-e048033a7af9">
+    <name>Выгружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружено</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="28c4bd6b-9b0e-4cc1-9dea-93dd72adffb5">
+    <name>Удалить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5deb0e16-79a2-4bf9-ae4b-6fb1c34cc607">
+    <name>booklet_barcode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Booklet barcode</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>19</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a284d6f0-2c87-475a-8bae-43335e998446">
+    <name>t_check_h_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>T check h id</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="62d08217-2d03-42cb-88b0-6327433f7666">
+    <name>check_date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Check date</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

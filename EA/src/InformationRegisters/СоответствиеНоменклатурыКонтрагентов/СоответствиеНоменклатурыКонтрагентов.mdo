@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6faffe1-acf0-47f7-a80a-15e926c6cf99">
+  <producedTypes>
+    <selectionType typeId="f2937986-9190-4d06-8e44-1b52732df49d" valueTypeId="825d0338-2a3f-4884-ae23-fcfce96e5a6e"/>
+    <listType typeId="824b4def-a0cd-4567-9d64-9f98107cab46" valueTypeId="9784334d-0dd6-46e3-807d-cae056a29939"/>
+    <managerType typeId="d1d2852b-ae54-44d4-a096-5b88f5b1d62d" valueTypeId="bb0d1d6b-5c6d-4543-bbf4-e0fa782e33ad"/>
+    <recordSetType typeId="fe47df19-9e99-4abd-8ca2-36534372dbca" valueTypeId="49d790fa-ba08-4579-9004-737bca0fb661"/>
+    <recordKeyType typeId="60cd754a-27d1-4bb3-a9e4-1feeb1c12421" valueTypeId="f0c710b1-511b-4e21-b984-e8d2ef64b33c"/>
+    <recordType typeId="ac0e0137-3428-498d-bcbf-1ae4296b614c" valueTypeId="736f2902-7a51-426a-8cc8-cf30eebfb279"/>
+    <recordManagerType typeId="90316532-fc04-4e14-a3de-32ff9e1fecfa" valueTypeId="0b6bf5d6-dc74-487c-8ae1-5a3570cd2bec"/>
+  </producedTypes>
+  <name>СоответствиеНоменклатурыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие номенклатуры контрагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f68d0b3f-85e3-4a91-96ea-62c02a13d96a">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f5454292-dedf-4054-84c0-6d838012c17b">
+    <name>НоменклатураКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура контрагента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НоменклатураКонтрагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

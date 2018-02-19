@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="232fef76-348f-468b-a51d-f229485aebc5">
+  <name>СценарииОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сценарии обмена</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.СценарииОбменовДанными</content>
+  <content>InformationRegister.ПолученныеСообщенияОбменовДанными</content>
+  <content>InformationRegister.СформированныеСообщенияОбменовДанными</content>
+  <content>InformationRegister.ПараметрыУдаленияСтарыхСообщенийОбмена</content>
+  <parentSubsystem>Subsystem.Администрирование.Subsystem.ОбменДанными</parentSubsystem>
+</mdclass:Subsystem>

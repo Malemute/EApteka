@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="797ffe39-ec5e-4fb3-9e79-0bca91f9878f">
+  <producedTypes>
+    <selectionType typeId="9d7a7f7a-218f-4356-841b-c21275f55faf" valueTypeId="58384bb9-71f1-4f76-991d-13875c1c8d6e"/>
+    <listType typeId="91c700f2-0667-4485-abb2-60d22e451772" valueTypeId="6d3dbde1-e0b9-4878-b7bc-80c94520fae6"/>
+    <managerType typeId="56dbb590-6bfe-4056-9352-171396b98887" valueTypeId="debcc296-4e51-4040-9843-3996ecc26201"/>
+    <recordSetType typeId="e40ac6ba-aa9f-417b-a106-8a913b988e05" valueTypeId="09ed1508-cfbc-4ea4-9404-83da3bd7023c"/>
+    <recordKeyType typeId="f8f5d1e2-765b-4c16-85b2-361edcc850aa" valueTypeId="8160dd66-e59a-49d5-8506-de98fe58e6ea"/>
+    <recordType typeId="e64de24c-24a0-4dff-87a8-b4face765b61" valueTypeId="e524cf31-f5e9-40cf-b44e-b07ef8bd1732"/>
+    <recordManagerType typeId="529c83c6-4e0d-4085-ae0f-c7b5055fb374" valueTypeId="cdeadf7b-5c00-400b-88a9-d0d413550276"/>
+  </producedTypes>
+  <name>ПараметрыУдаленияСтарыхСообщенийОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры удаления старых сообщений обмена</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПараметрыУдаленияСтарыхСообщенийОбмена.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПараметрыУдаленияСтарыхСообщенийОбмена.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c9bb2119-7e10-4acc-bf93-f7d9ba6fce93">
+    <name>ХранитьДнейНеБолее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранить дней не более</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ecdb275f-269f-4897-ae34-f91c14cf9f56">
+    <name>ХранитьШтукНеБолее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранить штук не более</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>32</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="023b9801-c565-4663-bfa3-a4b4537987a6">
+    <name>УзелИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел информационной базы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ExchangePlanRef</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2e3300aa-efbd-49d2-bbab-c98ba0a4fd6c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a8d9d1a2-1669-4fa2-b078-093cc3225df4">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

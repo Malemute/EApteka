@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d1820e8-043b-4ceb-ad3e-0781fbc7e29a">
+  <producedTypes>
+    <refType typeId="779a1999-7d37-4524-b57e-ad4968a238ef" valueTypeId="ea3e4d2c-6311-42d5-8c4c-3aa585418e91"/>
+    <listType typeId="ebd2f4d6-7596-4ccd-8f27-824b74709102" valueTypeId="8b0b9fea-9e46-41e3-97b5-5e864d48ede1"/>
+    <managerType typeId="e1177238-af20-4cc0-a78f-7d52b51b0b3e" valueTypeId="b6241787-145e-4f20-a5a1-ee622ee8b15a"/>
+  </producedTypes>
+  <name>СтатусПриходнойНакладной</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус приходной накладной</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="06c82952-7875-42f7-90b8-342e9a13214e">
+    <name>Создан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создан</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="1254572f-c90f-4dd2-b055-e99420145e90">
+    <name>Ошибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f39a52c7-e66f-4788-ba72-1ab193b08f1a">
+    <name>Проверен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверен</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

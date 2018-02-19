@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5dd17ab-f90d-462a-a83e-d26f29defecd">
+  <name>ПодключаемоеОборудованиеККСДисплеиПокупателяКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработчик драйвера &quot;ККС: Дисплеи покупателя&quot;</value>
+  </synonym>
+  <comment></comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

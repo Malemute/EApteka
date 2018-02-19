@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfec82c6-83c3-4126-a8fe-b596f6df17d5">
+  <producedTypes>
+    <objectType typeId="a5c4b508-df7d-48e0-9867-801caeeef8a6" valueTypeId="222a0677-4160-4053-95c3-0898d996bd83"/>
+    <managerType typeId="664ca952-b1cb-454a-a604-ddce4fadc369" valueTypeId="e1485190-df04-4133-a39c-e83938c49c35"/>
+  </producedTypes>
+  <name>ЗаполнениеКалендарныхГрафиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение календарных графиков</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <forms uuid="a7d9c0d2-54bb-49aa-94cb-c867043aec71">
+    <name>ПодборКалендарейИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор календарей из классификатора</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="c0c9c57d-df8e-4b56-a36e-3d988ed4a111">
+    <name>ПроизводственныеКалендари</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производственные календари</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a3a9b485-2d06-4d03-9bc5-ba453075a000">
+    <name>ДанныеПроизводственныхКалендарей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные производственных календарей</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="9b7bfba7-7740-45e2-85e9-33c9249c4dee">
+    <name>ДатыЦаганСар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Даты &quot;Цаган Сар&quot;</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5e6bf4e2-0d50-4b0c-81cc-49ea9cce9c50">
+    <name>ДатыРадоница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Даты &quot;Радоница&quot;</value>
+    </synonym>
+    <comment></comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

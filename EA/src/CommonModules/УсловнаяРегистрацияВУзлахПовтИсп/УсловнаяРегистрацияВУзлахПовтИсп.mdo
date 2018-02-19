@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12e97e80-8e43-42ca-bd7a-dc7cf24daf3b">
+  <name>УсловнаяРегистрацияВУзлахПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Условная регистрация в узлах повт исп</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

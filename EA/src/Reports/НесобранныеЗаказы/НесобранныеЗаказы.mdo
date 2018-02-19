@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="756cff84-621e-4136-8b52-2dea8639ddc1">
+  <producedTypes>
+    <objectType typeId="1c34a814-4620-4001-8fcb-d198d572fca9" valueTypeId="d54045c6-27c3-4814-956e-eeb5754ab378"/>
+    <managerType typeId="0e7ce23f-945e-4ef6-8c5d-c01826bbf6af" valueTypeId="b0e655c9-6fc9-4151-b1de-46dfa3eca53d"/>
+  </producedTypes>
+  <name>НесобранныеЗаказы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Несобранные заказы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.НесобранныеЗаказы.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.НесобранныеЗаказы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="4404fba1-b384-4dd9-8866-d199d4a4b115">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9feb3816-0229-40ac-806a-bf50f3ca9584">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

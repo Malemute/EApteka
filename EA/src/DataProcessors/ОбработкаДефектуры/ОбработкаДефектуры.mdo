@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9deaa695-4090-49b8-a9e5-9c0986b95f79">
+  <producedTypes>
+    <objectType typeId="ecb38822-8759-4654-8a5b-9e13905aea59" valueTypeId="e6233a78-cc2d-4b97-b89a-e3a25b25b14a"/>
+    <managerType typeId="35e0e5f9-f599-494a-a4dc-f50fb4ffb130" valueTypeId="77971449-80d8-457b-bdf8-927c22155e7d"/>
+  </producedTypes>
+  <name>ОбработкаДефектуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка дефектуры</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбработкаДефектуры.Form.Форма</defaultForm>
+  <tabularSections uuid="6862f1ac-33b3-4a8a-9458-c448839fb67f">
+    <producedTypes>
+      <objectType typeId="c4bee6ca-aef2-4830-9e6b-72b9913e994e" valueTypeId="32091b1a-d3c3-44a4-ba0d-9682fc5f5ef4"/>
+      <rowType typeId="c8e5d882-c523-4fc4-81d1-87290398ae43" valueTypeId="bf7bab29-c543-47eb-b19a-9b79b1804a94"/>
+    </producedTypes>
+    <name>табСклады</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таб склады</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="481c90a1-ce38-42fe-84b3-e5c43f7265c1">
+      <name>Склад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Склад</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.МестаХранения</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7afc77bd-ed51-4714-8635-6e5ea92f83cf">
+    <producedTypes>
+      <objectType typeId="51a48b52-39e2-4cbd-a24d-87df24cb7592" valueTypeId="f54e11d4-896d-405a-a801-4f8712256638"/>
+      <rowType typeId="2f2daa31-e52f-43d8-944c-e22ef550f87a" valueTypeId="71754339-c72a-439c-9f59-99b3ff5fad2c"/>
+    </producedTypes>
+    <name>табПоставщики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таб поставщики</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="8ac41152-c2b7-4f1e-bf82-a482aabe83cb">
+      <name>Поставщик</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поставщик</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="bc95ff69-db56-409b-9d5b-6098acb1d048">
+    <producedTypes>
+      <objectType typeId="100c8338-a3ae-4661-8f06-adcad48b8eff" valueTypeId="b9a5090f-8e02-4c74-afed-2f624130ca14"/>
+      <rowType typeId="ba6ef1b4-ed51-4a05-a1ef-58dd9c98c4e2" valueTypeId="b5891a6b-9713-4a39-9984-562de0facd84"/>
+    </producedTypes>
+    <name>табТовары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таб товары</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6bf903f0-7ee5-46d2-b277-d78665ddbf4d">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="ebdfa2cc-7f51-4af1-9127-072c09b0947a">
+    <producedTypes>
+      <objectType typeId="1952ac1a-88ad-4b15-8d9f-47ca1e8cf619" valueTypeId="b0f50cf3-7123-4c71-a72d-ec0da4e3ec91"/>
+      <rowType typeId="e42c9792-a2c8-4b38-a269-445b977298c1" valueTypeId="946312b2-80c0-4f5e-9b36-487669ef364a"/>
+    </producedTypes>
+    <name>ТабГруппыЗакупки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таб группы закупки</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4088600b-9d1e-48e1-bf78-929d8c4e0e49">
+      <name>ГруппаЗакупки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Группа закупки</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ГруппаЗакупки</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="b1a32e07-8e58-47ca-b8e0-1f8d8e8d2707">
+    <producedTypes>
+      <objectType typeId="b89418c6-2668-45c5-bb78-4799c638f208" valueTypeId="5b8dc5cc-06f7-423c-b252-556caa28a508"/>
+      <rowType typeId="ead42ac7-c67d-4b52-b0fb-87cc40202624" valueTypeId="ab571045-8eb2-4d6d-8b8c-31dba90ebdbc"/>
+    </producedTypes>
+    <name>ТабКонцернов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таб концернов</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="c075a8b0-d881-4435-b1cb-0278096c97ab">
+      <name>Концерн</name>
+      <synonym>
+        <key>ru</key>
+        <value>Концерн</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Концерны</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="a2fd6139-baba-4d94-9cff-2996423c7a81">
+    <producedTypes>
+      <objectType typeId="335a90d2-9c24-427a-a82c-a58ec5036d5e" valueTypeId="c3ede20f-56de-424d-87f3-b05fbed3f7de"/>
+      <rowType typeId="ab8a39cd-2b97-46b3-8369-707397e59b91" valueTypeId="e551a2f1-19c8-4df9-8765-29293e87af42"/>
+    </producedTypes>
+    <name>ТабПроизводители</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таб производители</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="7e0af6db-3e72-4dd9-8dd6-45bef4d79559">
+      <name>Производитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Производитель</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Вендор</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="310b85a9-d425-49ee-9d4c-8532c8204d4c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e0424c59-0447-49ca-a19a-efd631378da1">
+    <name>НеХватилоУПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не хватило у поставщика</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2500b37a-d463-4418-9100-c701e0f234bd">
+    <name>ФормаПоискаАналогаТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма поиска аналога товара</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2bfd3a56-629b-489b-942d-a3b77747ff5f">
+    <name>МакетКтоЗахватилТовары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет кто захватил товары</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

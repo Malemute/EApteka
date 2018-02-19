@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="948948c9-69e3-4eed-80bc-ee5d653cb944">
+  <name>DataRequests</name>
+  <synonym>
+    <key>ru</key>
+    <value>Data requests</value>
+  </synonym>
+  <comment></comment>
+  <namespace>eapteka.ru\DataRequests</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>8d9f2e1e-2e1b-4c43-b15a-f498630a9ea6</value>
+  </xdtoPackages>
+  <descriptorFileName>DataRequests.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="d32e6409-1bab-49d1-8507-8d2160e41375">
+    <name>Accounting_GetSales</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить реализацию</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Accounting_GetSales</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="b469d14e-60c4-4384-b1c2-4bedc17ea722">
+      <name>PeriodStart</name>
+      <synonym>
+        <key>ru</key>
+        <value>Period start</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="087d1440-5260-46df-a3e9-e5f39254579e">
+      <name>PeriodEnd</name>
+      <synonym>
+        <key>ru</key>
+        <value>Period end</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="8ded6c76-5217-498c-881a-1ac743c0d541">
+      <name>KKMNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>KKMNumber</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="c5a0599f-34ab-45a6-94af-d0668a296a9c">
+    <name>Accounting_GetConsignment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить приходы</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Accounting_GetConsignment</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="ffb61343-bf63-4cec-8c56-967c244628c4">
+      <name>PeriodStart</name>
+      <synonym>
+        <key>ru</key>
+        <value>Period start</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="69b955a5-7e28-4de7-9223-249711070141">
+      <name>PeriodEnd</name>
+      <synonym>
+        <key>ru</key>
+        <value>Period end</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="f7af6187-4925-4961-aa25-1a74c7500f7e">
+      <name>DocumentNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document number</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="11678514-0d1c-4fad-bc9d-4cee80cfd259">
+      <name>INN</name>
+      <synonym>
+        <key>ru</key>
+        <value>INN</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="f4ebeb70-77fe-4c6c-b68f-986fbbd7e695">
+    <name>Accounting_SalesRevise</name>
+    <synonym>
+      <key>ru</key>
+      <value>Accounting sales revise</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Accounting_SalesRevise</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a1f46252-635a-43ce-beff-bc7fca1a3dbc">
+      <name>PeriodStart</name>
+      <synonym>
+        <key>ru</key>
+        <value>Period start</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b094d4e3-9af1-4c7e-b9c0-700073299245">
+      <name>PeriodEnd</name>
+      <synonym>
+        <key>ru</key>
+        <value>Period end</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="0a6d6d7d-94c7-4a27-804c-e449f49d0fb9">
+      <name>ReportType</name>
+      <synonym>
+        <key>ru</key>
+        <value>Report type</value>
+      </synonym>
+      <comment>Тип отчета - 1 реализация, 2 - возвраты</comment>
+      <xdtoValueType>
+        <name>integer</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="0c632fa2-f89f-496e-a9d2-4175b8111013">
+      <name>KKMNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>KKMNumber</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b638cce0-0275-4c98-8fcc-82420d6db806">
+      <name>INN</name>
+      <synonym>
+        <key>ru</key>
+        <value>INN</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="7039ea91-047e-4b4b-a7be-9ac13920e812">
+    <name>Accounting_ConsignmentRevise</name>
+    <synonym>
+      <key>ru</key>
+      <value>Accounting consignment revise</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Accounting_ConsignmentRevise</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="de6fd137-f121-477e-8d96-5833cc0354c1">
+      <name>PeriodStart</name>
+      <synonym>
+        <key>ru</key>
+        <value>Period start</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b7568798-6c71-4c45-9cd9-9665a28d8663">
+      <name>PeriodEnd</name>
+      <synonym>
+        <key>ru</key>
+        <value>Period end</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="65eabe89-23fa-48dd-9abd-e6d20294208d">
+      <name>INN</name>
+      <synonym>
+        <key>ru</key>
+        <value>INN</value>
+      </synonym>
+      <comment></comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="82ea361b-4ca4-4aed-8512-28c5210b0367">
+    <name>Pharmacy_SendPromoCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Pharmacy send promo code</value>
+    </synonym>
+    <comment></comment>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Pharmacy_SendPromoCode</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="8c5eeb49-d7e1-46ab-9379-9d182f89f529">
+      <name>PromoRequest</name>
+      <synonym>
+        <key>ru</key>
+        <value>Promo request</value>
+      </synonym>
+      <comment>Структура {Телефон,Дата,Документ,Аптека}</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

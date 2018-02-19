@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c035d80-1c82-428c-9ae9-633cc4e8ac1e">
+  <producedTypes>
+    <refType typeId="15025b0d-cd18-4c67-ba9c-4eb6be4ac36c" valueTypeId="1e127747-d5b1-44e8-b3cc-f36e45cd11d6"/>
+    <listType typeId="98d00587-d32b-4bfa-929c-006015045839" valueTypeId="d7e120db-4e70-4753-8c81-5d4b52e58987"/>
+    <managerType typeId="dcd29eeb-b6e8-4df8-aa39-b9ff5217e390" valueTypeId="51444d55-285a-4dc8-b4cf-68d87e4ef350"/>
+  </producedTypes>
+  <name>ВидыИмпортируемыхПолей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды импортируемых полей</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="159699c2-a68c-47e4-ae10-0790ba8e7640">
+    <name>КодТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код товара</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9b7eadda-c101-4a3c-a337-496573bafe1b">
+    <name>НаименованиеТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование товара</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="88b23990-fb9c-479b-abf4-87a2f5581ea1">
+    <name>НаименованиеПроизводителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование производителя</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="1e4c6ec1-813a-444f-9d34-c732a842eb8f">
+    <name>Штрихкод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрихкод</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e734dc96-54de-4318-bf04-02e70b978621">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a6ffc1a8-ef39-4b7d-bb10-0d0ce2a04352">
+    <name>КодПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код поставщика</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e127246f-de63-4208-89ac-33760ed73e0e">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="22ceaeba-3f64-461e-b0f3-11aba8cf0870">
+    <name>ЦенаЗакупки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена закупки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="08eb733b-6e35-4ea7-8eb3-347963ed9101">
+    <name>ЦенаПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена продажи</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9aeef555-8bdb-4dbd-a4a0-7ebcd9b518ac">
+    <name>НачальныйОстаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальный остаток</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="387017ff-d29b-4f18-9e58-c692793513d8">
+    <name>КонечныйОстаток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конечный остаток</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="800bc8d5-b049-4eed-96a1-f0b35ce12598">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f4b76d1f-cbc2-4912-b3ad-7bdda3eff75b">
+    <name>КПП</name>
+    <synonym>
+      <key>ru</key>
+      <value>КПП</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="54d0c992-5322-4695-9a01-04f5fda9da35">
+    <name>НаименованиеПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование поставщика</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

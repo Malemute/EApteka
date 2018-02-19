@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37b5dfe6-ec25-4db8-88e2-bd19d562d8b0">
+  <producedTypes>
+    <objectType typeId="973f50fb-57ab-4c88-ba80-ae60ddb018ea" valueTypeId="7dab243e-93f9-4c54-b385-a8e3bdd70e0e"/>
+    <refType typeId="6b0a89c3-a288-41ad-bc9f-a7f3519b3774" valueTypeId="3cb0afe5-7a26-4ab1-9118-ffd773239357"/>
+    <selectionType typeId="5ee3454f-2ed0-4788-8484-b9c494cf81ca" valueTypeId="fb030faf-08c3-4544-b301-b545c437cd35"/>
+    <listType typeId="49791c91-03b5-4b64-b98e-24fcc146ddea" valueTypeId="1f5468c3-0f80-4baf-93b7-acc3e09ea200"/>
+    <managerType typeId="d49497eb-5b17-4633-9484-fab14458aa68" valueTypeId="1d27987b-e7af-4730-8b68-b05988179e5f"/>
+  </producedTypes>
+  <name>ШаблоныРассылкиПоЭлектроннойПочте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны рассылки по электронной почте</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ШаблоныРассылкиПоЭлектроннойПочте.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ШаблоныРассылкиПоЭлектроннойПочте.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ШаблоныРассылкиПоЭлектроннойПочте.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="8d2f2582-4890-4a9c-ba2a-a8ea0c4ef7d3">
+    <name>ПолучателиРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатели рассылки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="04caea7e-e500-46b3-b147-458d57edfb3e">
+    <name>ТемаПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тема письма</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70b33544-354e-41bb-9673-e7ed82037214">
+    <name>ТелоПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело письма</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7461f843-d4bf-49a9-99d4-3444b0ba8c81">
+    <name>УчетнаяЗаписьЭлектроннойПочты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись электронной почты</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="06b9c066-3f89-4217-af75-f5e3f6f0a4f6">
+    <name>ТипТекстаПочтовогоСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип текста почтового сообщения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ТипТекстаПочтовогоСообщения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипТекстаПочтовогоСообщения.EnumValue.ПростойТекст</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="70eda211-4f29-4aa0-a5eb-0e844f286ee8">
+    <name>ФорматнаяСтрокаДаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форматная строка даты</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="cac53fa4-9ef1-4609-bf3d-2562f7517a57">
+    <producedTypes>
+      <objectType typeId="7c69a67c-8e29-4e61-b7ba-d8cd2546fa2a" valueTypeId="af13bd16-70b8-4326-88fe-7c4108c636c2"/>
+      <rowType typeId="8a23ddbc-6a4e-4f62-bc5a-b489d983776f" valueTypeId="c055a575-eba8-4819-bc9e-fbb30ccaa4ae"/>
+    </producedTypes>
+    <name>ВложенияТабличныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вложения табличные документы</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="4d8fe055-24e7-46ca-9581-bfd9ed50027f">
+      <name>ШаблонИмениВложения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Шаблон имени вложения</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>[ТекущаяДата] для вставки текущей даты</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e2a9406e-ffdd-4fd9-b0a2-d6734c107d76">
+      <name>ТекстЗапроса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст запроса</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <mask></mask>
+      <multiLine>true</multiLine>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7474046e-fce3-4319-a66e-9d17bac4fb98">
+      <name>ПараметрыЗапроса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметры запроса</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ValueStorage</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Структура с параметрами</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="3384fe7a-8d2a-46fa-b5da-29192575cab3">
+      <name>ФорматнаяСтрокаДаты</name>
+      <synonym>
+        <key>ru</key>
+        <value>Форматная строка даты</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="db7d4cdd-8205-4f40-85ea-c1adf7c2a464">
+      <name>КодФормированияПараметраЗапросов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код формирования параметра запросов</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <mask></mask>
+      <multiLine>true</multiLine>
+      <extendedEdit>true</extendedEdit>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="add616f3-2006-4e16-b5f3-970100f71029">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

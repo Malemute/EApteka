@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6485cd44-51b5-40f0-8def-cd34907f8c52">
+  <producedTypes>
+    <selectionType typeId="6d88bb6a-ecbb-4ee1-9f7c-686bc57e02a2" valueTypeId="48d7490f-b26f-48d2-befe-2f30a29c3808"/>
+    <listType typeId="6b62d944-7c60-47d3-9d0d-ac0a35e8e754" valueTypeId="b879caff-0dd3-459f-9b76-63fb42e99d96"/>
+    <managerType typeId="19f90e4a-4bd9-4a55-9e9e-57a3ceb992b7" valueTypeId="800a1f60-f95c-4161-9772-050059a3c50e"/>
+    <recordSetType typeId="17330e75-cb5e-460f-a828-ce2af1b2aa44" valueTypeId="ee62facf-33d1-4ebe-9e5d-dd6799f07f56"/>
+    <recordKeyType typeId="2d2aac8e-b049-49ac-83d5-f36903e4b658" valueTypeId="92df883c-9987-43c6-a828-3d88fa50b6eb"/>
+    <recordType typeId="38cbb47d-bb17-486d-a58a-4c1c667fb0ae" valueTypeId="b89e902e-3858-4c99-88b3-023b14eed00c"/>
+    <recordManagerType typeId="38ee0267-91b1-4e5c-9f83-29e8064ed638" valueTypeId="8dec83e9-989d-4280-932f-d3b2ded94798"/>
+  </producedTypes>
+  <name>УсловияПоставкиТовараПоставщиком</name>
+  <synonym>
+    <key>ru</key>
+    <value>Условия поставки товара поставщиком</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.УсловияПоставкиТовараПоставщиком.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="4d1415d2-dd0e-4387-bb9a-3cb3efa9945c">
+    <name>КлючСвязи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ связи</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ff1cfef5-ab8f-4d96-af2d-6f365f13e77b">
+    <name>ДеньНедели</name>
+    <synonym>
+      <key>ru</key>
+      <value>День недели</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ДниНедели</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="97ed5a95-397d-4807-9eef-e83da39d4ae0">
+    <name>ДнейНаПоставку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней на поставку</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d46a1fdd-966f-4a55-a26f-8d7631f5ed09">
+    <name>ТипДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип дней</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ТипДня</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипДня.EnumValue.Календарный</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bda791c8-b90a-4fe9-b8d4-13384e2ab144">
+    <name>ВремяОкончанияПринятияЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время окончания принятия заказа</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T16:00:00</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a6afcaef-3a16-4141-8e49-45a60b31166f">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

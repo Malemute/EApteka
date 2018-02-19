@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f92c3b0-d159-48d0-9cf6-90777f33073f">
+  <producedTypes>
+    <refType typeId="a20f235f-adac-4f58-b4d5-fd554205e2b2" valueTypeId="b2830256-b33b-4296-a48a-c338b4d6bfda"/>
+    <listType typeId="75266a67-ca3f-49eb-9867-59a51082e315" valueTypeId="0964163a-16af-4cfe-9f78-466c5040a0c5"/>
+    <managerType typeId="43191cd1-f56b-44f6-889b-152ae04e2466" valueTypeId="32107ecf-9c05-45eb-b445-4b012d2c97fe"/>
+  </producedTypes>
+  <name>ЕдиницыИзмерения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Единицы измерения</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="822aa73a-efad-4f31-810e-29b975791bdc">
+    <name>Шт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шт</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="002f713e-d038-487b-9fba-7837c3111c67">
+    <name>Коробка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробка</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="79695b75-94a1-4d95-8bc6-8ca7ab2712f3">
+    <name>Пачка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пачка</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

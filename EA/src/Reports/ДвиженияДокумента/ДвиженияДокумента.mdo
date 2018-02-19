@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e69b4b9c-7b44-4f9b-8ed2-e29024b29589">
+  <producedTypes>
+    <objectType typeId="ce4c44ca-ad34-4a65-8897-d88c84fc990a" valueTypeId="39af9a23-9c86-467d-8159-5c0a90cd1c5f"/>
+    <managerType typeId="1ebdf1d8-026a-4ec5-8c24-2a70c13cf1c9" valueTypeId="077dd7ee-d252-4d37-a6a3-0c6a63dd6bd9"/>
+  </producedTypes>
+  <name>ДвиженияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения документа</value>
+  </synonym>
+  <comment>Отчет по движениям документа</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДвиженияДокумента.Form.ФормаОтчета</defaultForm>
+  <attributes uuid="6df28bbc-e85c-4299-9a78-aecbb1a55703">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, для которого формируется отчет.</value>
+    </toolTip>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="8e65c1a4-b7c5-4d9f-b4f1-882f022b00a0">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d7571ddb-a6e6-42f2-b6fb-579ac2071647">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+  <commands uuid="17f878a1-2437-4628-96db-16d1218b7a7d">
+    <name>ДвиженияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения документа</value>
+    </synonym>
+    <comment>Отчет по движениям документа</comment>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.СписаниеПретензии</types>
+      <types>DocumentRef.ПриемкаМаршрута</types>
+      <types>DocumentRef.ОбменТовара</types>
+      <types>DocumentRef.Расходная</types>
+      <types>DocumentRef.Маршрут</types>
+      <types>DocumentRef.Чеки</types>
+      <types>DocumentRef.МаршрутНаАптеку</types>
+      <types>DocumentRef.ЗаказПоставщику</types>
+      <types>DocumentRef.РаскладкаСамовывоза</types>
+      <types>DocumentRef.Заказ</types>
+      <types>DocumentRef.Приходная</types>
+      <types>DocumentRef.КомплектацияЗаказов</types>
+      <types>DocumentRef.ЗаявкаНаДефектуру</types>
+      <types>DocumentRef.ВозвратОтПокупателя</types>
+      <types>DocumentRef.Претензия</types>
+      <types>DocumentRef.Инвентаризация</types>
+      <types>DocumentRef.Перемещение</types>
+      <types>DocumentRef.ПриемныйОрдер</types>
+      <types>DocumentRef.Сборка</types>
+      <types>DocumentRef.АннулированиеЗаказовПоставщику</types>
+      <types>DocumentRef.ВводНачальныхОстатков</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.DebitCredit</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

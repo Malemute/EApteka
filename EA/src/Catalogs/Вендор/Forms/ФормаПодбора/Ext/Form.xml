@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="33">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Table name="СписокПроизводителей" id="1">
+					<Height>9</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<VerticalStretch>false</VerticalStretch>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>СписокПроизводителей</DataPath>
+					<RowPictureDataPath>СписокПроизводителей.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СписокПроизводителейКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="СписокПроизводителейКоманднаяПанель" id="3"/>
+					<ExtendedTooltip name="СписокПроизводителейРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="СписокПроизводителейСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>СписокПроизводителей</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокПроизводителейСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="СписокПроизводителейСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокПроизводителейСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>СписокПроизводителей</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокПроизводителейСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="СписокПроизводителейСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокПроизводителейУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>СписокПроизводителей</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокПроизводителейУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="СписокПроизводителейУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СписокКонцерныВыбор</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="СписокКод" id="41">
+							<DataPath>СписокПроизводителей.Code</DataPath>
+							<ContextMenu name="СписокКодКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="СписокКодРасширеннаяПодсказка" id="43"/>
+						</LabelField>
+						<LabelField name="СписокПроизводитель" id="44">
+							<DataPath>СписокПроизводителей.Производитель</DataPath>
+							<ContextMenu name="СписокПроизводительКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="СписокПроизводительРасширеннаяПодсказка" id="46"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаПодобранныеПозиции" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подобранные позиции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подобранные позиции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПодобранныеПозицииРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Table name="ПодобранныеПроизводители" id="17">
+							<Representation>List</Representation>
+							<Height>10</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПодобранныеПроизводители</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПодобранныеПроизводителиКонтекстноеМеню" id="18"/>
+							<AutoCommandBar name="ПодобранныеПроизводителиКоманднаяПанель" id="19">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПодобранныеПроизводителиРасширеннаяПодсказка" id="20"/>
+							<SearchStringAddition name="ПодобранныеПроизводителиСтрокаПоиска" id="21">
+								<AdditionSource>
+									<Item>ПодобранныеПроизводители</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодобранныеПроизводителиСтрокаПоискаКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ПодобранныеПроизводителиСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПодобранныеПроизводителиСостояниеПросмотра" id="24">
+								<AdditionSource>
+									<Item>ПодобранныеПроизводители</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодобранныеПроизводителиСостояниеПросмотраКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ПодобранныеПроизводителиСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПодобранныеПроизводителиУправлениеПоиском" id="27">
+								<AdditionSource>
+									<Item>ПодобранныеПроизводители</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодобранныеПроизводителиУправлениеПоискомКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ПодобранныеПроизводителиУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ПодобранныеКонцерныПередНачаломДобавления</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="Производитель" id="30">
+									<DataPath>ПодобранныеПроизводители.Производитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПроизводительКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ПроизводительРасширеннаяПодсказка" id="32"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="Перенести" id="39">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Перенести</CommandName>
+			<ExtendedTooltip name="ПеренестиРасширеннаяПодсказка" id="40"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокПроизводителей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список производителей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	Вендор.Код,
+	Вендор.Ссылка КАК Производитель
+ИЗ
+	Справочник.Вендор КАК Вендор</QueryText>
+				<MainTable>Catalog.Вендор</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПодобранныеПроизводители" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобранные производители</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Производитель" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Вендор</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Перенести" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Перенести" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Перенести</Action>
+		</Command>
+	</Commands>
+</Form>

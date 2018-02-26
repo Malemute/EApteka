@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Информация</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияЗаголовокИнформации" id="1">
+			<Width>50</Width>
+			<Height>2</Height>
+			<HorizontalStretch>false</HorizontalStretch>
+			<TextColor>web:DarkBlue</TextColor>
+			<Font ref="sys:DefaultGUIFont" height="16" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заловок информации</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalAlign>Top</VerticalAlign>
+			<ContextMenu name="ДекорацияЗаголовокИнформацииКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДекорацияЗаголовокИнформацииExtendedTooltip" id="11"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияТекстИнформации" id="3">
+			<Width>50</Width>
+			<Height>11</Height>
+			<HorizontalStretch>false</HorizontalStretch>
+			<TextColor>web:Blue</TextColor>
+			<Font ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст информации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<VerticalAlign>Top</VerticalAlign>
+			<ContextMenu name="ДекорацияТекстИнформацииКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ДекорацияТекстИнформацииExtendedTooltip" id="12"/>
+		</LabelDecoration>
+		<Pages name="СтраницыКнопок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыКнопокExtendedTooltip" id="13"/>
+			<ChildItems>
+				<Page name="СтраницаИнформации" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница информации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница информации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ExtendedTooltip name="СтраницаИнформацииExtendedTooltip" id="14"/>
+					<ChildItems>
+						<Button name="КнопкаЗакрыть" id="8">
+							<Type>UsualButton</Type>
+							<Width>50</Width>
+							<Height>1</Height>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<ExtendedTooltip name="КнопкаЗакрытьExtendedTooltip" id="15"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаВопрос" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница вопрос</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница вопрос</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="СтраницаВопросExtendedTooltip" id="16"/>
+					<ChildItems>
+						<Button name="КомандаОтветДа" id="9">
+							<Type>UsualButton</Type>
+							<Width>24</Width>
+							<CommandName>Form.Command.КомандаОтветДа</CommandName>
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<ExtendedTooltip name="КомандаОтветДаExtendedTooltip" id="17"/>
+						</Button>
+						<Button name="КомандаОтветНет" id="10">
+							<Type>UsualButton</Type>
+							<Width>24</Width>
+							<CommandName>Form.Command.КомандаОтветНет</CommandName>
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<ExtendedTooltip name="КомандаОтветНетExtendedTooltip" id="18"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="КомандаОтветДа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Да</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КомандаОтветДа</Action>
+		</Command>
+		<Command name="КомандаОтветНет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОтветНет</Action>
+		</Command>
+	</Commands>
+</Form>

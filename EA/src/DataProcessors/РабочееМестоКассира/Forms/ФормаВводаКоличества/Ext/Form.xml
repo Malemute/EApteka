@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КомандаПодтвердить" id="30">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КомандаПодтвердить</CommandName>
+				<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Подтвердить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КомандаПодтвердитьРасширеннаяПодсказка" id="31"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКнопок1" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок1</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопок1РасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<Button name="КомандаКолво1" id="6">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво1</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво1РасширеннаяПодсказка" id="7"/>
+				</Button>
+				<Button name="КомандаКолво2" id="8">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво2</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво2РасширеннаяПодсказка" id="9"/>
+				</Button>
+				<Button name="КомандаКолво3" id="10">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво3</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво3РасширеннаяПодсказка" id="11"/>
+				</Button>
+				<Button name="КомандаКолво4" id="12">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво4</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво4РасширеннаяПодсказка" id="13"/>
+				</Button>
+				<Button name="КомандаКолво5" id="14">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво5</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво5РасширеннаяПодсказка" id="15"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКнопок2" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопок2РасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<Button name="КомандаКолво6" id="16">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво6</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво6РасширеннаяПодсказка" id="17"/>
+				</Button>
+				<Button name="КомандаКолво7" id="20">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво7</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво7РасширеннаяПодсказка" id="21"/>
+				</Button>
+				<Button name="КомандаКолво8" id="22">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво8</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво8РасширеннаяПодсказка" id="23"/>
+				</Button>
+				<Button name="КомандаКолво9" id="24">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво9</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаКолво9РасширеннаяПодсказка" id="25"/>
+				</Button>
+				<Button name="КомандаКолво10" id="26">
+					<Type>UsualButton</Type>
+					<Width>6</Width>
+					<CommandName>Form.Command.КомандаКолво10</CommandName>
+					<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>10</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаКолво10РасширеннаяПодсказка" id="27"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="КоличествоТовара" id="1">
+			<DataPath>КоличествоТовара</DataPath>
+			<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+			<SpinButton>true</SpinButton>
+			<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+			<ContextMenu name="КоличествоТовараКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КоличествоТовараРасширеннаяПодсказка" id="3"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоКассира</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КоличествоТовара" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество товара</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>9</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаксКоличество" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макс количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаКолво1" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво1</Action>
+		</Command>
+		<Command name="КомандаКолво2" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво2</Action>
+		</Command>
+		<Command name="КомандаКолво3" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво3</Action>
+		</Command>
+		<Command name="КомандаКолво4" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>4</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво4</Action>
+		</Command>
+		<Command name="КомандаКолво5" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>5</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво5</Action>
+		</Command>
+		<Command name="КомандаКолво6" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>6</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво6</Action>
+		</Command>
+		<Command name="КомандаКолво7" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>7</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво7</Action>
+		</Command>
+		<Command name="КомандаКолво8" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>8</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво8</Action>
+		</Command>
+		<Command name="КомандаКолво9" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>9</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво9</Action>
+		</Command>
+		<Command name="КомандаКолво10" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>9</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда колво1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКолво10</Action>
+		</Command>
+		<Command name="КомандаПодтвердить" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда подтвердить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПодтвердить</Action>
+		</Command>
+	</Commands>
+</Form>

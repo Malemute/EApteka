@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="Склад" id="5">
+					<DataPath>Объект.Склад</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СкладКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="7"/>
+				</InputField>
+				<InputField name="Зона" id="8">
+					<DataPath>Объект.Зона</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Склад</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.Склад</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="ЗонаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ЗонаРасширеннаяПодсказка" id="10"/>
+					<Events>
+						<Event name="OnChange">ПриИзмененииЗаполнитьПараметры</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="ЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="СтелажС" id="11">
+							<DataPath>Объект.СтелажС</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СтелажСКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="СтелажСРасширеннаяПодсказка" id="13"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииЗаполнитьПараметры</Event>
+							</Events>
+						</InputField>
+						<InputField name="СтелажПо" id="16">
+							<DataPath>Объект.СтелажПо</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СтелажПоКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СтелажПоРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииЗаполнитьПараметры</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<InputField name="ЯчейкаС" id="19">
+							<DataPath>Объект.ЯчейкаС</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЯчейкаСКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ЯчейкаСРасширеннаяПодсказка" id="21"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииЗаполнитьПараметры</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЯчейкаПо" id="22">
+							<DataPath>Объект.ЯчейкаПо</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>по</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЯчейкаПоКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ЯчейкаПоРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="OnChange">ПриИзмененииЗаполнитьПараметры</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ВыбранныеМеста" id="25">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<SearchOnInput>DontUse</SearchOnInput>
+			<DataPath>ВыбранныеМеста</DataPath>
+			<CommandSet>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Choose</ExcludedCommand>
+				<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>ListSettings</ExcludedCommand>
+				<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>Refresh</ExcludedCommand>
+				<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+			</CommandSet>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="ВыбранныеМестаКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ВыбранныеМестаКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ВыбранныеМестаРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ВыбранныеМестаСтрокаПоиска" id="29">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>ВыбранныеМеста</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<HorizontalStretch>false</HorizontalStretch>
+				<ContextMenu name="ВыбранныеМестаСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ВыбранныеМестаСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВыбранныеМестаСостояниеПросмотра" id="32">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>ВыбранныеМеста</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<ContextMenu name="ВыбранныеМестаСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ВыбранныеМестаСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВыбранныеМестаУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ВыбранныеМеста</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВыбранныеМестаУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ВыбранныеМестаУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ВыбранныеМестаМестоЗСЯ" id="41">
+					<DataPath>ВыбранныеМеста.МестоЗСЯ</DataPath>
+					<ContextMenu name="ВыбранныеМестаМестоЗСЯКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ВыбранныеМестаМестоЗСЯРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="ВыбранныеМестаВидМестаЗСЯ" id="38">
+					<DataPath>ВыбранныеМеста.ВидМестаЗСЯ</DataPath>
+					<ContextMenu name="ВыбранныеМестаВидМестаЗСЯКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ВыбранныеМестаВидМестаЗСЯРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="ВыбранныеМестаСсылка" id="46">
+					<DataPath>~ВыбранныеМеста.Ref</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ВыбранныеМестаСсылкаКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ВыбранныеМестаСсылкаРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<Button name="НапечататьШК" id="44">
+			<Type>UsualButton</Type>
+			<DefaultButton>true</DefaultButton>
+			<OnlyInAllActions>true</OnlyInAllActions>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.НапечататьШК</CommandName>
+			<ExtendedTooltip name="НапечататьШКРасширеннаяПодсказка" id="45"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПечатьШКМестХраненияЗСЯ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВыбранныеМеста" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные места</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~ВыбранныеМеста.Ref</Field>
+				<Field>ВыбранныеМеста.ЗонаСсылка</Field>
+				<Field>ВыбранныеМеста.Стеллаж</Field>
+				<Field>ВыбранныеМеста.Ячейка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	МестоЗСЯ.Наименование КАК МестоЗСЯ,
+	ПРЕДСТАВЛЕНИЕ(МестоЗСЯ.ВидМестаЗСЯ) КАК ВидМестаЗСЯ,
+	МестоЗСЯ.ЗонаСсылка,
+	МестоЗСЯ.Стеллаж,
+	МестоЗСЯ.Ячейка
+ИЗ
+	Справочник.МестоЗСЯ КАК МестоЗСЯ
+ГДЕ
+	МестоЗСЯ.ЗонаСсылка = &amp;Зона
+	И МестоЗСЯ.Стеллаж МЕЖДУ &amp;СтелажС И &amp;СтелажПо
+	И МестоЗСЯ.Ячейка МЕЖДУ &amp;ЯчейкаС И &amp;ЯчейкаПо
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЗСЯНоменклатуры.Зона + "_" + ЗСЯНоменклатуры.Стеллаж + "_" + ЗСЯНоменклатуры.Ячейка,
+	ПРЕДСТАВЛЕНИЕ(ЗНАЧЕНИЕ(перечисление.ВидыМестЗСЯ.ХранениеНоменклатуры)),
+	ЗСЯНоменклатуры.ЗонаСсылка,
+	ЗСЯНоменклатуры.Стеллаж,
+	ЗСЯНоменклатуры.Ячейка
+ИЗ
+	РегистрСведений.ЗСЯНоменклатуры КАК ЗСЯНоменклатуры
+ГДЕ
+	ЗСЯНоменклатуры.ЗонаСсылка = &amp;Зона
+	И ЗСЯНоменклатуры.Стеллаж МЕЖДУ &amp;СтелажС И &amp;СтелажПо
+	И ЗСЯНоменклатуры.Ячейка МЕЖДУ &amp;ЯчейкаС И &amp;ЯчейкаПо</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НапечататьШК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напечатать штрих-коды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напечатать ШК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НапечататьШК</Action>
+		</Command>
+	</Commands>
+</Form>

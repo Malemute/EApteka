@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименованиеРодитель" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование/Родитель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование/Родитель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеРодительРасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<InputField name="Наименование" id="61">
+					<DataPath>Объект.Description</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="92"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ДекорацияНадписьПояснениеДляОбязательныхУсловий" id="69">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связь будет считаться успешной (возвращен объект-резальтат) только при истинности каждого из перечисленных условий.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНадписьПояснениеДляОбязательныхУсловийКонтекстноеМеню" id="70"/>
+			<ExtendedTooltip name="ДекорацияНадписьПояснениеДляОбязательныхУсловийРасширеннаяПодсказка" id="93"/>
+		</LabelDecoration>
+		<Pages name="ГруппаОписаниеСвязи" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа описание связи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа описание связи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаОписаниеСвязиРасширеннаяПодсказка" id="94"/>
+			<ChildItems>
+				<Page name="ГруппаУсловияСвязи" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Условия связи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа условия связи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаУсловияСвязиРасширеннаяПодсказка" id="95"/>
+					<ChildItems>
+						<InputField name="ВидОбъектаИсточникаУсловийСвязи" id="78">
+							<DataPath>Объект.ВидОбъектаИсточникаУсловийСвязи</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ВидОбъектаИсточникаУсловийСвязиКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ВидОбъектаИсточникаУсловийСвязиРасширеннаяПодсказка" id="96"/>
+						</InputField>
+						<Table name="УсловияСвязиОбязательные" id="7">
+							<Representation>List</Representation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.УсловияСвязи</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="УсловияСвязиОбязательныеКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="УсловияСвязиОбязательныеКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="УсловияСвязиОбязательныеРасширеннаяПодсказка" id="97"/>
+							<SearchStringAddition name="УсловияСвязиОбязательныеСтрокаПоиска" id="98">
+								<AdditionSource>
+									<Item>УсловияСвязиОбязательные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УсловияСвязиОбязательныеСтрокаПоискаКонтекстноеМеню" id="99"/>
+								<ExtendedTooltip name="УсловияСвязиОбязательныеСтрокаПоискаРасширеннаяПодсказка" id="100"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УсловияСвязиОбязательныеСостояниеПросмотра" id="101">
+								<AdditionSource>
+									<Item>УсловияСвязиОбязательные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УсловияСвязиОбязательныеСостояниеПросмотраКонтекстноеМеню" id="102"/>
+								<ExtendedTooltip name="УсловияСвязиОбязательныеСостояниеПросмотраРасширеннаяПодсказка" id="103"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УсловияСвязиОбязательныеУправлениеПоиском" id="104">
+								<AdditionSource>
+									<Item>УсловияСвязиОбязательные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УсловияСвязиОбязательныеУправлениеПоискомКонтекстноеМеню" id="105"/>
+								<ExtendedTooltip name="УсловияСвязиОбязательныеУправлениеПоискомРасширеннаяПодсказка" id="106"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="УсловияСвязиОбязательныеУсловиеСвязи" id="44">
+									<DataPath>Объект.УсловияСвязи.УсловиеСвязи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УсловияСвязиОбязательныеУсловиеСвязиКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="УсловияСвязиОбязательныеУсловиеСвязиРасширеннаяПодсказка" id="107"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОписаниеРезультата" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание результата</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основание связи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОписаниеРезультатаРасширеннаяПодсказка" id="108"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВидОбъекта" id="14">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид объекта</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вид объекта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидОбъектаРасширеннаяПодсказка" id="109"/>
+							<ChildItems>
+								<InputField name="ВидОбъектаРезультатаСвязи" id="1">
+									<DataPath>Объект.ВидОбъектаРезультатаСвязи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ВидОбъектаРезультатаСвязиКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ВидОбъектаРезультатаСвязиРасширеннаяПодсказка" id="110"/>
+									<Events>
+										<Event name="OnChange">ВидОбъектаРезультатаСвязиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ВидОбъектаРезультатаСвязиТипОбъекта" id="16">
+									<DataPath>Объект.ВидОбъектаРезультатаСвязи.ТипОбъекта</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ChoiceButton>false</ChoiceButton>
+									<ContextMenu name="ВидОбъектаРезультатаСвязиТипОбъектаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ВидОбъектаРезультатаСвязиТипОбъектаРасширеннаяПодсказка" id="111"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ОбъектРезультатСвязи" id="4">
+							<DataPath>Объект.ОбъектРезультатСвязи</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<OpenButton>true</OpenButton>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="ОбъектРезультатСвязиКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ОбъектРезультатСвязиРасширеннаяПодсказка" id="112"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="75">
+			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="76"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="113"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ОписанияСвязейОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="ПроверитьНастройки" id="46">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПроверитьНастройки</CommandName>
+			<ExtendedTooltip name="ПроверитьНастройкиРасширеннаяПодсказка" id="47"/>
+		</Button>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="АдресЭлектроннойПочты" id="7">
+			<DataPath>Объект.АдресЭлектроннойПочты</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресЭлектроннойПочтыКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АдресЭлектроннойПочтыРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ИмяПользователя" id="10">
+			<DataPath>Объект.ИмяПользователя</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Пользователь" id="13">
+			<DataPath>Объект.Пользователь</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="АдресСервераIMAP" id="16">
+			<DataPath>Объект.АдресСервераIMAP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресСервераIMAPКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="АдресСервераIMAPРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="АдресСервераSMTP" id="19">
+			<DataPath>Объект.АдресСервераSMTP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресСервераSMTPКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="АдресСервераSMTPРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<CheckBoxField name="ИспользоватьSSLIMAP" id="22">
+			<DataPath>Объект.ИспользоватьSSLIMAP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьSSLIMAPКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИспользоватьSSLIMAPРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<CheckBoxField name="ИспользоватьSSLSMTP" id="25">
+			<DataPath>Объект.ИспользоватьSSLSMTP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьSSLSMTPКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ИспользоватьSSLSMTPРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<InputField name="ПарольIMAP" id="28">
+			<DataPath>Объект.ПарольIMAP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПарольIMAPКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ПарольIMAPРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ПарольSMTP" id="31">
+			<DataPath>Объект.ПарольSMTP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПарольSMTPКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПарольSMTPРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ПользовательIMAP" id="34">
+			<DataPath>Объект.ПользовательIMAP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПользовательIMAPКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ПользовательIMAPРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ПользовательSMTP" id="37">
+			<DataPath>Объект.ПользовательSMTP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПользовательSMTPКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ПользовательSMTPРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="ПортIMAP" id="40">
+			<DataPath>Объект.ПортIMAP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПортIMAPКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ПортIMAPРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="ПортSMTP" id="43">
+			<DataPath>Объект.ПортSMTP</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПортSMTPКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ПортSMTPРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Таймаут" id="48">
+			<DataPath>Объект.Таймаут</DataPath>
+			<ContextMenu name="ТаймаутКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="50"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.УчетныеЗаписиЭлектроннойПочты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьНастройки</Action>
+		</Command>
+	</Commands>
+</Form>

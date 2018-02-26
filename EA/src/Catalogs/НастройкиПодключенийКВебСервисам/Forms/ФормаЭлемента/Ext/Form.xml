@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПроверитьПодключение" id="37">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьПодключениеРасширеннаяПодсказка" id="38"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="33">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="НазваниеСервиса" id="7">
+					<DataPath>Объект.НазваниеСервиса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НазваниеСервисаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="НазваниеСервисаРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">НазваниеСервисаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТипБазы" id="70">
+					<ContextMenu name="ТипБазыКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ТипБазыРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="Филиал" id="10">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ФилиалКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ФилиалРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">ФилиалПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="АдресСервиса" id="13">
+			<DataPath>Объект.АдресСервиса</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АдресСервисаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="АдресСервисаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="31">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<InputField name="ПространствоИмен" id="16">
+					<DataPath>Объект.ПространствоИмен</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПространствоИменКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПространствоИменРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="Порт" id="19">
+					<DataPath>Объект.Порт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПортКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="Таймаут" id="39">
+					<DataPath>Объект.Таймаут</DataPath>
+					<ContextMenu name="ТаймаутКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="41"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="35">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="Логин" id="22">
+					<DataPath>Объект.Логин</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогинКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="Пароль" id="25">
+					<DataPath>Объект.Пароль</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="ПарольКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ИмяСервиса" id="28">
+			<DataPath>Объект.ИмяСервиса</DataPath>
+			<ContextMenu name="ИмяСервисаКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ИмяСервисаРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<Table name="Организации" id="42">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОрганизацииКонтекстноеМеню" id="43"/>
+			<AutoCommandBar name="ОрганизацииКоманднаяПанель" id="44"/>
+			<ExtendedTooltip name="ОрганизацииРасширеннаяПодсказка" id="45"/>
+			<SearchStringAddition name="ОрганизацииСтрокаПоиска" id="46">
+				<AdditionSource>
+					<Item>Организации</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОрганизацииСтрокаПоискаКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="ОрганизацииСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОрганизацииСостояниеПросмотра" id="51">
+				<AdditionSource>
+					<Item>Организации</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОрганизацииСостояниеПросмотраКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ОрганизацииСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОрганизацииУправлениеПоиском" id="56">
+				<AdditionSource>
+					<Item>Организации</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОрганизацииУправлениеПоискомКонтекстноеМеню" id="59"/>
+				<ExtendedTooltip name="ОрганизацииУправлениеПоискомРасширеннаяПодсказка" id="60"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОрганизацииНомерСтроки" id="61">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацииНомерСтрокиКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ОрганизацииНомерСтрокиРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<InputField name="ОрганизацииДата" id="64">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацииДатаКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ОрганизацииДатаРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="ОрганизацииОрганизация" id="67">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацииОрганизацияКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ОрганизацииОрганизацияРасширеннаяПодсказка" id="69"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НастройкиПодключенийКВебСервисам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьПодключение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьПодключение</Action>
+		</Command>
+	</Commands>
+</Form>

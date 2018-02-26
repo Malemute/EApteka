@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<FunctionalOption uuid="49f81126-9729-4851-882c-be40bbe35de4">
+		<Properties>
+			<Name>ИспользоватьЗакупкуТоваров</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать закупку товаров</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Location>Constant.ИспользоватьЗакупкуТоваров</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>Subsystem.РаботаСТоваром.Subsystem.Закупка</xr:Object>
+				<xr:Object>Document.ЗаявкаНаДефектуру</xr:Object>
+				<xr:Object>Document.АннулированиеЗаказовПоставщику</xr:Object>
+				<xr:Object>Document.ЗаказПоставщику</xr:Object>
+				<xr:Object>Report.Движения_ПоДефектуре</xr:Object>
+				<xr:Object>InformationRegister.БлокированныеПоставщики</xr:Object>
+				<xr:Object>InformationRegister.НастройкиПрайсовПоставщиков</xr:Object>
+				<xr:Object>InformationRegister.ЛогЗагрузкиПрайсовПоставщиков</xr:Object>
+				<xr:Object>InformationRegister.ЗапрещенныеТовары</xr:Object>
+				<xr:Object>InformationRegister.ТоварыПоставщика</xr:Object>
+				<xr:Object>InformationRegister.ПрайсЛистПоставщика</xr:Object>
+				<xr:Object>InformationRegister.Поставщики</xr:Object>
+				<xr:Object>InformationRegister.НастройкиВыгрузкиЗаказовПоставщикам</xr:Object>
+				<xr:Object>InformationRegister.МестаХраненияПоДоговору</xr:Object>
+				<xr:Object>InformationRegister.ПроцентДозаказаУпаковка</xr:Object>
+				<xr:Object>InformationRegister.ПроцентКоррекцииПрайса</xr:Object>
+				<xr:Object>DataProcessor.ОбработкаДефектуры</xr:Object>
+				<xr:Object>InformationRegister.ЛимитыПоставки</xr:Object>
+				<xr:Object>InformationRegister.БлокированныеТоварыПоставщиков</xr:Object>
+				<xr:Object>InformationRegister.УсловияПоставкиТовараПоставщиком</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="33">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Table name="СписокКонцернов" id="1">
+					<Height>9</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<VerticalStretch>false</VerticalStretch>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>СписокКонцернов</DataPath>
+					<RowPictureDataPath>СписокКонцернов.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СписокКонцерновКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="СписокКонцерновКоманднаяПанель" id="3"/>
+					<ExtendedTooltip name="СписокКонцерновРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="СписокКонцерновСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>СписокКонцернов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокКонцерновСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="СписокКонцерновСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокКонцерновСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>СписокКонцернов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокКонцерновСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="СписокКонцерновСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокКонцерновУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>СписокКонцернов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокКонцерновУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="СписокКонцерновУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СписокКонцерныВыбор</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="СписокГруппЗакупкиКод" id="41">
+							<DataPath>СписокКонцернов.Code</DataPath>
+							<ContextMenu name="СписокГруппЗакупкиКодКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="СписокГруппЗакупкиКодРасширеннаяПодсказка" id="43"/>
+						</LabelField>
+						<LabelField name="СписокГруппЗакупкиКонцерн" id="44">
+							<DataPath>СписокКонцернов.Концерн</DataPath>
+							<ContextMenu name="СписокГруппЗакупкиКонцернКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="СписокГруппЗакупкиКонцернРасширеннаяПодсказка" id="46"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаПодобранныеПозиции" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подобранные позиции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подобранные позиции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПодобранныеПозицииРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Table name="ПодобранныеКонцерны" id="17">
+							<Representation>List</Representation>
+							<Height>10</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПодобранныеКонцерны</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПодобранныеКонцерныКонтекстноеМеню" id="18"/>
+							<AutoCommandBar name="ПодобранныеКонцерныКоманднаяПанель" id="19">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПодобранныеКонцерныРасширеннаяПодсказка" id="20"/>
+							<SearchStringAddition name="ПодобранныеКонцерныСтрокаПоиска" id="21">
+								<AdditionSource>
+									<Item>ПодобранныеКонцерны</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодобранныеКонцерныСтрокаПоискаКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ПодобранныеКонцерныСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПодобранныеКонцерныСостояниеПросмотра" id="24">
+								<AdditionSource>
+									<Item>ПодобранныеКонцерны</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодобранныеКонцерныСостояниеПросмотраКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ПодобранныеКонцерныСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПодобранныеКонцерныУправлениеПоиском" id="27">
+								<AdditionSource>
+									<Item>ПодобранныеКонцерны</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПодобранныеКонцерныУправлениеПоискомКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ПодобранныеКонцерныУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ПодобранныеКонцерныПередНачаломДобавления</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="Концерн" id="30">
+									<DataPath>ПодобранныеКонцерны.Концерн</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КонцернКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="КонцернРасширеннаяПодсказка" id="32"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="Перенести" id="39">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Перенести</CommandName>
+			<ExtendedTooltip name="ПеренестиРасширеннаяПодсказка" id="40"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокКонцернов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список концернов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	Концерны.Код,
+	Концерны.Ссылка КАК Концерн
+ИЗ
+	Справочник.Концерны КАК Концерны</QueryText>
+				<MainTable>Catalog.Концерны</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПодобранныеКонцерны" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобранные концерны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Концерн" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Концерн</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Концерны</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Перенести" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Перенести" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Перенести</Action>
+		</Command>
+	</Commands>
+</Form>

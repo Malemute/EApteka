@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="45081835-1abc-4031-b800-5b2d9ca1e614">
+		<Name>Склад</Name>
+		<Code>000000001</Code>
+		<Description>Склад</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5256f556-659c-430b-92a0-7b6b2f2a7b0b">
+		<Name>ЦентральнаяБазаDataRequests</Name>
+		<Code>000000002</Code>
+		<Description>Центральная база</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

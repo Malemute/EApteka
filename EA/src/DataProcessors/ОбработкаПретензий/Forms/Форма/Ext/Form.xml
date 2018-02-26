@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Журнал открытых претензий</v8:content>
+		</v8:item>
+	</Title>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОбновить" id="56">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Refresh</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="57"/>
+			</Button>
+			<Button name="ФормаУстановитьОтметки" id="64">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УстановитьОтметки</CommandName>
+				<ExtendedTooltip name="ФормаУстановитьОтметкиРасширеннаяПодсказка" id="65"/>
+			</Button>
+			<Button name="ФормаСнятьОтметки" id="62">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СнятьОтметки</CommandName>
+				<ExtendedTooltip name="ФормаСнятьОтметкиРасширеннаяПодсказка" id="63"/>
+			</Button>
+			<Button name="ФормаНайти" id="58">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Item.Претензии.StandardCommand.Find</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Find</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаНайтиРасширеннаяПодсказка" id="59"/>
+			</Button>
+			<Button name="ФормаОтменитьПоиск" id="60">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Item.Претензии.StandardCommand.CancelSearch</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.CancelSearch</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаОтменитьПоискРасширеннаяПодсказка" id="61"/>
+			</Button>
+			<Popup name="ОбработатьПретензии" id="66">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обработать претензии</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обработать претензии</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ОбработатьПретензииРасширеннаяПодсказка" id="67"/>
+				<ChildItems>
+					<Button name="ФормаРасходная" id="72">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Расходная</CommandName>
+						<ExtendedTooltip name="ФормаРасходнаяРасширеннаяПодсказка" id="73"/>
+					</Button>
+					<Button name="ФормаПриходная" id="68">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Приходная</CommandName>
+						<ExtendedTooltip name="ФормаПриходнаяРасширеннаяПодсказка" id="69"/>
+					</Button>
+					<Button name="ФормаПеремещение" id="70">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Перемещение</CommandName>
+						<ExtendedTooltip name="ФормаПеремещениеРасширеннаяПодсказка" id="71"/>
+					</Button>
+					<Button name="ФормаСписаниеПретензии" id="74">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Form.Command.СписаниеПретензии</CommandName>
+						<ExtendedTooltip name="ФормаСписаниеПретензииРасширеннаяПодсказка" id="75"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ФормаОшибка" id="86">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Ошибка</CommandName>
+				<ExtendedTooltip name="ФормаОшибкаРасширеннаяПодсказка" id="87"/>
+			</Button>
+			<Button name="ФормаУдалитьПретензию" id="88">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УдалитьПретензию</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Delete</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаУдалитьПретензиюРасширеннаяПодсказка" id="89"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Претензии" id="1">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<SearchOnInput>Use</SearchOnInput>
+			<DataPath>Объект.Претензии</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПретензииКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ПретензииКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПретензииРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ПретензииСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Претензии</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПретензииСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ПретензииСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПретензииСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Претензии</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПретензииСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ПретензииСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПретензииУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Претензии</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПретензииУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ПретензииУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnChange">ПретензииПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ПретензииНомерСтроки" id="14">
+					<DataPath>Объект.Претензии.LineNumber</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПретензииНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<CheckBoxField name="ПретензииОбрабатывать" id="17">
+					<DataPath>Объект.Претензии.Обрабатывать</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПретензииОбрабатыватьКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПретензииОбрабатыватьРасширеннаяПодсказка" id="19"/>
+				</CheckBoxField>
+				<InputField name="ПретензииСклад" id="20">
+					<DataPath>Объект.Претензии.Склад</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииСкладКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПретензииСкладРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ПретензииДатаПретензии" id="23">
+					<DataPath>Объект.Претензии.ДатаПретензии</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииДатаПретензииКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПретензииДатаПретензииРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ПретензииНакладная" id="26">
+					<DataPath>Объект.Претензии.Накладная</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииНакладнаяКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПретензииНакладнаяРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ПретензииТовар" id="29">
+					<DataPath>Объект.Претензии.Товар</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииТоварКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПретензииТоварРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ПретензииСерия" id="32">
+					<DataPath>Объект.Претензии.Серия</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииСерияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПретензииСерияРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ПретензииПретензия" id="35">
+					<DataPath>Объект.Претензии.Претензия</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииПретензияКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПретензииПретензияРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ПретензииЦена" id="38">
+					<DataPath>Объект.Претензии.Цена</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииЦенаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПретензииЦенаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ПретензииДокументПретензии" id="41">
+					<DataPath>Объект.Претензии.ДокументПретензии</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииДокументПретензииКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПретензииДокументПретензииРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ПретензииПартия" id="44">
+					<DataPath>Объект.Претензии.Партия</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииПартияКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПретензииПартияРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ПретензииСум" id="47">
+					<DataPath>Объект.Претензии.Сум</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииСумКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПретензииСумРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ПретензииКол" id="50">
+					<DataPath>Объект.Претензии.Кол</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПретензииКолКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПретензииКолРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<CheckBoxField name="ПретензииОтправлена" id="53">
+					<DataPath>Объект.Претензии.Отправлена</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПретензииОтправленаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПретензииОтправленаРасширеннаяПодсказка" id="55"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Итог" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИтогРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<UsualGroup name="Всего" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Всего</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Всего</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ВсегоРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<LabelField name="ИтогоВсего" id="78">
+							<DataPath>Объект.Претензии.TotalКол</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ИТОГО</v8:content>
+								</v8:item>
+							</Title>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧРГ=; ЧН=0; ЧГ=</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="ИтогоВсегоКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ИтогоВсегоРасширеннаяПодсказка" id="80"/>
+						</LabelField>
+						<LabelField name="СуммаВсего" id="83">
+							<DataPath>Объект.Претензии.TotalСум</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>на сумму:</v8:content>
+								</v8:item>
+							</Title>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧРГ=; ЧН=0; ЧГ=</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="СуммаВсегоКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="СуммаВсегоРасширеннаяПодсказка" id="85"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбработкаПретензий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ФормаУстановитьОтметки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Претензии.Обрабатывать</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="СнятьОтметки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьОтметки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="УстановитьОтметки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отметки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьОтметки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="Приходная" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приходная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приходная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокумент</Action>
+		</Command>
+		<Command name="СписаниеПретензии" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание претензии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание претензии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокумент</Action>
+		</Command>
+		<Command name="Перемещение" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перемещение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перемещение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокумент</Action>
+		</Command>
+		<Command name="Расходная" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расходная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокумент</Action>
+		</Command>
+		<Command name="Ошибка" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Ошибка</Action>
+		</Command>
+		<Command name="УдалитьПретензию" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить претензию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить претензию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьПретензию</Action>
+		</Command>
+	</Commands>
+</Form>

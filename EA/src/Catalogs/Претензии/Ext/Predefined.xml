@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="d7ef25dd-5bbf-4198-a383-97db1e42c3a6">
+		<Name>Брак</Name>
+		<Code>0000000003</Code>
+		<Description>Брак</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1cf051e7-de8c-4e01-982a-bf88b8970f90">
+		<Name>ВозвратПоставщику</Name>
+		<Code>0000000005</Code>
+		<Description>Возврат поставщику</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="58992ac5-d263-46e5-a483-8d584739d582">
+		<Name>Лишний</Name>
+		<Code>0000000004</Code>
+		<Description>Лишний</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0c86e856-5de8-4554-879e-1dd26f4c6e9e">
+		<Name>Недовоз</Name>
+		<Code>0000000001</Code>
+		<Description>Недовоз</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3af72b66-dbc0-488c-80a1-d94353bdd8b5">
+		<Name>Перевоз</Name>
+		<Code>0000000002</Code>
+		<Description>Перевоз</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalSpacing>Half</VerticalSpacing>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Группа3" id="83">
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="84"/>
+			<ChildItems>
+				<Page name="Группа7" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="73">
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<LabelField name="Владелец" id="7">
+									<DataPath>Объект.Owner</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+								</LabelField>
+								<UsualGroup name="Группа1" id="71">
+									<Group>Horizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="72"/>
+									<ChildItems>
+										<InputField name="Наименование" id="4">
+											<DataPath>Объект.Description</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>25</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+										</InputField>
+										<InputField name="Код" id="1">
+											<DataPath>Объект.Code</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+										</InputField>
+										<InputField name="ID_77" id="46">
+											<DataPath>1/0:a1c8e155-c525-4eda-aa02-922d9068948f</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ID_77КонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="ID_77РасширеннаяПодсказка" id="48"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа4" id="77">
+									<Group>Horizontal</Group>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="78"/>
+									<ChildItems>
+										<UsualGroup name="Группа5" id="79">
+											<Group>Vertical</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="80"/>
+											<ChildItems>
+												<CheckBoxField name="Активный" id="10">
+													<DataPath>Объект.Активный</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="АктивныйКонтекстноеМеню" id="11"/>
+													<ExtendedTooltip name="АктивныйРасширеннаяПодсказка" id="12"/>
+												</CheckBoxField>
+												<CheckBoxField name="Отгружает" id="13">
+													<DataPath>Объект.Отгружает</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОтгружаетКонтекстноеМеню" id="14"/>
+													<ExtendedTooltip name="ОтгружаетРасширеннаяПодсказка" id="15"/>
+												</CheckBoxField>
+												<InputField name="МинСуммаЗаказа" id="16">
+													<DataPath>Объект.МинСуммаЗаказа</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МинСуммаЗаказаКонтекстноеМеню" id="17"/>
+													<ExtendedTooltip name="МинСуммаЗаказаРасширеннаяПодсказка" id="18"/>
+												</InputField>
+												<InputField name="КратностьУпаковки" id="19">
+													<DataPath>Объект.КратностьУпаковки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="КратностьУпаковкиКонтекстноеМеню" id="20"/>
+													<ExtendedTooltip name="КратностьУпаковкиРасширеннаяПодсказка" id="21"/>
+												</InputField>
+												<InputField name="КоэфКорректировкиОстатка" id="31">
+													<DataPath>Объект.КоэфКорректировкиОстатка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="КоэфКорректировкиОстаткаКонтекстноеМеню" id="32"/>
+													<ExtendedTooltip name="КоэфКорректировкиОстаткаРасширеннаяПодсказка" id="33"/>
+												</InputField>
+												<CheckBoxField name="ПрайсДоступенОператорам" id="40">
+													<DataPath>Объект.ПрайсДоступенОператорам</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПрайсДоступенОператорамКонтекстноеМеню" id="41"/>
+													<ExtendedTooltip name="ПрайсДоступенОператорамРасширеннаяПодсказка" id="42"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа6" id="81">
+											<Group>Vertical</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="82"/>
+											<ChildItems>
+												<InputField name="Отсрочка" id="22">
+													<DataPath>Объект.Отсрочка</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОтсрочкаКонтекстноеМеню" id="23"/>
+													<ExtendedTooltip name="ОтсрочкаРасширеннаяПодсказка" id="24"/>
+												</InputField>
+												<InputField name="ПроцентРетробонус" id="25">
+													<DataPath>Объект.ПроцентРетробонус</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроцентРетробонусКонтекстноеМеню" id="26"/>
+													<ExtendedTooltip name="ПроцентРетробонусРасширеннаяПодсказка" id="27"/>
+												</InputField>
+												<InputField name="МинСрокГодности" id="28">
+													<DataPath>Объект.МинСрокГодности</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МинСрокГодностиКонтекстноеМеню" id="29"/>
+													<ExtendedTooltip name="МинСрокГодностиРасширеннаяПодсказка" id="30"/>
+												</InputField>
+												<InputField name="ЧастотаЗагрузкиПрайса" id="34">
+													<DataPath>Объект.ЧастотаЗагрузкиПрайса</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ЧастотаЗагрузкиПрайсаКонтекстноеМеню" id="35"/>
+													<ExtendedTooltip name="ЧастотаЗагрузкиПрайсаРасширеннаяПодсказка" id="36"/>
+												</InputField>
+												<InputField name="ДатаОжидаемойПоставки" id="37">
+													<DataPath>Объект.ДатаОжидаемойПоставки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДатаОжидаемойПоставкиКонтекстноеМеню" id="38"/>
+													<ExtendedTooltip name="ДатаОжидаемойПоставкиРасширеннаяПодсказка" id="39"/>
+												</InputField>
+												<InputField name="СрокГодностиПоУмолчанию" id="43">
+													<DataPath>Объект.СрокГодностиПоУмолчанию</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="СрокГодностиПоУмолчаниюКонтекстноеМеню" id="44"/>
+													<ExtendedTooltip name="СрокГодностиПоУмолчаниюРасширеннаяПодсказка" id="45"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группа8" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<UsualGroup name="Группа9" id="89">
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="90"/>
+							<ChildItems>
+								<UsualGroup name="Группа11" id="115">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>% коррекции прайса</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+									<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="116"/>
+									<ChildItems>
+										<Table name="ПроцентКоррекцииПрайса" id="91">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ПроцентКоррекцииПрайса</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ПроцентКоррекцииПрайсаКонтекстноеМеню" id="92"/>
+											<AutoCommandBar name="ПроцентКоррекцииПрайсаКоманднаяПанель" id="93"/>
+											<ExtendedTooltip name="ПроцентКоррекцииПрайсаРасширеннаяПодсказка" id="94"/>
+											<SearchStringAddition name="ПроцентКоррекцииПрайсаСтрокаПоиска" id="95">
+												<AdditionSource>
+													<Item>ПроцентКоррекцииПрайса</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроцентКоррекцииПрайсаСтрокаПоискаКонтекстноеМеню" id="96"/>
+												<ExtendedTooltip name="ПроцентКоррекцииПрайсаСтрокаПоискаРасширеннаяПодсказка" id="97"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ПроцентКоррекцииПрайсаСостояниеПросмотра" id="98">
+												<AdditionSource>
+													<Item>ПроцентКоррекцииПрайса</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроцентКоррекцииПрайсаСостояниеПросмотраКонтекстноеМеню" id="99"/>
+												<ExtendedTooltip name="ПроцентКоррекцииПрайсаСостояниеПросмотраРасширеннаяПодсказка" id="100"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ПроцентКоррекцииПрайсаУправлениеПоиском" id="101">
+												<AdditionSource>
+													<Item>ПроцентКоррекцииПрайса</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроцентКоррекцииПрайсаУправлениеПоискомКонтекстноеМеню" id="102"/>
+												<ExtendedTooltip name="ПроцентКоррекцииПрайсаУправлениеПоискомРасширеннаяПодсказка" id="103"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ПроцентКоррекцииПрайсаНомерСтроки" id="104">
+													<DataPath>Объект.ПроцентКоррекцииПрайса.LineNumber</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроцентКоррекцииПрайсаНомерСтрокиКонтекстноеМеню" id="105"/>
+													<ExtendedTooltip name="ПроцентКоррекцииПрайсаНомерСтрокиРасширеннаяПодсказка" id="106"/>
+												</LabelField>
+												<InputField name="ПроцентКоррекцииПрайсаМаксЦена" id="107">
+													<DataPath>Объект.ПроцентКоррекцииПрайса.МаксЦена</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроцентКоррекцииПрайсаМаксЦенаКонтекстноеМеню" id="108"/>
+													<ExtendedTooltip name="ПроцентКоррекцииПрайсаМаксЦенаРасширеннаяПодсказка" id="109"/>
+												</InputField>
+												<InputField name="ПроцентКоррекцииПрайсаКоэффициент" id="110">
+													<DataPath>Объект.ПроцентКоррекцииПрайса.Коэффициент</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроцентКоррекцииПрайсаКоэффициентКонтекстноеМеню" id="111"/>
+													<ExtendedTooltip name="ПроцентКоррекцииПрайсаКоэффициентРасширеннаяПодсказка" id="112"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа10" id="113">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>% дозаказа до упаковки</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+									<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="114"/>
+									<ChildItems>
+										<Table name="ПроцентДозаказаУпаковка" id="49">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<HorizontalStretch>false</HorizontalStretch>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ПроцентДозаказаУпаковка</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ПроцентДозаказаУпаковкаКонтекстноеМеню" id="50"/>
+											<AutoCommandBar name="ПроцентДозаказаУпаковкаКоманднаяПанель" id="51"/>
+											<ExtendedTooltip name="ПроцентДозаказаУпаковкаРасширеннаяПодсказка" id="52"/>
+											<SearchStringAddition name="ПроцентДозаказаУпаковкаСтрокаПоиска" id="53">
+												<AdditionSource>
+													<Item>ПроцентДозаказаУпаковка</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроцентДозаказаУпаковкаСтрокаПоискаКонтекстноеМеню" id="54"/>
+												<ExtendedTooltip name="ПроцентДозаказаУпаковкаСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ПроцентДозаказаУпаковкаСостояниеПросмотра" id="56">
+												<AdditionSource>
+													<Item>ПроцентДозаказаУпаковка</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроцентДозаказаУпаковкаСостояниеПросмотраКонтекстноеМеню" id="57"/>
+												<ExtendedTooltip name="ПроцентДозаказаУпаковкаСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ПроцентДозаказаУпаковкаУправлениеПоиском" id="59">
+												<AdditionSource>
+													<Item>ПроцентДозаказаУпаковка</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ПроцентДозаказаУпаковкаУправлениеПоискомКонтекстноеМеню" id="60"/>
+												<ExtendedTooltip name="ПроцентДозаказаУпаковкаУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ПроцентДозаказаУпаковкаНомерСтроки" id="62">
+													<DataPath>Объект.ПроцентДозаказаУпаковка.LineNumber</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроцентДозаказаУпаковкаНомерСтрокиКонтекстноеМеню" id="63"/>
+													<ExtendedTooltip name="ПроцентДозаказаУпаковкаНомерСтрокиРасширеннаяПодсказка" id="64"/>
+												</LabelField>
+												<InputField name="ПроцентДозаказаУпаковкаЦенаУпаковки" id="65">
+													<DataPath>Объект.ПроцентДозаказаУпаковка.ЦенаУпаковки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПроцентДозаказаУпаковкаЦенаУпаковкиКонтекстноеМеню" id="66"/>
+													<ExtendedTooltip name="ПроцентДозаказаУпаковкаЦенаУпаковкиРасширеннаяПодсказка" id="67"/>
+												</InputField>
+												<InputField name="ПроцентДозаказаУпаковкаКоэффициент" id="68">
+													<DataPath>Объект.ПроцентДозаказаУпаковка.Коэффициент</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроцентДозаказаУпаковкаКоэффициентКонтекстноеМеню" id="69"/>
+													<ExtendedTooltip name="ПроцентДозаказаУпаковкаКоэффициентРасширеннаяПодсказка" id="70"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.delПрофильПоставщика</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

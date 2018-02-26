@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ТипОбъектаМетаданных" id="7">
+			<DataPath>Объект.ТипОбъектаМетаданных</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипОбъектаМетаданныхКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТипОбъектаМетаданныхРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ИмяОбъектаМетаданных" id="10">
+			<DataPath>Объект.ИмяОбъектаМетаданных</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяОбъектаМетаданныхКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИмяОбъектаМетаданныхРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<CheckBoxField name="ВключитьВОбмен" id="13">
+			<DataPath>Объект.ВключитьВОбмен</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВключитьВОбменКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВключитьВОбменРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<InputField name="НаправлениеОбмена" id="16">
+			<DataPath>Объект.НаправлениеОбмена</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаправлениеОбменаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="НаправлениеОбменаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<CheckBoxField name="НеЗависимыйРегистр" id="19">
+			<DataPath>Объект.НеЗависимыйРегистр</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеЗависимыйРегистрКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="НеЗависимыйРегистрРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<InputField name="УсловиеПоАдресуХранения" id="22">
+			<DataPath>Объект.УсловиеПоАдресуХранения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="УсловиеПоАдресуХраненияКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="УсловиеПоАдресуХраненияРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ТипПодключения" id="25">
+			<DataPath>1/0:2fabde23-e5c1-4c7b-9172-a326b5d24084</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипПодключенияКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ТипПодключенияРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ПроизвольныйАлгоритм" id="28">
+			<DataPath>Объект.ПроизвольныйАлгоритм</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код выполняемый регистрации объекта на обмен для определения узла куда должны уйти данные
+Источник - регистрируемый на обмен объект
+АдресХранения - аптека куда должен пометится объект;</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<MultiLine>true</MultiLine>
+			<ExtendedEdit>true</ExtendedEdit>
+			<ContextMenu name="ПроизвольныйАлгоритмКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ПроизвольныйАлгоритмРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="АлгоритмОпределенияПроизвольныхСвязанныхОбъектов" id="65">
+			<DataPath>Объект.АлгоритмОпределенияПроизвольныхСвязанныхОбъектов</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В поле располагается код формирующий массив ссылок связанных объектов с наименованием "МассивСвязанныхОбъектов"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="АлгоритмОпределенияПроизвольныхСвязанныхОбъектовКонтекстноеМеню" id="66"/>
+			<ExtendedTooltip name="АлгоритмОпределенияПроизвольныхСвязанныхОбъектовРасширеннаяПодсказка" id="67"/>
+		</InputField>
+		<Table name="ПодчиненныеОбъекты" id="31">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПодчиненныеОбъекты</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПодчиненныеОбъектыКонтекстноеМеню" id="32"/>
+			<AutoCommandBar name="ПодчиненныеОбъектыКоманднаяПанель" id="33"/>
+			<ExtendedTooltip name="ПодчиненныеОбъектыРасширеннаяПодсказка" id="34"/>
+			<SearchStringAddition name="ПодчиненныеОбъектыСтрокаПоиска" id="35">
+				<AdditionSource>
+					<Item>ПодчиненныеОбъекты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодчиненныеОбъектыСтрокаПоискаКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ПодчиненныеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПодчиненныеОбъектыСостояниеПросмотра" id="38">
+				<AdditionSource>
+					<Item>ПодчиненныеОбъекты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодчиненныеОбъектыСостояниеПросмотраКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="ПодчиненныеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПодчиненныеОбъектыУправлениеПоиском" id="41">
+				<AdditionSource>
+					<Item>ПодчиненныеОбъекты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодчиненныеОбъектыУправлениеПоискомКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="ПодчиненныеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПодчиненныеОбъектыНомерСтроки" id="44">
+					<DataPath>Объект.ПодчиненныеОбъекты.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодчиненныеОбъектыНомерСтрокиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПодчиненныеОбъектыНомерСтрокиРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<InputField name="ПодчиненныеОбъектыИмяРеквизита" id="47">
+					<DataPath>Объект.ПодчиненныеОбъекты.ИмяРеквизита</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодчиненныеОбъектыИмяРеквизитаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПодчиненныеОбъектыИмяРеквизитаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ПодчиненныеОбъектыПодчиненныйОбъект" id="50">
+					<DataPath>Объект.ПодчиненныеОбъекты.ПодчиненныйОбъект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодчиненныеОбъектыПодчиненныйОбъектКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПодчиненныеОбъектыПодчиненныйОбъектРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<CheckBoxField name="ПодчиненныеОбъектыИсключенИзОбмена" id="53">
+					<DataPath>Объект.ПодчиненныеОбъекты.ИсключенИзОбмена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПодчиненныеОбъектыИсключенИзОбменаКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПодчиненныеОбъектыИсключенИзОбменаРасширеннаяПодсказка" id="55"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПодчиненныеОбъектыДвижение" id="56">
+					<DataPath>Объект.ПодчиненныеОбъекты.Движение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПодчиненныеОбъектыДвижениеКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ПодчиненныеОбъектыДвижениеРасширеннаяПодсказка" id="58"/>
+				</CheckBoxField>
+				<InputField name="ПодчиненныеОбъектыТабличнаяЧасть" id="59">
+					<DataPath>Объект.ПодчиненныеОбъекты.ТабличнаяЧасть</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодчиненныеОбъектыТабличнаяЧастьКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ПодчиненныеОбъектыТабличнаяЧастьРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<CheckBoxField name="ПодчиненныеОбъектыМетитьНаОбмен" id="62">
+					<DataPath>Объект.ПодчиненныеОбъекты.МетитьНаОбмен</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПодчиненныеОбъектыМетитьНаОбменКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПодчиненныеОбъектыМетитьНаОбменРасширеннаяПодсказка" id="64"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НастройкиОбмена</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПроизвольныйАлгоритм</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.НаправлениеОбмена</dcsset:left>
+						<dcsset:comparisonType>InList</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.Обмен_НаправлениеОбмена.ВПодчиненныйУзел</dcsset:right>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.Обмен_НаправлениеОбмена.ПоАдресуХранения</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>

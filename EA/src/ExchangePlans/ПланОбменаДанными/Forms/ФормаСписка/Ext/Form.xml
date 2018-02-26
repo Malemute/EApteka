@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыгрузитьДанныеВУзел" id="34">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыгрузитьДанныеВУзел</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьДанныеВУзелРасширеннаяПодсказка" id="35"/>
+			</Button>
+			<Button name="ФормаПервоначальноеЗаполнение" id="36">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПервоначальноеЗаполнение</CommandName>
+				<ExtendedTooltip name="ФормаПервоначальноеЗаполнениеРасширеннаяПодсказка" id="37"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<InputField name="ТекущийУзел" id="38">
+			<DataPath>ТекущийУзел</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ТекущийУзелКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ТекущийУзелРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>true</AutoRefresh>
+			<AutoRefreshPeriod>5</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Код" id="16">
+					<DataPath>Список.Code</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="Наименование" id="19">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="ОсновнойУзел" id="28">
+					<DataPath>Список.ОсновнойУзел</DataPath>
+					<ContextMenu name="ОсновнойУзелКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ОсновнойУзелРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="ОбъектовВОчереди" id="41">
+					<DataPath>Список.ОбъектовВОчереди</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В очереди</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОбъектовВОчередиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОбъектовВОчередиРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="ОбъектовВыгруженно" id="44">
+					<DataPath>Список.ОбъектовВыгруженно</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгруженно</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОбъектовВыгруженноКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ОбъектовВыгруженноРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<CheckBoxField name="ЦиклОбменаЗавершен" id="50">
+					<DataPath>Список.ЦиклОбменаЗавершен</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен завершен</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЦиклОбменаЗавершенКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ЦиклОбменаЗавершенРасширеннаяПодсказка" id="52"/>
+				</CheckBoxField>
+				<LabelField name="ПорцияОбмена" id="31">
+					<DataPath>Список.ПорцияОбмена</DataPath>
+					<ContextMenu name="ПорцияОбменаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПорцияОбменаРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="Период" id="53">
+					<DataPath>Список.Period</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Последняя выгрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+				<LabelField name="ОписаниеОшибки" id="47">
+					<DataPath>Список.ОписаниеОшибки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОписаниеОшибкиКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ОписаниеОшибкиРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<Table name="ТаблицаОчередей" id="56">
+			<Representation>Tree</Representation>
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаОчередей</DataPath>
+			<ContextMenu name="ТаблицаОчередейКонтекстноеМеню" id="57"/>
+			<AutoCommandBar name="ТаблицаОчередейКоманднаяПанель" id="58">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ТаблицаОчередейОбновитьОчередь" id="81">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьОчередь</CommandName>
+						<ExtendedTooltip name="ТаблицаОчередейОбновитьОчередьРасширеннаяПодсказка" id="82"/>
+					</Button>
+					<Button name="ТаблицаОчередейУдалитьРегистрациюПоМетаданному" id="83">
+						<Type>CommandBarButton</Type>
+						<Enabled>false</Enabled>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Command.УдалитьРегистрациюПоМетаданному</CommandName>
+						<ExtendedTooltip name="ТаблицаОчередейУдалитьРегистрациюПоМетаданномуРасширеннаяПодсказка" id="84"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаОчередейРасширеннаяПодсказка" id="59"/>
+			<SearchStringAddition name="ТаблицаОчередейСтрокаПоиска" id="60">
+				<AdditionSource>
+					<Item>ТаблицаОчередей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОчередейСтрокаПоискаКонтекстноеМеню" id="61"/>
+				<ExtendedTooltip name="ТаблицаОчередейСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаОчередейСостояниеПросмотра" id="63">
+				<AdditionSource>
+					<Item>ТаблицаОчередей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОчередейСостояниеПросмотраКонтекстноеМеню" id="64"/>
+				<ExtendedTooltip name="ТаблицаОчередейСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаОчередейУправлениеПоиском" id="66">
+				<AdditionSource>
+					<Item>ТаблицаОчередей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОчередейУправлениеПоискомКонтекстноеМеню" id="67"/>
+				<ExtendedTooltip name="ТаблицаОчередейУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">ТаблицаОчередейПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаОчередейУзел" id="78">
+					<DataPath>ТаблицаОчередей.Узел</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОчередейУзелКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ТаблицаОчередейУзелРасширеннаяПодсказка" id="80"/>
+				</InputField>
+				<InputField name="ТаблицаОчередейОчередь" id="72">
+					<DataPath>ТаблицаОчередей.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОчередейОчередьКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ТаблицаОчередейОчередьРасширеннаяПодсказка" id="74"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ПланОбменаПланОбменаДанными.Ссылка,
+	ПланОбменаПланОбменаДанными.ПометкаУдаления,
+	ПланОбменаПланОбменаДанными.ЭтотУзел,
+	ПланОбменаПланОбменаДанными.Код,
+	ПланОбменаПланОбменаДанными.Наименование,
+	ПланОбменаПланОбменаДанными.НомерОтправленного,
+	ПланОбменаПланОбменаДанными.НомерПринятого,
+	ПланОбменаПланОбменаДанными.ОсновнойУзел,
+	ПланОбменаПланОбменаДанными.ПорцияОбмена,
+	ОбменРИБД_ЛогОбменаСрезПоследних.ОбъектовВОчереди,
+	ОбменРИБД_ЛогОбменаСрезПоследних.ОбъектовВыгруженно,
+	ОбменРИБД_ЛогОбменаСрезПоследних.ЦиклОбменаЗавершен,
+	ОбменРИБД_ЛогОбменаСрезПоследних.ОписаниеОшибки,
+	ОбменРИБД_ЛогОбменаСрезПоследних.Период
+ИЗ
+	ПланОбмена.ПланОбменаДанными КАК ПланОбменаПланОбменаДанными
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ОбменРИБД_ЛогОбмена.СрезПоследних КАК ОбменРИБД_ЛогОбменаСрезПоследних
+		ПО (ОбменРИБД_ЛогОбменаСрезПоследних.Узел = ПланОбменаПланОбменаДанными.Ссылка)</QueryText>
+				<MainTable>ExchangePlan.ПланОбменаДанными</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ЭтотУзел</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийУзел" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий узел</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ExchangePlanRef.ПланОбменаДанными</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаОчередей" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица очередей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Узел" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел/Метаданное</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>cfg:ExchangePlanRef.ПланОбменаДанными</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очередь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыгрузитьДанныеВУзел" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные в узел</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные в узел</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьДанныеВУзел</Action>
+		</Command>
+		<Command name="ПервоначальноеЗаполнение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первоначальное заполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первоначальное заполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПервоначальноеЗаполнение</Action>
+		</Command>
+		<Command name="ОбновитьОчередь" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить очередь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить очередь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьОчередьКоманда</Action>
+		</Command>
+		<Command name="УдалитьРегистрациюПоМетаданному" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить регистрацию по метаданному</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить регистрацию по метаданному</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьРегистрациюПоМетаданному</Action>
+		</Command>
+	</Commands>
+</Form>

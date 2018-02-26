@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Склад" id="7">
+			<DataPath>Объект.Склад</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="Холод" id="10">
+			<DataPath>Объект.Холод</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ХолодКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ХолодРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<InputField name="Сотрудник" id="13">
+			<DataPath>Объект.Сотрудник</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СотрудникКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="СкладПотерь" id="16">
+			<DataPath>Объект.СкладПотерь</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладПотерьКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СкладПотерьРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ДокументОснование" id="144">
+			<DataPath>Объект.ДокументОснование</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="145"/>
+			<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="146"/>
+		</InputField>
+		<CheckBoxField name="ЭтоКоробкаСЦентральногоСклада" id="19">
+			<DataPath>Объект.ЭтоКоробкаСЦентральногоСклада</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЭтоКоробкаСЦентральногоСкладаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ЭтоКоробкаСЦентральногоСкладаРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<InputField name="ID_77" id="22">
+			<DataPath>Объект.ID_77</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ID_77КонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ID_77РасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ШК" id="147">
+			<DataPath>Объект.ШК</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ШККонтекстноеМеню" id="148"/>
+			<ExtendedTooltip name="ШКРасширеннаяПодсказка" id="149"/>
+		</InputField>
+		<Pages name="Страницы" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Page name="ГруппаТовары" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТоварыРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<Table name="Товары" id="29">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Товары</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТоварыКонтекстноеМеню" id="30"/>
+							<AutoCommandBar name="ТоварыКоманднаяПанель" id="31"/>
+							<ExtendedTooltip name="ТоварыРасширеннаяПодсказка" id="32"/>
+							<SearchStringAddition name="ТоварыСтрокаПоиска" id="33">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыСтрокаПоискаКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ТоварыСтрокаПоискаРасширеннаяПодсказка" id="35"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТоварыСостояниеПросмотра" id="36">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыСостояниеПросмотраКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="ТоварыСостояниеПросмотраРасширеннаяПодсказка" id="38"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТоварыУправлениеПоиском" id="39">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыУправлениеПоискомКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="41"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТоварыНомерСтроки" id="42">
+									<DataPath>Объект.Товары.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ТоварыНомерСтрокиРасширеннаяПодсказка" id="44"/>
+								</LabelField>
+								<InputField name="ТоварыЗаказ" id="45">
+									<DataPath>Объект.Товары.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыЗаказКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ТоварыЗаказРасширеннаяПодсказка" id="47"/>
+								</InputField>
+								<InputField name="ТоварыТовар" id="48">
+									<DataPath>Объект.Товары.Товар</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыТоварКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ТоварыТоварРасширеннаяПодсказка" id="50"/>
+								</InputField>
+								<InputField name="ТоварыПартия" id="51">
+									<DataPath>Объект.Товары.Партия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыПартияКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ТоварыПартияРасширеннаяПодсказка" id="53"/>
+								</InputField>
+								<CheckBoxField name="ТоварыХолод" id="54">
+									<DataPath>Объект.Товары.Холод</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТоварыХолодКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ТоварыХолодРасширеннаяПодсказка" id="56"/>
+								</CheckBoxField>
+								<InputField name="ТоварыКоличество" id="57">
+									<DataPath>Объект.Товары.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ТоварыКоличествоРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="ТоварыКоличествоСобрано" id="60">
+									<DataPath>Объект.Товары.КоличествоСобрано</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыКоличествоСобраноКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ТоварыКоличествоСобраноРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="ТоварыКоличествоНеХватило" id="63">
+									<DataPath>Объект.Товары.КоличествоНеХватило</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыКоличествоНеХватилоКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ТоварыКоличествоНеХватилоРасширеннаяПодсказка" id="65"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПрогрессСборки" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прогресс сборки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПрогрессСборкиРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<Table name="ПрогрессСборки" id="68">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПрогрессСборки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПрогрессСборкиКонтекстноеМеню" id="69"/>
+							<AutoCommandBar name="ПрогрессСборкиКоманднаяПанель" id="70"/>
+							<ExtendedTooltip name="ПрогрессСборкиРасширеннаяПодсказка" id="71"/>
+							<SearchStringAddition name="ПрогрессСборкиСтрокаПоиска" id="72">
+								<AdditionSource>
+									<Item>ПрогрессСборки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрогрессСборкиСтрокаПоискаКонтекстноеМеню" id="73"/>
+								<ExtendedTooltip name="ПрогрессСборкиСтрокаПоискаРасширеннаяПодсказка" id="74"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПрогрессСборкиСостояниеПросмотра" id="75">
+								<AdditionSource>
+									<Item>ПрогрессСборки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрогрессСборкиСостояниеПросмотраКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="ПрогрессСборкиСостояниеПросмотраРасширеннаяПодсказка" id="77"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПрогрессСборкиУправлениеПоиском" id="78">
+								<AdditionSource>
+									<Item>ПрогрессСборки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрогрессСборкиУправлениеПоискомКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ПрогрессСборкиУправлениеПоискомРасширеннаяПодсказка" id="80"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПрогрессСборкиНомерСтроки" id="81">
+									<DataPath>Объект.ПрогрессСборки.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиНомерСтрокиКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ПрогрессСборкиНомерСтрокиРасширеннаяПодсказка" id="83"/>
+								</LabelField>
+								<InputField name="ПрогрессСборкиПериод" id="84">
+									<DataPath>Объект.ПрогрессСборки.Период</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиПериодКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ПрогрессСборкиПериодРасширеннаяПодсказка" id="86"/>
+								</InputField>
+								<InputField name="ПрогрессСборкиЗаказ" id="87">
+									<DataPath>Объект.ПрогрессСборки.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиЗаказКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ПрогрессСборкиЗаказРасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<InputField name="ПрогрессСборкиТовар" id="90">
+									<DataPath>Объект.ПрогрессСборки.Товар</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиТоварКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ПрогрессСборкиТоварРасширеннаяПодсказка" id="92"/>
+								</InputField>
+								<InputField name="ПрогрессСборкиПартия" id="93">
+									<DataPath>Объект.ПрогрессСборки.Партия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиПартияКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ПрогрессСборкиПартияРасширеннаяПодсказка" id="95"/>
+								</InputField>
+								<CheckBoxField name="ПрогрессСборкиХолод" id="96">
+									<DataPath>Объект.ПрогрессСборки.Холод</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПрогрессСборкиХолодКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ПрогрессСборкиХолодРасширеннаяПодсказка" id="98"/>
+								</CheckBoxField>
+								<InputField name="ПрогрессСборкиЗона" id="99">
+									<DataPath>Объект.ПрогрессСборки.Зона</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиЗонаКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ПрогрессСборкиЗонаРасширеннаяПодсказка" id="101"/>
+								</InputField>
+								<InputField name="ПрогрессСборкиСтелаж" id="102">
+									<DataPath>Объект.ПрогрессСборки.Стелаж</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиСтелажКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ПрогрессСборкиСтелажРасширеннаяПодсказка" id="104"/>
+								</InputField>
+								<InputField name="ПрогрессСборкиЯчейка" id="105">
+									<DataPath>Объект.ПрогрессСборки.Ячейка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиЯчейкаКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ПрогрессСборкиЯчейкаРасширеннаяПодсказка" id="107"/>
+								</InputField>
+								<InputField name="ПрогрессСборкиКоличествоСобрано" id="108">
+									<DataPath>Объект.ПрогрессСборки.КоличествоСобрано</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиКоличествоСобраноКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ПрогрессСборкиКоличествоСобраноРасширеннаяПодсказка" id="110"/>
+								</InputField>
+								<InputField name="ПрогрессСборкиКоличествоНеХватило" id="111">
+									<DataPath>Объект.ПрогрессСборки.КоличествоНеХватило</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрогрессСборкиКоличествоНеХватилоКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ПрогрессСборкиКоличествоНеХватилоРасширеннаяПодсказка" id="113"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПотери" id="114">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Потери</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПотериРасширеннаяПодсказка" id="115"/>
+					<ChildItems>
+						<Table name="Потери" id="116">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Потери</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПотериКонтекстноеМеню" id="117"/>
+							<AutoCommandBar name="ПотериКоманднаяПанель" id="118"/>
+							<ExtendedTooltip name="ПотериРасширеннаяПодсказка" id="119"/>
+							<SearchStringAddition name="ПотериСтрокаПоиска" id="120">
+								<AdditionSource>
+									<Item>Потери</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПотериСтрокаПоискаКонтекстноеМеню" id="121"/>
+								<ExtendedTooltip name="ПотериСтрокаПоискаРасширеннаяПодсказка" id="122"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПотериСостояниеПросмотра" id="123">
+								<AdditionSource>
+									<Item>Потери</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПотериСостояниеПросмотраКонтекстноеМеню" id="124"/>
+								<ExtendedTooltip name="ПотериСостояниеПросмотраРасширеннаяПодсказка" id="125"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПотериУправлениеПоиском" id="126">
+								<AdditionSource>
+									<Item>Потери</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПотериУправлениеПоискомКонтекстноеМеню" id="127"/>
+								<ExtendedTooltip name="ПотериУправлениеПоискомРасширеннаяПодсказка" id="128"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПотериНомерСтроки" id="129">
+									<DataPath>Объект.Потери.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПотериНомерСтрокиКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ПотериНомерСтрокиРасширеннаяПодсказка" id="131"/>
+								</LabelField>
+								<InputField name="ПотериТовар" id="132">
+									<DataPath>Объект.Потери.Товар</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПотериТоварКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ПотериТоварРасширеннаяПодсказка" id="134"/>
+								</InputField>
+								<InputField name="ПотериПартия" id="135">
+									<DataPath>Объект.Потери.Партия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПотериПартияКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ПотериПартияРасширеннаяПодсказка" id="137"/>
+								</InputField>
+								<InputField name="ПотериОстаток" id="138">
+									<DataPath>Объект.Потери.Остаток</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПотериОстатокКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ПотериОстатокРасширеннаяПодсказка" id="140"/>
+								</InputField>
+								<InputField name="ПотериРезерв" id="141">
+									<DataPath>Объект.Потери.Резерв</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПотериРезервКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ПотериРезервРасширеннаяПодсказка" id="143"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Сборка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

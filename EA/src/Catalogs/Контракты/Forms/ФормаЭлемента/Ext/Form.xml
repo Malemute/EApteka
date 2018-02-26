@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНаименованиеКод" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа наименование код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНаименованиеКодРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<Button name="СформироватьНаименование" id="100">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СформироватьНаименование</CommandName>
+					<ExtendedTooltip name="СформироватьНаименованиеРасширеннаяПодсказка" id="101"/>
+				</Button>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Владелец" id="7">
+			<DataPath>Объект.Owner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="ГруппаПериодДействия" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период действия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период действия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодДействияРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="13">
+					<DataPath>Объект.ДатаНачала</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период с</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="16">
+					<DataPath>Объект.ДатаОкончания</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ТипКонтракта" id="19">
+			<DataPath>Объект.ТипКонтракта</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипКонтрактаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ТипКонтрактаРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="OnChange">ТипКонтрактаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаПланКонтракта" id="102">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа план контракта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа план контракта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПланКонтрактаРасширеннаяПодсказка" id="103"/>
+			<ChildItems>
+				<InputField name="ПланКонтракта" id="22">
+					<DataPath>Объект.ПланКонтракта</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>План контракта (руб.)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПланКонтрактаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПланКонтрактаРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<CheckBoxField name="УчитыватьНДС" id="104">
+					<DataPath>Объект.УчитыватьНДС</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УчитыватьНДСКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="УчитыватьНДСРасширеннаяПодсказка" id="106"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ШкалаБюджета" id="25">
+			<DataPath>Объект.ШкалаБюджета</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ШкалаБюджетаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ШкалаБюджетаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<Pages name="Страницы" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<Page name="СтраницаНовыйКонтракт" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Планы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница новый контракт</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНовыйКонтрактРасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<Table name="НовыеПланыКонтракта" id="75">
+							<Representation>List</Representation>
+							<HeightInTableRows>3</HeightInTableRows>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>НовыеПланыКонтракта</DataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="НовыеПланыКонтрактаКонтекстноеМеню" id="76"/>
+							<AutoCommandBar name="НовыеПланыКонтрактаКоманднаяПанель" id="77"/>
+							<ExtendedTooltip name="НовыеПланыКонтрактаРасширеннаяПодсказка" id="78"/>
+							<SearchStringAddition name="НовыеПланыКонтрактаСтрокаПоиска" id="79">
+								<AdditionSource>
+									<Item>НовыеПланыКонтракта</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НовыеПланыКонтрактаСтрокаПоискаКонтекстноеМеню" id="80"/>
+								<ExtendedTooltip name="НовыеПланыКонтрактаСтрокаПоискаРасширеннаяПодсказка" id="81"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НовыеПланыКонтрактаСостояниеПросмотра" id="82">
+								<AdditionSource>
+									<Item>НовыеПланыКонтракта</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НовыеПланыКонтрактаСостояниеПросмотраКонтекстноеМеню" id="83"/>
+								<ExtendedTooltip name="НовыеПланыКонтрактаСостояниеПросмотраРасширеннаяПодсказка" id="84"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НовыеПланыКонтрактаУправлениеПоиском" id="85">
+								<AdditionSource>
+									<Item>НовыеПланыКонтракта</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НовыеПланыКонтрактаУправлениеПоискомКонтекстноеМеню" id="86"/>
+								<ExtendedTooltip name="НовыеПланыКонтрактаУправлениеПоискомРасширеннаяПодсказка" id="87"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="НовыеПланыКонтрактаДатаНачала" id="88">
+									<DataPath>НовыеПланыКонтракта.ДатаНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="НовыеПланыКонтрактаДатаНачалаКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="НовыеПланыКонтрактаДатаНачалаРасширеннаяПодсказка" id="90"/>
+								</InputField>
+								<InputField name="НовыеПланыКонтрактаДатаОкончания" id="91">
+									<DataPath>НовыеПланыКонтракта.ДатаОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="НовыеПланыКонтрактаДатаОкончанияКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="НовыеПланыКонтрактаДатаОкончанияРасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<InputField name="НовыеПланыКонтрактаПланКонтракта" id="94">
+									<DataPath>НовыеПланыКонтракта.ПланКонтракта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НовыеПланыКонтрактаПланКонтрактаКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="НовыеПланыКонтрактаПланКонтрактаРасширеннаяПодсказка" id="96"/>
+								</InputField>
+								<InputField name="НовыеПланыКонтрактаШкалаБюджета" id="97">
+									<DataPath>НовыеПланыКонтракта.ШкалаБюджета</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="НовыеПланыКонтрактаШкалаБюджетаКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="НовыеПланыКонтрактаШкалаБюджетаРасширеннаяПодсказка" id="99"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСуществующийКонтракт" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Планы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница существующий контракт</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСуществующийКонтрактРасширеннаяПодсказка" id="74"/>
+					<ChildItems>
+						<Table name="ПланыКонтракта" id="32">
+							<HeightInTableRows>3</HeightInTableRows>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ПланыКонтракта</DataPath>
+							<RowPictureDataPath>ПланыКонтракта.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>LevelDown</ExcludedCommand>
+								<ExcludedCommand>LevelUp</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>MoveItem</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ПланыКонтрактаКонтекстноеМеню" id="33"/>
+							<AutoCommandBar name="ПланыКонтрактаКоманднаяПанель" id="34"/>
+							<ExtendedTooltip name="ПланыКонтрактаРасширеннаяПодсказка" id="35"/>
+							<SearchStringAddition name="ПланыКонтрактаСтрокаПоиска" id="36">
+								<AdditionSource>
+									<Item>ПланыКонтракта</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПланыКонтрактаСтрокаПоискаКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="ПланыКонтрактаСтрокаПоискаРасширеннаяПодсказка" id="38"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПланыКонтрактаСостояниеПросмотра" id="39">
+								<AdditionSource>
+									<Item>ПланыКонтракта</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПланыКонтрактаСостояниеПросмотраКонтекстноеМеню" id="40"/>
+								<ExtendedTooltip name="ПланыКонтрактаСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПланыКонтрактаУправлениеПоиском" id="42">
+								<AdditionSource>
+									<Item>ПланыКонтракта</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПланыКонтрактаУправлениеПоискомКонтекстноеМеню" id="43"/>
+								<ExtendedTooltip name="ПланыКонтрактаУправлениеПоискомРасширеннаяПодсказка" id="44"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ПланыКонтрактаПередНачаломДобавления</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПланыКонтрактаДатаНачала" id="54">
+									<DataPath>ПланыКонтракта.ДатаНачала</DataPath>
+									<ContextMenu name="ПланыКонтрактаДатаНачалаКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ПланыКонтрактаДатаНачалаРасширеннаяПодсказка" id="56"/>
+								</LabelField>
+								<LabelField name="ПланыКонтрактаДатаОкончания" id="57">
+									<DataPath>ПланыКонтракта.ДатаОкончания</DataPath>
+									<ContextMenu name="ПланыКонтрактаДатаОкончанияКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ПланыКонтрактаДатаОкончанияРасширеннаяПодсказка" id="59"/>
+								</LabelField>
+								<LabelField name="ПланыКонтрактаПланКонтракта" id="63">
+									<DataPath>ПланыКонтракта.ПланКонтракта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение плана</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПланыКонтрактаПланКонтрактаКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПланыКонтрактаПланКонтрактаРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+								<LabelField name="ПланыКонтрактаШкалаБюджета" id="66">
+									<DataPath>ПланыКонтракта.ШкалаБюджета</DataPath>
+									<ContextMenu name="ПланыКонтрактаШкалаБюджетаКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ПланыКонтрактаШкалаБюджетаРасширеннаяПодсказка" id="68"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Контракты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПланыКонтракта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Планы контракта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Контракты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="НовыеПланыКонтракта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новые планы контракта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаНачала" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОкончания" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПланКонтракта" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение плана</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ШкалаБюджета" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шкала бюджета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ШкалыПлановКонтрактов</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьНаименование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СформироватьНаименование</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

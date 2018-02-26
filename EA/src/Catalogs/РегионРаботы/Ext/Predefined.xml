@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="8478c099-8ac9-4e1b-ac8e-47a8a8d492b8">
+		<Name>МО</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>МО</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="210ad448-9a4d-4c29-b9e9-57a8e534c9f1">
+		<Name>Москва</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Москва</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4311c0f3-c740-4dbf-b53b-0b03ef4b8b0f">
+		<Name>СПб</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>СПб</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0bb75545-1456-436c-9a60-77fcff47706b">
+		<Name>Тверь</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>Тверь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d85d94b3-faa8-4ec6-b30b-191cd74236e0">
+		<Name>Ярославль</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Ярославль</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

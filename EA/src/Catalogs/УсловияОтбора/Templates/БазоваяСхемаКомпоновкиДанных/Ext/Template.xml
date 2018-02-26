@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных_ТекущаяБД</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ТаблицаУсловийОтбора</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭлементСправочника_УсловияОтбора</dataPath>
+			<field>ЭлементСправочника_УсловияОтбора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условие отбора</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭлементСправочника_УсловияОтбора_ВидОбъекта</dataPath>
+			<field>ЭлементСправочника_УсловияОтбора_ВидОбъекта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент справочника условия отбора вид объекта</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<dataSource>ИсточникДанных_ТекущаяБД</dataSource>
+		<query>ВЫБРАТЬ
+	УсловияОтбора.Ссылка КАК ЭлементСправочника_УсловияОтбора
+ИЗ
+	Справочник.УсловияОтбора КАК УсловияОтбора
+ГДЕ
+	УсловияОтбора.ЭтоГруппа = ЛОЖЬ
+	И УсловияОтбора.ПометкаУдаления = ЛОЖЬ
+{ГДЕ
+	УсловияОтбора.ВидОбъекта.* КАК ЭлементСправочника_УсловияОтбора_ВидОбъекта}</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>ТаблицаШапкаОбъекта</name>
+		<dataSource>ИсточникДанных_ТекущаяБД</dataSource>
+		<objectName>ТаблицаШапкаОбъекта</objectName>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>ТаблицаШапкаОбъекта</sourceDataSet>
+		<destinationDataSet>ТаблицаУсловийОтбора</destinationDataSet>
+		<sourceExpression>ИСТИНА</sourceExpression>
+		<destinationExpression>ИСТИНА</destinationExpression>
+	</dataSetLink>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭлементСправочника_УсловияОтбора</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

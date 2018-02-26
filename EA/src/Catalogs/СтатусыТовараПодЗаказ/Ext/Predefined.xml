@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="35e1533a-6f27-4906-9235-7195de7e5f7b">
+		<Name>ВставленоВЗаказ</Name>
+		<Code xsi:type="xs:decimal">9</Code>
+		<Description>Вставлено в заказ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e5130919-2636-4d1a-9ae0-6c83826b0f9e">
+		<Name>ЗаказаноКлиентом</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>Заказано клиентом</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ca865b58-5eda-408c-acb9-95be1757ddf2">
+		<Name>ЗапрошенаПредоплата</Name>
+		<Code xsi:type="xs:decimal">11</Code>
+		<Description>Запрошена предоплата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3bdd0a4b-8481-4bd6-ad4b-01362ac541b8">
+		<Name>КлиентОтказалсяОжидать</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>Клиент отказался ожидать</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="44d994b0-4b30-45b3-ba57-9af4cd6bd3db">
+		<Name>НаСогласованииВОтделеЗакупок</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>На согласовании в отделе закупок</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d5f259ec-76ec-4ca1-9900-54b4ddce3f0d">
+		<Name>НаСогласованииМРК</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>На согласовании МРК</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9f99b304-6aa1-4dce-a841-69f49a630501">
+		<Name>НевозможноЗаказать</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>Невозможно заказать</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eccbd7ff-2039-457e-9e52-8fd081219e4e">
+		<Name>Нехватило</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Нехватило</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2787d40d-ac3a-40f3-a0fa-d5764f3c2464">
+		<Name>ОжидаетЗаказаТовара</Name>
+		<Code xsi:type="xs:decimal">7</Code>
+		<Description>Ожидает заказа товара</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3ac022a7-e6cb-44b3-8708-87358c165f46">
+		<Name>ОжидаетПоставкуТовара</Name>
+		<Code xsi:type="xs:decimal">8</Code>
+		<Description>Ожидает поставку товара</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9f95397d-0ab7-49b2-97f9-fb73aad8515c">
+		<Name>ОжидаетПредоплаты</Name>
+		<Code xsi:type="xs:decimal">12</Code>
+		<Description>Ожидает предоплаты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="489cc054-0167-4740-9f9d-0ee57b88bb79">
+		<Name>ОжидаетРаскладки</Name>
+		<Code xsi:type="xs:decimal">13</Code>
+		<Description>Ожидает раскладки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3c11a3f3-41f3-4e62-aa90-c0c7260b665a">
+		<Name>Отменен</Name>
+		<Code xsi:type="xs:decimal">10</Code>
+		<Description>Отменен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

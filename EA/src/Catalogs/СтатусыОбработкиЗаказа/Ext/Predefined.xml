@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="47702b43-8531-4c0a-ad18-ae9abf11660a">
+		<Name>Доставляется</Name>
+		<Code xsi:type="xs:decimal">14</Code>
+		<Description>Доставляется</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="11dd76b9-c62a-4153-ad0c-5827018f10cc">
+		<Name>ЗаказВТочкеСамовывоза</Name>
+		<Code xsi:type="xs:decimal">21</Code>
+		<Description>Заказ в точке самовывоза</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e1c7e167-67e8-4818-827f-e1ba0ed30485">
+		<Name>ЗаказСоздан</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>Заказ создан</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="32974d1a-1c4c-4933-bdbe-0ec723d90a22">
+		<Name>ОжидаетОбработкиМРК</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>Ожидает обработки МРК</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="32a93209-53c7-4da5-95eb-bb7eb794e654">
+		<Name>Отменен</Name>
+		<Code xsi:type="xs:decimal">16</Code>
+		<Description>Отменен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1c8b7ef1-5cd0-4313-b68b-a083c4f76054">
+		<Name>ПереданНаСборку</Name>
+		<Code xsi:type="xs:decimal">8</Code>
+		<Description>Передан на сборку</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7ebc22dc-6cef-4494-80fd-5f705271846b">
+		<Name>ПолныйВозврат</Name>
+		<Code xsi:type="xs:decimal">17</Code>
+		<Description>Полный возврат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="48d475a5-30de-4044-b466-e43429f43ee5">
+		<Name>Пробит</Name>
+		<Code xsi:type="xs:decimal">11</Code>
+		<Description>Пробит</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="65414183-577e-47a8-b159-f79db08564fc">
+		<Name>Собран</Name>
+		<Code xsi:type="xs:decimal">10</Code>
+		<Description>Собран</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

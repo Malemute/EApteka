@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.5">
+	<Item id="81f8e018-0a1c-484e-b938-bf22d38d3e24">
+		<Name>ЕА</Name>
+		<Code xsi:type="xs:decimal">2</Code>
+		<Description>EAPTEKA.RU</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d7fe225b-1510-43b4-9dfc-f3073d786e78">
+		<Name>ПИ</Name>
+		<Code xsi:type="xs:decimal">3</Code>
+		<Description>PILULI.RU</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="67cac824-8a84-4c76-8055-1fd7beef91dc">
+		<Name>СМ</Name>
+		<Code xsi:type="xs:decimal">1</Code>
+		<Description>SMED.RU</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="128a43b6-2f72-4dfd-8074-9f7e4da658fa">
+		<Name>LX</Name>
+		<Code xsi:type="xs:decimal">6</Code>
+		<Description>Аптека XL</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="60d1237a-dd35-4676-8c70-e8542c66e9e2">
+		<Name>НА</Name>
+		<Code xsi:type="xs:decimal">5</Code>
+		<Description>Аптека еАптека</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fe513e5a-3301-446d-b746-e7424fb7dd8f">
+		<Name>САП</Name>
+		<Code xsi:type="xs:decimal">4</Code>
+		<Description>САП</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

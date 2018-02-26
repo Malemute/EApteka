@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Общая" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОбщаяРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<UsualGroup name="Управление" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="УправлениеРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<InputField name="Зона" id="1">
+							<DataPath>Зона</DataPath>
+							<ContextMenu name="ЗонаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ЗонаРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Объем" id="19">
+							<DataPath>Объем</DataPath>
+							<ContextMenu name="ОбъемКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ОбъемРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="КоличествоЯчеекНаСтелаже" id="16">
+							<DataPath>КоличествоЯчеекНаСтелаже</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="КоличествоЯчеекНаСтелажеКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="КоличествоЯчеекНаСтелажеРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="КоличествоПолокНаСтелаже" id="13">
+							<DataPath>КоличествоПолокНаСтелаже</DataPath>
+							<Visible>false</Visible>
+							<ContextMenu name="КоличествоПолокНаСтелажеКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="КоличествоПолокНаСтелажеРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<UsualGroup name="ДиапазонСтелажей" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Диапазон стелажей</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Диапазон стелажей</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ДиапазонСтелажейРасширеннаяПодсказка" id="33"/>
+							<ChildItems>
+								<InputField name="СтелажМин" id="7">
+									<DataPath>СтелажМин</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стелаж с</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтелажМинКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="СтелажМинРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="СтелажМакс" id="10">
+									<DataPath>СтелажМакс</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>по</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтелажМаксКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="СтелажМаксРасширеннаяПодсказка" id="12"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ДиапазонЯчеек" id="24">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Диапазон ячеек</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Диапазон ячеек</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ДиапазонЯчеекРасширеннаяПодсказка" id="25"/>
+							<ChildItems>
+								<InputField name="ЯчейкаМин" id="26">
+									<DataPath>ЯчейкаМин</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ячейки с</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЯчейкаМинКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ЯчейкаМинРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ЯчейкаМакс" id="29">
+									<DataPath>ЯчейкаМакс</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>по</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<ContextMenu name="ЯчейкаМаксКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ЯчейкаМаксРасширеннаяПодсказка" id="31"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ВиМестаЗСЯ" id="4">
+							<DataPath>ВиМестаЗСЯ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ВиМестаЗСЯКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ВиМестаЗСЯРасширеннаяПодсказка" id="6"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="Подсказка" id="38">
+					<Font ref="style:NormalTextFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зоны
+1 - Материальная комната 
+2 - Рецептура
+3 - Зал
+4 - Холодильник
+5 - Касса
+Ячейки самовывоза
+99 - тепло
+98 - холод</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПодсказкаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПодсказкаРасширеннаяПодсказка" id="40"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="СоздатьЯчейки" id="22">
+			<Type>UsualButton</Type>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Form.Command.СоздатьЯчейки</CommandName>
+			<ExtendedTooltip name="СоздатьЯчейкиРасширеннаяПодсказка" id="23"/>
+		</Button>
+		<Table name="ЯчейкиЗСЯ" id="41">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаЯчейкиЗСЯ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЯчейкиЗСЯКонтекстноеМеню" id="42"/>
+			<AutoCommandBar name="ЯчейкиЗСЯКоманднаяПанель" id="43">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ЯчейкиЗСЯУстановитьОтметки" id="64">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.УстановитьОтметки</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ЯчейкиЗСЯУстановитьОтметкиРасширеннаяПодсказка" id="65"/>
+					</Button>
+					<Button name="ЯчейкиЗСЯСнятьОтметки" id="66">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.СнятьОтметки</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ЯчейкиЗСЯСнятьОтметкиРасширеннаяПодсказка" id="67"/>
+					</Button>
+					<Button name="ЯчейкиЗСЯНапечататьШК" id="62">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.НапечататьШК</CommandName>
+						<ExtendedTooltip name="ЯчейкиЗСЯНапечататьШКРасширеннаяПодсказка" id="63"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЯчейкиЗСЯРасширеннаяПодсказка" id="44"/>
+			<SearchStringAddition name="ЯчейкиЗСЯСтрокаПоиска" id="45">
+				<AdditionSource>
+					<Item>ЯчейкиЗСЯ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЯчейкиЗСЯСтрокаПоискаКонтекстноеМеню" id="46"/>
+				<ExtendedTooltip name="ЯчейкиЗСЯСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЯчейкиЗСЯСостояниеПросмотра" id="48">
+				<AdditionSource>
+					<Item>ЯчейкиЗСЯ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЯчейкиЗСЯСостояниеПросмотраКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="ЯчейкиЗСЯСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЯчейкиЗСЯУправлениеПоиском" id="51">
+				<AdditionSource>
+					<Item>ЯчейкиЗСЯ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЯчейкиЗСЯУправлениеПоискомКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="ЯчейкиЗСЯУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ЯчейкиЗСЯЯчейка" id="54">
+					<DataPath>ТаблицаЯчейкиЗСЯ.Ячейка</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<MaxWidth>5</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ЯчейкиЗСЯЯчейкаКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ЯчейкиЗСЯЯчейкаРасширеннаяПодсказка" id="56"/>
+				</InputField>
+				<CheckBoxField name="ЯчейкиЗСЯПечатать" id="57">
+					<DataPath>ТаблицаЯчейкиЗСЯ.Печатать</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЯчейкиЗСЯПечататьКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ЯчейкиЗСЯПечататьРасширеннаяПодсказка" id="59"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СозданиеЯчеекНаСкладе</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Зона" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЗонаХранения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтелажМин" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стелаж мин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтелажМакс" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стелаж макс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПолокНаСтелаже" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество полок на стелаже</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоЯчеекНаСтелаже" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество ячеек на стелаже</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Объем" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ВиМестаЗСЯ" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ви места ЗСЯ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыМестЗСЯ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЯчейкаМин" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ячейка мин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЯчейкаМакс" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ячейка макс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаЯчейкиЗСЯ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица ячейки ЗСЯ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ячейка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ячейка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.МестоЗСЯ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Печатать" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печатать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьЯчейки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ячейки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ячейки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьЯчейки</Action>
+		</Command>
+		<Command name="НапечататьШК" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напечатать ШК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напечатать ШК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НапечататьШК</Action>
+		</Command>
+		<Command name="УстановитьОтметки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отметки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьОтметки</Action>
+		</Command>
+		<Command name="СнятьОтметки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьОтметки</Action>
+		</Command>
+	</Commands>
+</Form>
